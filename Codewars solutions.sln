@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sum of Digits (Digital Root
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Total amount of points", "Total amount of points\Total amount of points.csproj", "{C0FE56AD-DA69-4B8B-8012-1BACDD52B69E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SameCase", "SameCase\SameCase.csproj", "{22920915-B509-499B-9C09-AE06835CE24A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{C0FE56AD-DA69-4B8B-8012-1BACDD52B69E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0FE56AD-DA69-4B8B-8012-1BACDD52B69E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0FE56AD-DA69-4B8B-8012-1BACDD52B69E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22920915-B509-499B-9C09-AE06835CE24A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22920915-B509-499B-9C09-AE06835CE24A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22920915-B509-499B-9C09-AE06835CE24A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22920915-B509-499B-9C09-AE06835CE24A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
