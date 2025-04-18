@@ -12,16 +12,13 @@ namespace Roman_Numerals_Helper
             Console.WriteLine(ToRoman(2000));
             Console.WriteLine(ToRoman(86));
             Console.WriteLine(ToRoman(1));
+
+            Console.WriteLine(FromRoman("IV"));
         }
 
         public static string ToRoman(int n)
         {
             StringBuilder result = new StringBuilder();
-
-            //iterate until reach 0 current num
-            // check if roman symbol value < current num
-            //      if yes subtract value from current num and append symbol to result
-            // check from largest to smallest
 
             int num = n;
 
@@ -104,7 +101,83 @@ namespace Roman_Numerals_Helper
 
         public static int FromRoman(string romanNumeral)
         {
-            return 0;
+            int result = 0;
+
+            string r = romanNumeral;
+
+            for (int i = 0; i < r.Length; i++)
+            {
+                if (r[i] == 'I')
+                {
+                    if (i < r.Length - 1 && r[i + 1] == 'X')
+                    {
+                        result += 9;
+                        i++;
+                    }
+                    else if (i < r.Length - 1 && r[i + 1] == 'V')
+                    {
+                        result += 4;
+                        i++;
+                    }
+                    else
+                    {
+                        result += 1;
+                    }
+                }
+                else if (r[i] == 'X')
+                {
+                    if (i < r.Length - 1 && r[i + 1] == 'C')
+                    {
+                        result += 90;
+                        i++;
+                    }
+                    else if (i < r.Length - 1 && r[i + 1] == 'L')
+                    {
+                        result += 40;
+                        i++;
+                    }
+                    else
+                    {
+                        result += 10;
+                    }
+                }
+                else if (r[i] == 'C')
+                {
+                    if (i < r.Length - 1 && r[i + 1] == 'M')
+                    {
+                        result += 900;
+                        i++;
+                    }
+                    else if (i < r.Length - 1 && r[i + 1] == 'D')
+                    {
+                        result += 400;
+                        i++;
+                    }
+                    else
+                    {
+                        result += 100;
+                    }
+                }
+                else if (r[i] == 'M')
+                {
+                    result += 1000;
+                }
+                else if (r[i] == 'D')
+                {
+                    result += 500;
+                }
+                else if (r[i] == 'L')
+                {
+                    result += 50;
+                }
+                else if (r[i] == 'V')
+                {
+                    result += 5;
+                }
+
+            }
+
+            return result;
         }
     }
 }
