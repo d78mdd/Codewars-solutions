@@ -17,7 +17,6 @@ namespace Range_Extraction
         {
             List<string> list = new List<string>();
 
-
             if (args.Length == 2)
             {
                 list.Add($"{args[0]}");
@@ -25,111 +24,87 @@ namespace Range_Extraction
 
                 return string.Join(',', list);
             }
-            else if (args.Length == 1)
+            if (args.Length == 1)
             {
-                list.Add($"{args[0]}");
-
-                return string.Join(',', list);
+                return $"{args[0]}";
             }
-            else if (args.Length == 0)
+            if (args.Length == 0)
             {
-                list.Add("");
-
-                return string.Join(',', list);
+                return "";
             }
-
 
             // track whether current item is being included in a sequence
-            bool inSequence = true;
-            int sequenceLength = 0;
+            bool inSequence;
+            int sequenceLength;
 
             int start = args[0];
-            int end = args[0];
+            int end = start;
 
             sequenceLength = 1;
             for (int i = 1; i < args.Length; i++)
             {
-        
-
-                if (args[i] - args[i-1] == 1) // in sequence
+                if (args[i] - args[i - 1] == 1) // in sequence
                 {
-
                     inSequence = true;
-
-                    
                 }
                 else // end of sequence
                 {
                     inSequence = false;
 
                     end = args[i - 1]; // if a single number with no sequence then start would == end, and no inSequence needed?
-                    // also sequenceLength is end-start
-
-                    
+                                       // also sequenceLength is end-start
                 }
 
-                
 
-
-                if (!inSequence && sequenceLength == 1)  // if a single number
+                if (!inSequence)
                 {
-                    list.Add($"{start}");
-
-                    sequenceLength = 0;
+                    if (sequenceLength == 1) // if a single number
+                    {
+                        list.Add($"{start}");
+                    }
+                    else if (sequenceLength >= 3) // if a sequence ended
+                    {
+                        list.Add($"{start}-{end}");
+                    }
+                    else if (sequenceLength == 2) // sequence of 2 does not qualify
+                    {
+                        list.Add($"{start}");
+                        list.Add($"{end}");
+                    }
 
                     start = args[i];
-                    //end = args[i]?;
-                }
-                else if (!inSequence && sequenceLength >= 3) // if a sequence ended
-                {
-                    list.Add($"{start}-{end}");
-
-                    sequenceLength = 0;
-
-                    start = args[i];
-                    //end = args[i]?;
-                }
-                else if (!inSequence && sequenceLength == 2) // sequence of 2 does not qualify
-                {
-                    list.Add($"{start}");
-                    list.Add($"{end}");
-
-                    start = args[i];
-                    end = args[i];
+                    end = start;
 
                     sequenceLength = 0;
                 }
 
-                
+
                 sequenceLength++;
 
 
-                if (i == args.Length - 1 && inSequence && sequenceLength >= 3)  // if it's the last index and we're in a sequence
+                if (i == args.Length - 1)
                 {
                     end = args[i];
-                    list.Add($"{start}-{end}");
-                }
-                else if (i == args.Length - 1 && !inSequence && sequenceLength == 1)  // if last 1 number out of sequence
-                {
-                    end = args[i];
-                    list.Add($"{start}");
-                }
-                else if (i == args.Length - 1 && inSequence && sequenceLength == 2)  // if last 2 numbers - consecutive
-                {
-                    end = args[i];
-                    list.Add($"{start}");
-                    list.Add($"{end}");
+
+                    if (sequenceLength >= 3)  // if it's the last index, and we're in a sequence
+                    {
+                        list.Add($"{start}-{end}");
+                    }
+                    else if (sequenceLength == 1)  // if last 1 number out of sequence
+                    {
+                        list.Add($"{start}");
+                    }
+                    else if (sequenceLength == 2)  // if last 2 numbers - consecutive
+                    {
+                        list.Add($"{start}");
+                        list.Add($"{end}");
+                    }
                 }
 
             }
 
-
-
-
-
             return string.Join(',', list);
         }
-
 
     }
 }
