@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            int n = 12;
+            int n = 500000000;
 
             Console.WriteLine(n);
 
@@ -31,7 +31,6 @@
 
         private static List<List<long>> results = new List<List<long>>();
 
-        // found a result with last number == n-1 - can't have a sequence with larger last number
         private static bool foundBestResult;
 
 
@@ -81,18 +80,15 @@
                 if (nums.Count >= 2)
                 {
                     results.Add(nums);
-
-                    if (nums.Last() == n - 1)
-                    {
-                        foundBestResult = true;
-                    }
+                    // it's automatically the best result
+                    foundBestResult = true;
                 }
             }
             else if (sum < ns)
             {
                 long nextNum = GetNextNum(nums);
 
-                for (long i = nextNum; i * i + sum <= ns; i++)
+                for (long i = nextNum; i >= 1; i--)
                 {
                     nums.Add(i);
                     AddToSum(nums);
@@ -107,11 +103,11 @@
 
             if (lastIndex >= 0)
             {
-                return nums[lastIndex] + 1;
+                return nums[lastIndex] - 1;
             }
             else
             {
-                return 1;
+                return n - 1;
             }
         }
 
