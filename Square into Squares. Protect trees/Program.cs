@@ -38,22 +38,13 @@ namespace Square_into_Squares._Protect_trees
     {
         static void Main(string[] args)
         {
-            int n = 40;
+            int n = 80;
 
             Console.WriteLine(n);
 
             string bestList = new Decompose().decompose(n);
 
-            foreach (List<int> result in results)
-            {
-                foreach (int num in result)
-                {
-                    Console.Write(num);
-                    Console.Write(" ");
-                }
-
-                Console.WriteLine();
-            }
+            //PrintAllResults();
 
             Console.WriteLine(bestList);
 
@@ -63,6 +54,8 @@ namespace Square_into_Squares._Protect_trees
                1 2 4 10
              */
         }
+
+
 
         // number to decompose
         private static long n;
@@ -80,8 +73,6 @@ namespace Square_into_Squares._Protect_trees
 
             AddToSum(new List<int>());
 
-
-
             return GetAsString(GetBestResult());
         }
 
@@ -98,8 +89,16 @@ namespace Square_into_Squares._Protect_trees
                 .Last();
         }
 
+        // found a result with last number == n-1 - can't have a sequence with larger last number
+        private static bool foundBestResult = false;
+
         public static void AddToSum(List<int> numbers)
         {
+            if (foundBestResult)
+            {
+                return;
+            }
+
             List<int> nums = new List<int>(numbers);
 
             //var sum = nums.Sum();
@@ -109,6 +108,11 @@ namespace Square_into_Squares._Protect_trees
                 if (nums.Count >= 2)
                 {
                     results.Add(nums);
+
+                    if (nums.Last() == n - 1)
+                    {
+                        foundBestResult = true;
+                    }
                 }
             }
             else if (sum < ns)
@@ -151,6 +155,20 @@ namespace Square_into_Squares._Protect_trees
             }
 
             return sum;
+        }
+
+        private static void PrintAllResults()
+        {
+            foreach (List<int> result in results)
+            {
+                foreach (int num in result)
+                {
+                    Console.Write(num);
+                    Console.Write(" ");
+                }
+
+                Console.WriteLine();
+            }
         }
 
     }
