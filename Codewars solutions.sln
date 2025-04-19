@@ -53,6 +53,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Range Extraction tests", "R
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject1", "TestProject1\TestProject1.csproj", "{CAE65B5E-3D75-4501-84C0-3EBCDD09FA25}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Square into Squares. Protect trees", "Square into Squares. Protect trees\Square into Squares. Protect trees.csproj", "{880F4398-5C1F-40B5-A383-821A2F539E4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Square into Squares. Protect trees tests", "Square into Squares. Protect trees tests\Square into Squares. Protect trees tests.csproj", "{9D53F36C-3F1F-46CD-8622-C4BC8FA41B3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Square into Squares. Protect trees - base logic", "Square into Squares. Protect trees - base logic\Square into Squares. Protect trees - base logic.csproj", "{8E00F866-1D6D-4063-983C-D527DEAAD11A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Square into Squares. Protect trees - base logic1", "Square into Squares. Protect trees - base logic1\Square into Squares. Protect trees - base logic1.csproj", "{16C847D9-FB72-4063-829F-AD4D35913DCD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Square into Squares. Protect trees! - base logic2", "Square into Squares. Protect trees! - base logic2\Square into Squares. Protect trees! - base logic2.csproj", "{18E106DC-1EF9-47A1-B16F-27C1652DFCD6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -151,6 +161,26 @@ Global
 		{CAE65B5E-3D75-4501-84C0-3EBCDD09FA25}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CAE65B5E-3D75-4501-84C0-3EBCDD09FA25}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CAE65B5E-3D75-4501-84C0-3EBCDD09FA25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{880F4398-5C1F-40B5-A383-821A2F539E4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{880F4398-5C1F-40B5-A383-821A2F539E4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{880F4398-5C1F-40B5-A383-821A2F539E4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{880F4398-5C1F-40B5-A383-821A2F539E4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D53F36C-3F1F-46CD-8622-C4BC8FA41B3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D53F36C-3F1F-46CD-8622-C4BC8FA41B3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D53F36C-3F1F-46CD-8622-C4BC8FA41B3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D53F36C-3F1F-46CD-8622-C4BC8FA41B3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E00F866-1D6D-4063-983C-D527DEAAD11A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E00F866-1D6D-4063-983C-D527DEAAD11A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E00F866-1D6D-4063-983C-D527DEAAD11A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E00F866-1D6D-4063-983C-D527DEAAD11A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16C847D9-FB72-4063-829F-AD4D35913DCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16C847D9-FB72-4063-829F-AD4D35913DCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16C847D9-FB72-4063-829F-AD4D35913DCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16C847D9-FB72-4063-829F-AD4D35913DCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18E106DC-1EF9-47A1-B16F-27C1652DFCD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18E106DC-1EF9-47A1-B16F-27C1652DFCD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18E106DC-1EF9-47A1-B16F-27C1652DFCD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18E106DC-1EF9-47A1-B16F-27C1652DFCD6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -179,5 +209,10 @@ Global
 		{C8E59024-A14F-4C73-8232-0A9A3C9A0BB7} = {0F221328-5FC3-4D26-BFE2-F2018811721B}
 		{14ACFF82-F767-4FBF-8858-3117160B87CC} = {F3977773-212C-4430-A666-68D425B4CA76}
 		{CAE65B5E-3D75-4501-84C0-3EBCDD09FA25} = {F3977773-212C-4430-A666-68D425B4CA76}
+		{880F4398-5C1F-40B5-A383-821A2F539E4C} = {0F221328-5FC3-4D26-BFE2-F2018811721B}
+		{9D53F36C-3F1F-46CD-8622-C4BC8FA41B3C} = {F3977773-212C-4430-A666-68D425B4CA76}
+		{8E00F866-1D6D-4063-983C-D527DEAAD11A} = {0F221328-5FC3-4D26-BFE2-F2018811721B}
+		{16C847D9-FB72-4063-829F-AD4D35913DCD} = {0F221328-5FC3-4D26-BFE2-F2018811721B}
+		{18E106DC-1EF9-47A1-B16F-27C1652DFCD6} = {0F221328-5FC3-4D26-BFE2-F2018811721B}
 	EndGlobalSection
 EndGlobal
