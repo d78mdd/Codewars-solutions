@@ -59,7 +59,7 @@ namespace Square_into_Squares._Protect_trees____base_logic2
     {
         static void Main(string[] args)
         {
-            int n = 11;
+            int n = 31;
 
             Console.WriteLine(n);
 
@@ -93,45 +93,33 @@ namespace Square_into_Squares._Protect_trees____base_logic2
 
         public static List<int> decompose(int n)
         {
-            int sum = 0;
-
             Program.n = n;
 
-            List<int> result = AddToSum(new List<int>() { 1 });
+            AddToSum(new List<int>() { 1 });
 
-            return result;
+            return null;
         }
 
-        public static List<int> AddToSum(List<int> numbers)
+        public static void AddToSum(List<int> numbers)
         {
             List<int> nums = new List<int>(numbers);
-
-            int nextNum = nums[nums.Count - 1] + 1;
 
             if (nums.Sum() == n)
             {
                 results.Add(nums);
-                return nums;
             }
-            else if (nums.Sum() > n)
+            else if (nums.Sum() < n)
             {
-                return nums;
-            }
-            else
-            {
+                int nextNum = nums[nums.Count - 1] + 1;
+
                 for (int i = nextNum; i + nums.Sum() <= n; i++)
                 {
-
                     nums.Add(i);
                     AddToSum(nums);
                     nums.Remove(i);
                 }
-
-                return nums;
-
             }
         }
 
     }
 }
-
