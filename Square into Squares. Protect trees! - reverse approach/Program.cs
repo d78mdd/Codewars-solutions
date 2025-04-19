@@ -1,38 +1,4 @@
-﻿// https://www.codewars.com/kata/54eb33e5bc1a25440d000891/train/csharp
-
-using System.Text;
-
-// strictly increasing sequence
-
-// so that the sum of the squares is equal to n^2
-
-// return as far as possible the result with the largest possible values (of the last number)
-
-////////////////////////////////////////////////////////////
-
-// 1^2 + 2^2 + 3^2 + 4^4 + 5^2 +.....
-
-// would compare all these with n^2
-// 1^2 + 2^2 
-// 1^2 + 2^2 + 3^2
-// 1^2 + 2^2 + 3^2 + 4^2
-// 1^2 + 2^2 + 3^2 + 4^2 + 5^2
-// 1^2 + 2^2 + 3^2 + 5^2
-// 1^2 + 2^2 + 4^2 
-// 1^2 + 2^2 + 5^2
-// 1^2 + 3^2
-// 1^2 + 3^2 + 4^2
-// 1^2 + 3^2 + 4^2 + 5^2
-// 1^2 + 3^2 + 5^2
-// 1^2 + 4^2
-// 1^2 + 4^2 + 5^2
-// 1^2 + 5^2
-
-// at least 2 numbers
-
-
-
-namespace Square_into_Squares._Protect_trees
+﻿namespace Square_into_Squares._Protect_trees____reverse_approach
 {
     public class Decompose
     {
@@ -64,7 +30,7 @@ namespace Square_into_Squares._Protect_trees
         private static long ns;
 
         private static List<List<int>> results = new List<List<int>>();
-        
+
         // found a result with last number == n-1 - can't have a sequence with larger last number
         private static bool foundBestResult;
 
