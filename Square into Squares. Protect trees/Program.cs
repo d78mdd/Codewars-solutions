@@ -38,7 +38,7 @@ namespace Square_into_Squares._Protect_trees
     {
         static void Main(string[] args)
         {
-            int n = 80;
+            int n = 12;
 
             Console.WriteLine(n);
 
@@ -64,6 +64,9 @@ namespace Square_into_Squares._Protect_trees
         private static long ns;
 
         private static List<List<int>> results = new List<List<int>>();
+        
+        // found a result with last number == n-1 - can't have a sequence with larger last number
+        private static bool foundBestResult;
 
 
         public string decompose(long n)
@@ -89,9 +92,6 @@ namespace Square_into_Squares._Protect_trees
                 .Last();
         }
 
-        // found a result with last number == n-1 - can't have a sequence with larger last number
-        private static bool foundBestResult = false;
-
         public static void AddToSum(List<int> numbers)
         {
             if (foundBestResult)
@@ -101,8 +101,7 @@ namespace Square_into_Squares._Protect_trees
 
             List<int> nums = new List<int>(numbers);
 
-            //var sum = nums.Sum();
-            var sum = Sum(nums);
+            int sum = Sum(nums);
             if (sum == ns)
             {
                 if (nums.Count >= 2)
@@ -132,7 +131,6 @@ namespace Square_into_Squares._Protect_trees
         {
             int lastIndex = nums.Count - 1;
 
-            int nextNum;
             if (lastIndex >= 0)
             {
                 return nums[lastIndex] + 1;
