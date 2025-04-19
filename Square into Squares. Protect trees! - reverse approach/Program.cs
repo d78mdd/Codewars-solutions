@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            int n = 500000000;
+            int n = 20000000;
 
             Console.WriteLine(n);
 
@@ -14,10 +14,9 @@
 
             Console.WriteLine(bestList);
 
-            /* gets lists of consecutive numbers whose squares' sum is equal to a number's square
-             * 11
-               1 2 4 6 8
-               1 2 4 10
+            /* gets the sequence of largest consecutive numbers whose squares' sum is equal to a number's square
+             * 20000000
+               19999999 6324 83 11 3 2
              */
         }
 

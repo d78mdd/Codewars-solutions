@@ -38,7 +38,7 @@ namespace Square_into_Squares._Protect_trees
     {
         static void Main(string[] args)
         {
-            int n = 625;
+            int n = 60;
 
             Console.WriteLine(n);
 
@@ -48,10 +48,9 @@ namespace Square_into_Squares._Protect_trees
 
             Console.WriteLine(bestList);
 
-            /* gets lists of consecutive numbers whose squares' sum is equal to a number's square
-             * 11
-               1 2 4 6 8
-               1 2 4 10
+            /* gets the list of largest consecutive numbers whose squares' sum is equal to a number's square
+             * 60
+               1 2 3 4 5 8 59
              */
         }
 
