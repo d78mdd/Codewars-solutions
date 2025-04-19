@@ -33,14 +33,14 @@
         private static bool foundBestResult;
 
 
-        public string decompose(long n)
+        public string? decompose(long n)
         {
             Decompose.n = n;
             Decompose.ns = n * n;
 
             AddToSum(new List<long>());
 
-            string result = GetAsString(GetBestResult());
+            string? result = GetAsStringOrNull(GetBestResult());
 
             // cleanup
             Decompose.n = 0;
@@ -51,19 +51,36 @@
             return result;
         }
 
-        private string GetAsString(List<long> intsList)
+        private string? GetAsStringOrNull(List<long> intsList)
         {
-            return string.Join(' ', intsList);
+            if (intsList.Count == 0)
+            {
+                return null;
+            }
+            else
+            {
+                return string.Join(' ', intsList);
+            }
         }
 
         private List<long> GetBestResult()
         {
             // take the list with largest last number
-            return results
+
+            var result = results
                 .OrderBy(ints => ints.Last())
-                .Last()
-                .OrderBy(longs => longs)
-                .ToList();
+                .LastOrDefault();
+
+            if (result != null)
+            {
+                return result
+                    .OrderBy(longs => longs)
+                    .ToList();
+            }
+            else
+            {
+                return new List<long>();
+            }
         }
 
         public static void AddToSum(List<long> numbers)
