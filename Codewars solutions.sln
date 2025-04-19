@@ -63,6 +63,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Square into Squares. Protec
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Square into Squares. Protect trees! - base logic2", "Square into Squares. Protect trees! - base logic2\Square into Squares. Protect trees! - base logic2.csproj", "{18E106DC-1EF9-47A1-B16F-27C1652DFCD6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Square into Squares. Protect trees! - base logic3", "Square into Squares. Protect trees! - base logic3\Square into Squares. Protect trees! - base logic3.csproj", "{CB2F901C-E668-41CE-99B7-BD2F6472D4AF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -181,6 +183,10 @@ Global
 		{18E106DC-1EF9-47A1-B16F-27C1652DFCD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18E106DC-1EF9-47A1-B16F-27C1652DFCD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18E106DC-1EF9-47A1-B16F-27C1652DFCD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB2F901C-E668-41CE-99B7-BD2F6472D4AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB2F901C-E668-41CE-99B7-BD2F6472D4AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB2F901C-E668-41CE-99B7-BD2F6472D4AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB2F901C-E668-41CE-99B7-BD2F6472D4AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
