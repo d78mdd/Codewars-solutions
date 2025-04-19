@@ -8,7 +8,7 @@
 
             Console.WriteLine(n);
 
-            string bestList = new Decompose().decompose(n);
+            string? bestList = new Decompose().decompose(n);
 
             //PrintAllResults();
 
@@ -28,9 +28,7 @@
         // n squared
         private static long ns;
 
-        private static List<List<long>> results = new List<List<long>>();
-
-        private static bool foundBestResult;
+        private static List<long>? bestResult;
 
 
         public string? decompose(long n)
@@ -45,36 +43,29 @@
             // cleanup
             Decompose.n = 0;
             Decompose.ns = 0;
-            results = new List<List<long>>();
-            foundBestResult = false;
+            bestResult = null;
 
             return result;
         }
 
-        private string? GetAsStringOrNull(List<long> intsList)
+        private string? GetAsStringOrNull(List<long> longsList)
         {
-            if (intsList.Count == 0)
+            if (longsList.Count == 0)
             {
                 return null;
             }
             else
             {
-                return string.Join(' ', intsList);
+                return string.Join(' ', longsList);
             }
         }
 
         private List<long> GetBestResult()
         {
-            // take the list with largest last number
-
-            var result = results
-                .OrderBy(ints => ints.Last())
-                .LastOrDefault();
-
-            if (result != null)
+            if (bestResult != null)
             {
-                return result
-                    .OrderBy(longs => longs)
+                return bestResult
+                    .OrderBy(number => number)
                     .ToList();
             }
             else
@@ -85,7 +76,7 @@
 
         public static void AddToSum(List<long> numbers)
         {
-            if (foundBestResult)
+            if (bestResult != null)
             {
                 return;
             }
@@ -97,9 +88,7 @@
             {
                 if (nums.Count >= 2)
                 {
-                    results.Add(nums);
-                    // it's automatically the best result
-                    foundBestResult = true;
+                    bestResult = nums;
                 }
             }
             else if (sum < ns)
@@ -145,16 +134,13 @@
 
         private static void PrintAllResults()
         {
-            foreach (List<long> result in results)
+            foreach (long num in bestResult)
             {
-                foreach (long num in result)
-                {
-                    Console.Write(num);
-                    Console.Write(" ");
-                }
-
-                Console.WriteLine();
+                Console.Write(num);
+                Console.Write(" ");
             }
+
+            Console.WriteLine();
         }
 
     }
