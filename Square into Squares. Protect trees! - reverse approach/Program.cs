@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            int n = 625;
+            int n = 12;
 
             Console.WriteLine(n);
 
@@ -29,7 +29,7 @@
         // n squared
         private static long ns;
 
-        private static List<List<int>> results = new List<List<int>>();
+        private static List<List<long>> results = new List<List<long>>();
 
         // found a result with last number == n-1 - can't have a sequence with larger last number
         private static bool foundBestResult;
@@ -40,25 +40,25 @@
             Decompose.n = n;
             Decompose.ns = n * n;
 
-            AddToSum(new List<int>());
+            AddToSum(new List<long>());
 
             string result = GetAsString(GetBestResult());
 
             // cleanup
             Decompose.n = 0;
             Decompose.ns = 0;
-            results = new List<List<int>>();
+            results = new List<List<long>>();
             foundBestResult = false;
 
             return result;
         }
 
-        private string GetAsString(List<int> intsList)
+        private string GetAsString(List<long> intsList)
         {
             return string.Join(' ', intsList);
         }
 
-        private List<int> GetBestResult()
+        private List<long> GetBestResult()
         {
             // take the list with largest last number
             return results
@@ -66,16 +66,16 @@
                 .Last();
         }
 
-        public static void AddToSum(List<int> numbers)
+        public static void AddToSum(List<long> numbers)
         {
             if (foundBestResult)
             {
                 return;
             }
 
-            List<int> nums = new List<int>(numbers);
+            List<long> nums = new List<long>(numbers);
 
-            int sum = Sum(nums);
+            long sum = Sum(nums);
             if (sum == ns)
             {
                 if (nums.Count >= 2)
@@ -90,9 +90,9 @@
             }
             else if (sum < ns)
             {
-                int nextNum = GetNextNum(nums);
+                long nextNum = GetNextNum(nums);
 
-                for (int i = nextNum; i * i + sum <= ns; i++)
+                for (long i = nextNum; i * i + sum <= ns; i++)
                 {
                     nums.Add(i);
                     AddToSum(nums);
@@ -101,7 +101,7 @@
             }
         }
 
-        private static int GetNextNum(List<int> nums)
+        private static long GetNextNum(List<long> nums)
         {
             int lastIndex = nums.Count - 1;
 
@@ -117,11 +117,11 @@
 
 
         // return the sum of the squares of the numbers in the list
-        public static int Sum(List<int> nums)
+        public static long Sum(List<long> nums)
         {
-            int sum = 0;
+            long sum = 0;
 
-            foreach (int num in nums)
+            foreach (long num in nums)
             {
                 sum += num * num;
             }
@@ -131,9 +131,9 @@
 
         private static void PrintAllResults()
         {
-            foreach (List<int> result in results)
+            foreach (List<long> result in results)
             {
-                foreach (int num in result)
+                foreach (long num in result)
                 {
                     Console.Write(num);
                     Console.Write(" ");
