@@ -76,7 +76,15 @@ namespace Square_into_Squares._Protect_trees
 
             AddToSum(new List<int>());
 
-            return GetAsString(GetBestResult());
+            string result = GetAsString(GetBestResult());
+
+            // cleanup
+            Decompose.n = 0;
+            Decompose.ns = 0;
+            results = new List<List<int>>();
+            foundBestResult = false;
+
+            return result;
         }
 
         private string GetAsString(List<int> intsList)
