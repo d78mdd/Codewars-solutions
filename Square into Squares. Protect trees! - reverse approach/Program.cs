@@ -16,7 +16,7 @@
 
             /* gets the sequence of largest consecutive numbers whose squares' sum is equal to a number's square
              * 20000000
-               19999999 6324 83 11 3 2
+               2 3 11 83 6324 19999999
              */
         }
 
@@ -61,7 +61,9 @@
             // take the list with largest last number
             return results
                 .OrderBy(ints => ints.Last())
-                .Last();
+                .Last()
+                .OrderBy(longs => longs)
+                .ToList();
         }
 
         public static void AddToSum(List<long> numbers)
