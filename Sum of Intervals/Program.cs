@@ -41,7 +41,7 @@ namespace Sum_of_Intervals
                 endC = intervalCurrent.Item2;
 
 
-                for (int j = 0; j < asList.Count; j++)
+                for (int j = i + 1; j < asList.Count; j++)
                 {
                     intervalOther = asList[j];
 
