@@ -9,7 +9,8 @@ namespace Sum_of_Intervals
         {
             //Console.WriteLine(SumIntervals(new (int, int)[] { (4, 4), (6, 6), (8, 8) }));
             //Console.WriteLine(SumIntervals(new (int, int)[] { (-1, 4), (-5, -3) }));
-            Console.WriteLine(SumIntervals(new (int, int)[] { (1, 4), (7, 10), (3, 5) }));
+            //Console.WriteLine(SumIntervals(new (int, int)[] { (1, 4), (7, 10), (3, 5) }));
+            Console.WriteLine(SumIntervals(new (int, int)[] { (1, 5), (10, 20), (1, 6), (16, 19), (5, 11) }));
         }
 
         // implement overlapping  
@@ -56,15 +57,16 @@ namespace Sum_of_Intervals
 
                     if (overlap)
                     {
-                        i++;
-                        break;
+                        i++; // skip an index in the large loop
+
+                        endC = Math.Max(endC, endO); // update the end of the currently processed interval
                     }
                 }
 
 
                 if (overlap)
                 {
-                    combined.Add((begC, endO)); // add a combined interval
+                    combined.Add((begC, endC)); // add a combined interval
                 }
                 else // no overlapping
                 {
@@ -85,7 +87,7 @@ namespace Sum_of_Intervals
             {
                 (int, int) interval = intervals[i];
 
-                lengths[i] = interval.Item2 - interval.Item1;
+                lengths[i] = interval.Item2 - interval.Item1;  // The first value of the interval will always be less than the second value
             }
 
             result = lengths.Sum();
