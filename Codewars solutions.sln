@@ -69,6 +69,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Square into Squares. Protec
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Square into Squares. Protect trees! - reverse approach - cleanup", "Square into Squares. Protect trees! - reverse approach - cleanup\Square into Squares. Protect trees! - reverse approach - cleanup.csproj", "{AEE95ECD-542F-43B0-AA46-829B6062587F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sum of Intervals", "Sum of Intervals\Sum of Intervals.csproj", "{0403B91D-5615-48E6-837D-B32DD0947727}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -199,6 +201,10 @@ Global
 		{AEE95ECD-542F-43B0-AA46-829B6062587F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AEE95ECD-542F-43B0-AA46-829B6062587F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AEE95ECD-542F-43B0-AA46-829B6062587F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0403B91D-5615-48E6-837D-B32DD0947727}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0403B91D-5615-48E6-837D-B32DD0947727}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0403B91D-5615-48E6-837D-B32DD0947727}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0403B91D-5615-48E6-837D-B32DD0947727}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -235,5 +241,6 @@ Global
 		{CB2F901C-E668-41CE-99B7-BD2F6472D4AF} = {0F221328-5FC3-4D26-BFE2-F2018811721B}
 		{430BABCF-2F65-437C-BF27-4204B3BC2797} = {0F221328-5FC3-4D26-BFE2-F2018811721B}
 		{AEE95ECD-542F-43B0-AA46-829B6062587F} = {0F221328-5FC3-4D26-BFE2-F2018811721B}
+		{0403B91D-5615-48E6-837D-B32DD0947727} = {0F221328-5FC3-4D26-BFE2-F2018811721B}
 	EndGlobalSection
 EndGlobal
