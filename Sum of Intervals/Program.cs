@@ -26,52 +26,41 @@ namespace Sum_of_Intervals
 
         public static int SumIntervals((int, int)[] intervals)
         {
-            List<(int, int)> asList = intervals
-                .OrderBy(tuple => tuple.Item1)
+            List<(int, int)> asOrderedList = intervals
+                .OrderBy(interval => interval.Item1) // order by the left number (the interval start)
                 .ToList();
 
             List<(int, int)> combined = new List<(int, int)>();
 
-            for (int i = 0; i < asList.Count; i++)
+            for (int i = 0; i < asOrderedList.Count; i++)
             {
-                (int, int) intervalCurrent = asList[i];
-                bool overlap = false;
-                int begC = -1;
-                int endC = -1;
-                int begO = -1;
-                int endO = -1;
-                (int, int) intervalOther = new ValueTuple<int, int>(-1, -1);
+                (int, int) intervalCurrent = asOrderedList[i];
 
-                begC = intervalCurrent.Item1;
-                endC = intervalCurrent.Item2;
+                int begC = intervalCurrent.Item1;
+                int endC = intervalCurrent.Item2;
 
-
-                for (int j = i + 1; j < asList.Count; j++)
+                for (int j = i + 1; j < asOrderedList.Count; j++)
                 {
-                    intervalOther = asList[j];
+                    (int, int) intervalOther = asOrderedList[j];
 
-                    begO = intervalOther.Item1;
-                    endO = intervalOther.Item2;
+                    int begO = intervalOther.Item1;
+                    int endO = intervalOther.Item2;
 
-                    overlap = endC > begO;
+                    bool overlap = endC > begO;
 
                     if (overlap)
                     {
-                        i++; // skip an index in the large loop
+                        i++; // skip an index (the other interval) in the large loop
+                        // overlapping intervals will always be consecutive when sorted by left number
 
-                        endC = Math.Max(endC, endO); // update the end of the currently processed interval
+                        endC = Math.Max(endC, endO);
+                        // update the end of the currently processed interval
+                        // endC larger : current contains the entire other
+                        // endO larger : the other ends after the current
                     }
                 }
 
-
-                if (overlap)
-                {
-                    combined.Add((begC, endC)); // add a combined interval
-                }
-                else // no overlapping
-                {
-                    combined.Add((begC, endC)); // just add the current interval
-                }
+                combined.Add((begC, endC)); // add the current interval be it a regular one or a combined one
             }
 
             return Sum(combined);
@@ -94,7 +83,6 @@ namespace Sum_of_Intervals
 
             return result;
         }
-
 
     }
 }
