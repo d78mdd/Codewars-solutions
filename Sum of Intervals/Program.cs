@@ -1,4 +1,6 @@
-﻿namespace Sum_of_Intervals
+﻿// https://www.codewars.com/kata/52b7ed099cdc285c300001cd/train/csharp
+
+namespace Sum_of_Intervals
 {
     public class Intervals
     {
