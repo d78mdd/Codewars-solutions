@@ -10,7 +10,9 @@ namespace Sum_of_Intervals
             //Console.WriteLine(SumIntervals(new (int, int)[] { (4, 4), (6, 6), (8, 8) }));
             //Console.WriteLine(SumIntervals(new (int, int)[] { (-1, 4), (-5, -3) }));
             //Console.WriteLine(SumIntervals(new (int, int)[] { (1, 4), (7, 10), (3, 5) }));
-            Console.WriteLine(SumIntervals(new (int, int)[] { (1, 5), (10, 20), (1, 6), (16, 19), (5, 11) }));
+            //Console.WriteLine(SumIntervals(new (int, int)[] { (1, 5), (10, 20), (1, 6), (16, 19), (5, 11) }));
+            //Console.WriteLine(SumIntervals(new (int, int)[] { (-1_000_000_000, 1_000_000_000) }));  // 11ms
+            Console.WriteLine(SumIntervals(new (int, int)[] { (0, 20), (-100_000_000, 10), (30, 40) })); // 13ms
         }
 
         // implement overlapping  
