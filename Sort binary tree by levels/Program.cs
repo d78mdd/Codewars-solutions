@@ -9,7 +9,7 @@ namespace Sort_binary_tree_by_levels
 
         }
 
-        public static List<int> TreeByLevels(Node node)
+        public static List<int> TreeByLevels(Node? node)
         {
             if (node == null)
             {
@@ -28,8 +28,10 @@ namespace Sort_binary_tree_by_levels
              * end if list is empty - no more children were added
              */
 
-            List<Node> level = new List<Node>();
-            level.Add(node);
+            List<Node> level = new List<Node>
+            {
+                node
+            };
 
             for (; ; )
             {
@@ -43,13 +45,13 @@ namespace Sort_binary_tree_by_levels
                 List<Node> temp = new List<Node>();
                 foreach (Node n in level)
                 {
-                    var left = n.Left;
+                    Node? left = n.Left;
                     if (left != null)
                     {
-                        temp.Add(n.Left);
+                        temp.Add(left);
                     }
-                    
-                    var right = n.Right;
+
+                    Node? right = n.Right;
                     if (right != null)
                     {
                         temp.Add(right);
@@ -67,8 +69,8 @@ namespace Sort_binary_tree_by_levels
 
     public class Node
     {
-        public Node Left;
-        public Node Right;
+        public Node? Left;
+        public Node? Right;
         public int Value;
 
         public Node(Node l, Node r, int v)
