@@ -15,7 +15,26 @@ namespace Sort_binary_tree_by_levels
             {
                 return new List<int>();
             }
-            
+
+            /*
+             * use 1 or 2 lists
+             * put all nodes of a level into it
+             * print the list's nodes' values
+             * discard the list and/or put all child nodes to a list
+             * repeat
+             *
+             * end if list is empty - no more children were added
+             */
+
+            List<Node> level = new List<Node>();
+            level.Add(node);
+
+            for (; ; )
+            {
+                
+            }
+
+
             return null;
         }
     }
