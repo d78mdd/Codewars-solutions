@@ -16,10 +16,12 @@ namespace Sort_binary_tree_by_levels
                 return new List<int>();
             }
 
+            List<int> values = new List<int>();
+
             /*
              * use 1 or 2 lists
              * put all nodes of a level into it
-             * print the list's nodes' values
+             * collect the list's nodes' values
              * discard the list and/or put all child nodes to a list
              * repeat
              *
@@ -31,11 +33,35 @@ namespace Sort_binary_tree_by_levels
 
             for (; ; )
             {
-                
+                if (level.Count == 0)
+                {
+                    break;
+                }
+
+                values.AddRange(level.Select(n => n.Value));
+
+                List<Node> temp = new List<Node>();
+                foreach (Node n in level)
+                {
+                    var left = n.Left;
+                    if (left != null)
+                    {
+                        temp.Add(n.Left);
+                    }
+                    
+                    var right = n.Right;
+                    if (right != null)
+                    {
+                        temp.Add(right);
+                    }
+
+                }
+                level.Clear();
+                level.AddRange(temp);
             }
 
 
-            return null;
+            return values;
         }
     }
 
