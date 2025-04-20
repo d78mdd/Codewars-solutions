@@ -7,7 +7,8 @@ namespace Sum_of_Intervals
 
         static void Main(string[] args)
         {
-            Console.WriteLine(SumIntervals(new (int, int)[] { (4, 4), (6, 6), (8, 8) }));
+            //Console.WriteLine(SumIntervals(new (int, int)[] { (4, 4), (6, 6), (8, 8) }));
+            Console.WriteLine(SumIntervals(new (int, int)[] { (-1, 4), (-5, -3) }));
         }
 
         // implement overlapping  
@@ -23,7 +24,9 @@ namespace Sum_of_Intervals
 
         public static int SumIntervals((int, int)[] intervals)
         {
-            List<(int, int)> asList = intervals.ToList();
+            List<(int, int)> asList = intervals
+                .OrderBy(tuple => tuple.Item1)
+                .ToList();
 
             List<(int, int)> combined = new List<(int, int)>();
 
