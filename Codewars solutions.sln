@@ -71,6 +71,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Square into Squares. Protec
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sum of Intervals", "Sum of Intervals\Sum of Intervals.csproj", "{0403B91D-5615-48E6-837D-B32DD0947727}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sort binary tree by levels", "Sort binary tree by levels\Sort binary tree by levels.csproj", "{F03B26F8-5CF8-4454-AC3C-F90863D42899}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sort binary tree by levels - tests", "Sort binary tree by levels - tests\Sort binary tree by levels - tests.csproj", "{ABDE5C6B-F53D-431F-AEA4-FE0BF941C3E1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -205,6 +209,14 @@ Global
 		{0403B91D-5615-48E6-837D-B32DD0947727}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0403B91D-5615-48E6-837D-B32DD0947727}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0403B91D-5615-48E6-837D-B32DD0947727}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F03B26F8-5CF8-4454-AC3C-F90863D42899}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F03B26F8-5CF8-4454-AC3C-F90863D42899}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F03B26F8-5CF8-4454-AC3C-F90863D42899}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F03B26F8-5CF8-4454-AC3C-F90863D42899}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABDE5C6B-F53D-431F-AEA4-FE0BF941C3E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABDE5C6B-F53D-431F-AEA4-FE0BF941C3E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABDE5C6B-F53D-431F-AEA4-FE0BF941C3E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABDE5C6B-F53D-431F-AEA4-FE0BF941C3E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -242,5 +254,7 @@ Global
 		{430BABCF-2F65-437C-BF27-4204B3BC2797} = {0F221328-5FC3-4D26-BFE2-F2018811721B}
 		{AEE95ECD-542F-43B0-AA46-829B6062587F} = {0F221328-5FC3-4D26-BFE2-F2018811721B}
 		{0403B91D-5615-48E6-837D-B32DD0947727} = {0F221328-5FC3-4D26-BFE2-F2018811721B}
+		{F03B26F8-5CF8-4454-AC3C-F90863D42899} = {0F221328-5FC3-4D26-BFE2-F2018811721B}
+		{ABDE5C6B-F53D-431F-AEA4-FE0BF941C3E1} = {F3977773-212C-4430-A666-68D425B4CA76}
 	EndGlobalSection
 EndGlobal
