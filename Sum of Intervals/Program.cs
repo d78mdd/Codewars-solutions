@@ -8,7 +8,8 @@ namespace Sum_of_Intervals
         static void Main(string[] args)
         {
             //Console.WriteLine(SumIntervals(new (int, int)[] { (4, 4), (6, 6), (8, 8) }));
-            Console.WriteLine(SumIntervals(new (int, int)[] { (-1, 4), (-5, -3) }));
+            //Console.WriteLine(SumIntervals(new (int, int)[] { (-1, 4), (-5, -3) }));
+            Console.WriteLine(SumIntervals(new (int, int)[] { (1, 4), (7, 10), (3, 5) }));
         }
 
         // implement overlapping  
@@ -55,6 +56,7 @@ namespace Sum_of_Intervals
 
                     if (overlap)
                     {
+                        i++;
                         break;
                     }
                 }
