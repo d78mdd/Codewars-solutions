@@ -4,18 +4,38 @@ namespace Twice_linear___tests
 {
     public class Tests
     {
-        [Test]
-        public static void test1()
-        {
-            testing(DoubleLinear.DblLinear(10), 22);
-            testing(DoubleLinear.DblLinear(20), 57);
-            testing(DoubleLinear.DblLinear(30), 91);
-            testing(DoubleLinear.DblLinear(50), 175);
-        }
+        //[Test]
+        //public static void Test1()
+        //{
+        //    Assert.That(DoubleLinear.DblLinear(10), Is.EqualTo(22));
+        //}
+        
+        //[Test]
+        //public static void Test2()
+        //{
+        //    Assert.That(DoubleLinear.DblLinear(20), Is.EqualTo(57));
+        //}
+        
+        //[Test]
+        //public static void Test3()
+        //{
+        //    Assert.That(DoubleLinear.DblLinear(30), Is.EqualTo(91));
+        //}
+        
+        //[Test]
+        //public static void Test4()
+        //{
+        //    Assert.That(DoubleLinear.DblLinear(50), Is.EqualTo(175));
+        //}
 
-        private static void testing(int actual, int expected)
+
+        [TestCase(10, 22)]
+        [TestCase(20, 57)]
+        [TestCase(30, 91)]
+        [TestCase(50, 175)]
+        public static void Test(int actual, int expected)
         {
-            Assert.That(actual, Is.EqualTo(expected));
+            Assert.That(DoubleLinear.DblLinear(actual), Is.EqualTo(expected));
         }
     }
 }

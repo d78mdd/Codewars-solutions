@@ -1,4 +1,4 @@
-﻿using System.Reflection.Emit;
+﻿// https://www.codewars.com/kata/5672682212c8ecf83e000050/train/csharp
 
 namespace Twice_linear
 {
@@ -21,11 +21,19 @@ namespace Twice_linear
             List<Node> level = new List<Node>();
             level.Add(root);
 
+            bool reached = false;
+
             // add numbers in u
-            for (; u.Count <= n; )
+            for (; u.Count <= n;)
             {
                 foreach (Node node in level)
                 {
+                    if (u.Count == n)
+                    {
+                        reached = true;
+                        break;
+                    }
+
                     int y = 2 * node.Value + 1;
 
                     Node left = new Node(null, null, y);
@@ -38,6 +46,11 @@ namespace Twice_linear
 
                     u.Add(y);
                     u.Add(z);
+                }
+
+                if (reached)
+                {
+                    break;
                 }
 
                 List<Node> temp = new List<Node>(level);
