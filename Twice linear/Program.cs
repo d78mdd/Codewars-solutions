@@ -10,29 +10,27 @@ namespace Twice_linear
         }
     }
 
-    
+
     public class DoubleLinear
     {
         public static SortedSet<int> u = new SortedSet<int>();
 
+        public static int MaxSize = 400000;
+
         public static int DblLinear(int n)
         {
-            if (u.Count == 0)
+            bool populated = u.Count > 0;
+
+            if (!populated)
             {
-                DblLinearinternal();
+                PopulateU();
             }
 
-            // get the n-th element from u
-            int result = u.ElementAt(n);
-
-            return result;
+            return u.ElementAt(n);
         }
 
-        public static void DblLinearinternal()
+        public static void PopulateU()
         {
-            int maxSize = 400000;
-
-
             u.Add(1);
 
             Node root = new Node(null, null, 1);
@@ -41,7 +39,7 @@ namespace Twice_linear
             level.Add(root);
 
             // add numbers in u
-            for (; u.Count <= maxSize;)
+            for (; u.Count <= MaxSize;)
             {
                 foreach (Node node in level)
                 {
