@@ -13,7 +13,8 @@ namespace Twice_linear
         public static int DblLinear(int n)
         {
 
-            HashSet<int> u = new HashSet<int>();
+
+            SortedSet<int> u = new SortedSet<int>();
             u.Add(1);
 
             Node root = new Node(null, null, 1);
@@ -28,24 +29,33 @@ namespace Twice_linear
             {
                 foreach (Node node in level)
                 {
-                    if (u.Count == n)
+                    int y = 2 * node.Value + 1;
+
+                    Node left = new Node(null, null, y);
+                    node.Left = left;
+
+                    u.Add(y);
+                    
+
+                    if (u.Count == n + 1) // n - 0-based index
                     {
                         reached = true;
                         break;
                     }
 
-                    int y = 2 * node.Value + 1;
-
-                    Node left = new Node(null, null, y);
-                    node.Left = left;
 
                     int z = 3 * node.Value + 1;
 
                     Node right = new Node(null, null, z);
                     node.Right = right;
 
-                    u.Add(y);
                     u.Add(z);
+
+                    if (u.Count == n + 1)
+                    {
+                        reached = true;
+                        break;
+                    }
                 }
 
                 if (reached)
