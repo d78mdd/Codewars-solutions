@@ -2,27 +2,43 @@
 
 namespace Twice_linear
 {
-    public class DoubleLinear
+    public class MainClass
     {
-
         public static void Main()
         {
-            Console.WriteLine(DblLinear(50));
+            Console.WriteLine(DoubleLinear.DblLinear(50));
         }
+    }
+
+    
+    public class DoubleLinear
+    {
+        public static SortedSet<int> u = new SortedSet<int>();
 
         public static int DblLinear(int n)
         {
+            if (u.Count == 0)
+            {
+                DblLinearinternal();
+            }
+
+            // get the n-th element from u
+            int result = u.ElementAt(n);
+
+            return result;
+        }
+
+        public static void DblLinearinternal()
+        {
             int maxSize = 400000;
 
-            SortedSet<int> u = new SortedSet<int>();
+
             u.Add(1);
 
             Node root = new Node(null, null, 1);
 
             List<Node> level = new List<Node>();
             level.Add(root);
-
-            //bool reached = false;
 
             // add numbers in u
             for (; u.Count <= maxSize;)
@@ -35,13 +51,6 @@ namespace Twice_linear
                     node.Left = left;
 
                     u.Add(y);
-                    
-
-                    //if (u.Count == n + 100) // n - 0-based index
-                    //{
-                    //    reached = true;
-                    //    break;
-                    //}
 
 
                     int z = 3 * node.Value + 1;
@@ -50,18 +59,7 @@ namespace Twice_linear
                     node.Right = right;
 
                     u.Add(z);
-
-                    //if (u.Count == n + 100)
-                    //{
-                    //    reached = true;
-                    //    break;
-                    //}
                 }
-
-                //if (reached)
-                //{
-                //    break;
-                //}
 
                 List<Node> temp = new List<Node>(level);
                 level.Clear();
@@ -69,12 +67,7 @@ namespace Twice_linear
                 level.AddRange(temp.Select(node => node.Right));
             }
 
-            // get the n-th element from u
-            int result = u.ElementAt(n);
-
-            return result;
         }
-
     }
 
     public class Node
