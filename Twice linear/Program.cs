@@ -13,7 +13,7 @@ namespace Twice_linear
         public static int DblLinear(int n)
         {
 
-            List<int> u = new List<int>();
+            HashSet<int> u = new HashSet<int>();
             u.Add(1);
 
             Node root = new Node(null, null, 1);
@@ -58,10 +58,6 @@ namespace Twice_linear
                 level.AddRange(temp.Select(node => node.Left));
                 level.AddRange(temp.Select(node => node.Right));
             }
-
-            // sort u
-            u = u.OrderBy(i => i)
-                .ToList();
 
             // get the n-th element from u
             int result = u.ElementAt(n);
