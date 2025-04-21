@@ -7,12 +7,12 @@ namespace Twice_linear
 
         public static void Main()
         {
-            Console.WriteLine(DblLinear(10));
+            Console.WriteLine(DblLinear(50));
         }
 
         public static int DblLinear(int n)
         {
-
+            int maxSize = 400000;
 
             SortedSet<int> u = new SortedSet<int>();
             u.Add(1);
@@ -22,10 +22,10 @@ namespace Twice_linear
             List<Node> level = new List<Node>();
             level.Add(root);
 
-            bool reached = false;
+            //bool reached = false;
 
             // add numbers in u
-            for (; u.Count <= n;)
+            for (; u.Count <= maxSize;)
             {
                 foreach (Node node in level)
                 {
@@ -37,11 +37,11 @@ namespace Twice_linear
                     u.Add(y);
                     
 
-                    if (u.Count == n + 1) // n - 0-based index
-                    {
-                        reached = true;
-                        break;
-                    }
+                    //if (u.Count == n + 100) // n - 0-based index
+                    //{
+                    //    reached = true;
+                    //    break;
+                    //}
 
 
                     int z = 3 * node.Value + 1;
@@ -51,17 +51,17 @@ namespace Twice_linear
 
                     u.Add(z);
 
-                    if (u.Count == n + 1)
-                    {
-                        reached = true;
-                        break;
-                    }
+                    //if (u.Count == n + 100)
+                    //{
+                    //    reached = true;
+                    //    break;
+                    //}
                 }
 
-                if (reached)
-                {
-                    break;
-                }
+                //if (reached)
+                //{
+                //    break;
+                //}
 
                 List<Node> temp = new List<Node>(level);
                 level.Clear();
