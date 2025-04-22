@@ -79,6 +79,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Twice linear", "Twice linea
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Twice linear - tests", "Twice linear - tests\Twice linear - tests.csproj", "{93B20384-4D00-446F-8C1F-9C363BE2FE62}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Connect Four", "Connect Four\Connect Four.csproj", "{98B46065-BFF6-4752-9918-C93E955ADAA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Connect Four  - tests", "Connect Four  - tests\Connect Four  - tests.csproj", "{702B5FCF-76EF-45F4-804F-305E5802F0B0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -229,6 +233,14 @@ Global
 		{93B20384-4D00-446F-8C1F-9C363BE2FE62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93B20384-4D00-446F-8C1F-9C363BE2FE62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93B20384-4D00-446F-8C1F-9C363BE2FE62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98B46065-BFF6-4752-9918-C93E955ADAA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98B46065-BFF6-4752-9918-C93E955ADAA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98B46065-BFF6-4752-9918-C93E955ADAA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98B46065-BFF6-4752-9918-C93E955ADAA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{702B5FCF-76EF-45F4-804F-305E5802F0B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{702B5FCF-76EF-45F4-804F-305E5802F0B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{702B5FCF-76EF-45F4-804F-305E5802F0B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{702B5FCF-76EF-45F4-804F-305E5802F0B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -270,5 +282,7 @@ Global
 		{ABDE5C6B-F53D-431F-AEA4-FE0BF941C3E1} = {F3977773-212C-4430-A666-68D425B4CA76}
 		{824BC603-C1C7-490A-8B45-BA1C75EC13E7} = {0F221328-5FC3-4D26-BFE2-F2018811721B}
 		{93B20384-4D00-446F-8C1F-9C363BE2FE62} = {F3977773-212C-4430-A666-68D425B4CA76}
+		{98B46065-BFF6-4752-9918-C93E955ADAA2} = {0F221328-5FC3-4D26-BFE2-F2018811721B}
+		{702B5FCF-76EF-45F4-804F-305E5802F0B0} = {F3977773-212C-4430-A666-68D425B4CA76}
 	EndGlobalSection
 EndGlobal
