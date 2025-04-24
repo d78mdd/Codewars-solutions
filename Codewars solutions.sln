@@ -87,6 +87,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Connect Four - approach 2",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Connect Four - approach 3", "Connect Four - approach 3\Connect Four - approach 3.csproj", "{A555460C-ED85-454F-80D8-2D3A39F13A3A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Connect_Four___approach_3 tests", "Connect_Four___approach_3 tests\Connect_Four___approach_3 tests.csproj", "{679CF8EA-A259-4CBB-812C-2A9455AF6AB9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -253,6 +255,10 @@ Global
 		{A555460C-ED85-454F-80D8-2D3A39F13A3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A555460C-ED85-454F-80D8-2D3A39F13A3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A555460C-ED85-454F-80D8-2D3A39F13A3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{679CF8EA-A259-4CBB-812C-2A9455AF6AB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{679CF8EA-A259-4CBB-812C-2A9455AF6AB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{679CF8EA-A259-4CBB-812C-2A9455AF6AB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{679CF8EA-A259-4CBB-812C-2A9455AF6AB9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -298,5 +304,6 @@ Global
 		{702B5FCF-76EF-45F4-804F-305E5802F0B0} = {F3977773-212C-4430-A666-68D425B4CA76}
 		{A6B1A60F-0EF8-422F-A86A-3C4534C55E34} = {0F221328-5FC3-4D26-BFE2-F2018811721B}
 		{A555460C-ED85-454F-80D8-2D3A39F13A3A} = {0F221328-5FC3-4D26-BFE2-F2018811721B}
+		{679CF8EA-A259-4CBB-812C-2A9455AF6AB9} = {F3977773-212C-4430-A666-68D425B4CA76}
 	EndGlobalSection
 EndGlobal
