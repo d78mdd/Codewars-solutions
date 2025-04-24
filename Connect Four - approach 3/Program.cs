@@ -10,16 +10,14 @@ namespace Connect_Four___approach_3
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
-
             ConnectFour.InitBoard();
 
-            ConnectFour.AddPiece("G", "Red");
-            ConnectFour.AddPiece("G", "Red");
-            ConnectFour.AddPiece("G", "Red");
-            ConnectFour.AddPiece("G", "Red");
+            ConnectFour.AddPiece("A", "Red");
+            ConnectFour.AddPiece("B", "Red");
+            ConnectFour.AddPiece("C", "Red");
+            ConnectFour.AddPiece("D", "Red");
 
-            Console.WriteLine(ConnectFour.Vertical("Red"));
+            Console.WriteLine(ConnectFour.HasHorizontal("Red"));
 
             ConnectFour.Print();
         }
@@ -160,14 +158,14 @@ namespace Connect_Four___approach_3
 
         public static bool Wins(string player)
         {
-            if (Horizontal(player) || Vertical(player) || Diagonal(player))
+            if (HasHorizontal(player) || HasVertical(player) || HasDiagonal(player))
             {
                 return true;
             }
             return false;
         }
 
-        public static bool Diagonal(string player)
+        public static bool HasDiagonal(string player)
         {
             //for (int i = 3; i < 7; i++) // ?
             //{
@@ -192,11 +190,11 @@ namespace Connect_Four___approach_3
             //}
             return false;
         }
-        public static bool Vertical(string player) // horizontal?
+        public static bool HasVertical(string player)
         {
             /*
              * A B C D E F G
-             * 0 1 2 3 4 5 6 columnInt
+             * 0 1 2 3 4 5 6 col
              * x x x x x x x  row = 0
              * x x x x x x x  row = 1
              * x x x x x x x  row = 2
@@ -208,9 +206,9 @@ namespace Connect_Four___approach_3
             // no need to check above row 3 - not possible to have vertical line of 4 above it
             int row3 = 3;
 
-            for (int row = 5; row >= row3; row--) // ?
+            for (int row = 5; row >= row3; row--)
             {
-                for (int col = 0; col <= 6; col++) // ?
+                for (int col = 0; col <= 6; col++)
                 {
                     if (Board[row][col] != Piece.Empty &&
                         Board[row][col] == Board[row - 1][col] &&
@@ -223,17 +221,30 @@ namespace Connect_Four___approach_3
             }
             return false;
         }
-        public static bool Horizontal(string player) // vertical?
+        public static bool HasHorizontal(string player)
         {
-            return false;
+            /*
+             * A B C D E F G
+             * 0 1 2 3 4 5 6 col
+             * x x x x x x x  row = 0
+             * x x x x x x x  row = 1
+             * x x x x x x x  row = 2
+             * x x x x x x x  row = 3
+             * x x x x x x x  row = 4
+             * Y Y Y x x x x  row = 5
+             */
 
-            for (int i = 0; i < 7; i++) // ?
+            // no need to check right of column 3 - not possible to have horizontal line of 4 after it
+            int col3 = 3;
+
+            for (int col = 0; col <= col3; col++)
             {
-                for (int j = 0; j < 6 - 4; j++) // ?
+                for (int row = 0; row <= 5; row++)
                 {
-                    if (Board[i][j] == Board[i][j + 1]
-                        && Board[i][j + 1] == Board[i][j + 2]
-                        && Board[i][j + 2] == Board[i][j + 3])
+                    if (Board[row][col] != Piece.Empty &&
+                        Board[row][col] == Board[row][col + 1] &&
+                        Board[row][col] == Board[row][col + 2] &&
+                        Board[row][col] == Board[row][col + 3])
                     {
                         return true;
                     }
