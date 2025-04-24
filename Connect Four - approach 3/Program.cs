@@ -32,13 +32,13 @@ namespace Connect_Four___approach_3
 
     public class ConnectFour
     {
-        public static List<List<Piece>> Board = new List<List<Piece>>(); // static ok?
+        public static List<List<Piece>> Board = new List<List<Piece>>();
 
         public static string WhoIsWinner(List<string> piecesPositionList)
         {
             InitBoard();
 
-            for (int i = 0; i < piecesPositionList.Count; i++) // max 42?
+            for (int i = 0; i < piecesPositionList.Count; i++)
             {
                 string[] input = piecesPositionList[i].Split('_');
                 string column = input[0];
@@ -339,9 +339,7 @@ namespace Connect_Four___approach_3
             {
                 Console.WriteLine(string.Join('\t', column));
             }
-
         }
-
     }
 
     public enum Columns
@@ -362,13 +360,5 @@ namespace Connect_Four___approach_3
         Yellow,
         Red
     }
-
-    //public class Results
-    //{
-    //    public static string Red = "Red";
-    //    public static string Yellow = "Yellow";
-
-    //    public static string Draw = "Draw";
-    //}
 
 }
