@@ -89,6 +89,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Connect Four - approach 3",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Connect_Four___approach_3 tests", "Connect_Four___approach_3 tests\Connect_Four___approach_3 tests.csproj", "{679CF8EA-A259-4CBB-812C-2A9455AF6AB9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The observed PIN", "The observed PIN\The observed PIN.csproj", "{AA2163D7-30E5-4EF7-959C-E2703804F101}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The observed PIN - tests", "The observed PIN - tests\The observed PIN - tests.csproj", "{F1B4F208-BEE9-46A7-96EC-1FEA05C1DA3D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -259,6 +263,14 @@ Global
 		{679CF8EA-A259-4CBB-812C-2A9455AF6AB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{679CF8EA-A259-4CBB-812C-2A9455AF6AB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{679CF8EA-A259-4CBB-812C-2A9455AF6AB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA2163D7-30E5-4EF7-959C-E2703804F101}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA2163D7-30E5-4EF7-959C-E2703804F101}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA2163D7-30E5-4EF7-959C-E2703804F101}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA2163D7-30E5-4EF7-959C-E2703804F101}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1B4F208-BEE9-46A7-96EC-1FEA05C1DA3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1B4F208-BEE9-46A7-96EC-1FEA05C1DA3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1B4F208-BEE9-46A7-96EC-1FEA05C1DA3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1B4F208-BEE9-46A7-96EC-1FEA05C1DA3D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -305,5 +317,7 @@ Global
 		{A6B1A60F-0EF8-422F-A86A-3C4534C55E34} = {0F221328-5FC3-4D26-BFE2-F2018811721B}
 		{A555460C-ED85-454F-80D8-2D3A39F13A3A} = {0F221328-5FC3-4D26-BFE2-F2018811721B}
 		{679CF8EA-A259-4CBB-812C-2A9455AF6AB9} = {F3977773-212C-4430-A666-68D425B4CA76}
+		{AA2163D7-30E5-4EF7-959C-E2703804F101} = {0F221328-5FC3-4D26-BFE2-F2018811721B}
+		{F1B4F208-BEE9-46A7-96EC-1FEA05C1DA3D} = {F3977773-212C-4430-A666-68D425B4CA76}
 	EndGlobalSection
 EndGlobal
