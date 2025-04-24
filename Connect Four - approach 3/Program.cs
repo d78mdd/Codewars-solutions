@@ -12,10 +12,12 @@ namespace Connect_Four___approach_3
         {
             ConnectFour.InitBoard();
 
-            ConnectFour.AddPiece("A", "Red");
-            ConnectFour.AddPiece("B", "Red");
-            ConnectFour.AddPiece("C", "Red");
-            ConnectFour.AddPiece("D", "Red");
+            //ConnectFour.AddPiece("A", "Red");
+            //ConnectFour.AddPiece("B", "Red");
+            //ConnectFour.AddPiece("C", "Red");
+            ConnectFour.AddPiece("E", "Red");
+            ConnectFour.AddPiece("F", "Red");
+            ConnectFour.AddPiece("G", "Ред");
 
             Console.WriteLine(ConnectFour.HasHorizontal("Red"));
 
@@ -71,7 +73,8 @@ namespace Connect_Four___approach_3
             {
                 case "Red": piece = Piece.Red; break;
                 case "Yellow": piece = Piece.Yellow; break;
-                default: piece = Piece.Yellow; break;
+                default:
+                    throw new Exception($"invalid player {player}");
             }
 
             switch (column)
@@ -83,7 +86,7 @@ namespace Connect_Four___approach_3
                 case "E": columnInt = 4; break;
                 case "F": columnInt = 5; break;
                 case "G": columnInt = 6; break;
-                default: columnInt = 6; break;
+                default: throw new Exception($"invalid column {column}");
             }
 
             int position = 5; // bottom row
