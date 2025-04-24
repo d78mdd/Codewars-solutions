@@ -1,9 +1,5 @@
 ﻿// https://www.codewars.com/kata/56882731514ec3ec3d000009/train/csharp
 
-using System.Data;
-using System.IO.Enumeration;
-using Microsoft.VisualBasic;
-
 namespace Connect_Four___approach_3
 {
     internal class Program
