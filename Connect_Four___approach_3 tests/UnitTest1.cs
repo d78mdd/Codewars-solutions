@@ -66,23 +66,22 @@ namespace Connect_Four___approach_3_tests
         {
             List<string> myList = new List<string>()
             {
-            "A_Yellow",
-            "B_Red",
-            "B_Yellow",
-            "C_Red",
-            "G_Yellow",
-            "C_Red",
-            "C_Yellow",
-            "D_Red",
-            "G_Yellow",
-            "D_Red",
-            "G_Yellow",
-            "D_Red",
-            "F_Yellow",
-            "E_Red",
-            "D_Yellow"
+                "A_Yellow",
+                "B_Red",
+                "B_Yellow",
+                "C_Red",
+                "G_Yellow",
+                "C_Red",
+                "C_Yellow",
+                "D_Red",
+                "G_Yellow",
+                "D_Red",
+                "G_Yellow",
+                "D_Red",
+                "F_Yellow",
+                "E_Red",
+                "D_Yellow"
             };
-
             Assert.That(ConnectFour.WhoIsWinner(myList), Is.EqualTo("Red").IgnoreCase, "it should return Red");
         }
     }

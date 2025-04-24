@@ -56,6 +56,8 @@ namespace Connect_Four___approach_3
 
         public static void InitBoard()
         {
+            Board = new List<List<Piece>>();
+
             for (int row = 0; row < 6; row++)
             {
                 Board.Add(new List<Piece>());
