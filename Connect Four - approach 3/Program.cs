@@ -27,7 +27,7 @@ namespace Connect_Four___approach_3
             ConnectFour.AddPiece("D", "Red");
 
 
-            Console.WriteLine(ConnectFour.HasBackwardDiagonal("Red"));
+            Console.WriteLine(ConnectFour.Wins("Red"));
 
             ConnectFour.Print();
         }
@@ -40,7 +40,7 @@ namespace Connect_Four___approach_3
 
         public static string WhoIsWinner(List<string> piecesPositionList)
         {
-            //InitBoard();
+            InitBoard();
 
             for (int i = 0; i < piecesPositionList.Count; i++) // max 42?
             {
