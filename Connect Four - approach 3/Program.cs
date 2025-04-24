@@ -12,14 +12,21 @@ namespace Connect_Four___approach_3
         {
             ConnectFour.InitBoard();
 
-            //ConnectFour.AddPiece("A", "Red");
-            //ConnectFour.AddPiece("B", "Red");
-            //ConnectFour.AddPiece("C", "Red");
-            ConnectFour.AddPiece("E", "Red");
-            ConnectFour.AddPiece("F", "Red");
-            ConnectFour.AddPiece("G", "Ред");
+            ConnectFour.AddPiece("A", "Red");
+            
+            ConnectFour.AddPiece("B", "Yellow");
+            ConnectFour.AddPiece("B", "Red");
+            
+            ConnectFour.AddPiece("C", "Yellow");
+            ConnectFour.AddPiece("C", "Yellow");
+            ConnectFour.AddPiece("C", "Red");
+            
+            ConnectFour.AddPiece("D", "Yellow");
+            ConnectFour.AddPiece("D", "Yellow");
+            ConnectFour.AddPiece("D", "Yellow");
+            ConnectFour.AddPiece("D", "Red");
 
-            Console.WriteLine(ConnectFour.HasHorizontal("Red"));
+            Console.WriteLine(ConnectFour.HasForwardDiagonal("Red"));
 
             ConnectFour.Print();
         }
@@ -161,36 +168,100 @@ namespace Connect_Four___approach_3
 
         public static bool Wins(string player)
         {
-            if (HasHorizontal(player) || HasVertical(player) || HasDiagonal(player))
+            if (HasHorizontal(player) ||
+                HasVertical(player) ||
+                HasForwardDiagonal(player) ||
+                HasBackwardDiagonal(player)
+                )
             {
                 return true;
             }
             return false;
         }
 
-        public static bool HasDiagonal(string player)
+        public static bool HasForwardDiagonal(string player)
         {
-            //for (int i = 3; i < 7; i++) // ?
-            //{
-            //    for (int j = 0; i <= 6 - 4; j++) // ?
-            //    {
-            //        // forward diagonal "/"
-            //        if (Board[i][j?] == Board[i - 1][j]
-            //            && Board[i - 1][j] == Board[i - 2][j]
-            //            && Board[i - 2][j] == Board[i - 3][j])
-            //        {
-            //            return true;
-            //        }
+            for (int row = 5; row >= 3; row--)
+            {
+                for (int col = 0; col <= 3; col++)
+                {
+                    /*
+                     * A B C D E F G
+                     * 0 1 2 3 4 5 6 col
+                     * _ _ _ x x x x  row = 0
+                     * _ _ x x x x x  row = 1
+                     * _ x x R x x x  row = 2
+                     * x x R x x x _  row = 3
+                     * x R x x x _ _  row = 4
+                     * R x x x _ _ _  row = 5
+                     *
+                     * _ : unreachable position
+                     */
 
-            //        // backwards diagonal "\"
-            //        if (Board[i][j] == Board[i + 1][j]
-            //            && Board[i + 1][j] == Board[i + 2][j]
-            //            && Board[i + 2][j] == Board[i + 3][j])
-            //        {
-            //            return true;
-            //        }
-            //    }
-            //}
+                    /*
+                     * there are 3x4 possible win conditions
+                       all of them step on these positions "W"
+
+                       A B C D E F G
+                       0 1 2 3 4 5 6 col
+                       _ _ _ x x x x  row = 0
+                       _ _ x x x x x  row = 1
+                       _ x x x x x x  row = 2
+                       W W W W x x _  row = 3
+                       W W W W x _ _  row = 4
+                       W W W W _ _ _  row = 5
+                     */
+
+                    // forward diagonal "/"
+                    if (Board[row][col] != Piece.Empty &&
+                        Board[row][col] == Board[row - 1][col + 1] &&
+                        Board[row][col] == Board[row - 2][col + 2] &&
+                        Board[row][col] == Board[row - 3][col + 3])
+                    {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+        public static bool HasBackwardDiagonal(string player)
+        {
+            for (int i = 3; i < 7; i++)
+            {
+                for (int j = 0; i <= 6 - 4; j++)
+                {
+                    /*
+                     * A B C D E F G
+                     * 0 1 2 3 4 5 6 col
+                     * x x x Y _ _ _  row = 0
+                     * x x x x Y _ _  row = 1
+                     * x x x x x Y _  row = 2
+                     * _ x x x x x Y  row = 3
+                     * _ _ x x x x x  row = 4
+                     * _ _ _ x x x x  row = 5
+                     *
+                     * _ : unreachable position
+                     */
+
+                    /*
+                     * backwards slash "\" win positions
+                       W W W W _ _ _ 
+                       W W W W x _ _ 
+                       W W W W x x _ 
+                       _ x x x x x x 
+                       _ _ x x x x x 
+                       _ _ _ x x x x 
+                     */
+
+                    // backwards diagonal "\"
+                    if (Board[i][j] == Board[i + 1][j]
+                        && Board[i + 1][j] == Board[i + 2][j]
+                        && Board[i + 2][j] == Board[i + 3][j])
+                    {
+                        return true;
+                    }
+                }
+            }
             return false;
         }
         public static bool HasVertical(string player)
