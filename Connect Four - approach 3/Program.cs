@@ -1,4 +1,8 @@
-﻿using System.IO.Enumeration;
+﻿// https://www.codewars.com/kata/56882731514ec3ec3d000009/train/csharp
+
+using System.Data;
+using System.IO.Enumeration;
+using Microsoft.VisualBasic;
 
 namespace Connect_Four___approach_3
 {
@@ -10,9 +14,12 @@ namespace Connect_Four___approach_3
 
             ConnectFour.InitBoard();
 
-            ConnectFour.AddPiece("A", "Red");
-            ConnectFour.AddPiece("A", "Red");
-            ConnectFour.AddPiece("A", "Red");
+            ConnectFour.AddPiece("G", "Red");
+            ConnectFour.AddPiece("G", "Red");
+            ConnectFour.AddPiece("G", "Red");
+            ConnectFour.AddPiece("G", "Red");
+
+            Console.WriteLine(ConnectFour.Vertical("Red"));
 
             ConnectFour.Print();
         }
@@ -21,9 +28,7 @@ namespace Connect_Four___approach_3
 
     public class ConnectFour
     {
-
         public static List<List<Piece>> Board = new List<List<Piece>>(); // static ok?
-
 
         public static string WhoIsWinner(List<string> piecesPositionList)
         {
@@ -189,13 +194,28 @@ namespace Connect_Four___approach_3
         }
         public static bool Vertical(string player) // horizontal?
         {
-            for (int i = 0; i <= 7 - 4; i++) // ?
+            /*
+             * A B C D E F G
+             * 0 1 2 3 4 5 6 columnInt
+             * x x x x x x x  row = 0
+             * x x x x x x x  row = 1
+             * x x x x x x x  row = 2
+             * x x x x x x x  row = 3
+             * R Y x x x x x  row = 4
+             * R Y x x x x x  row = 5
+             */
+
+            // no need to check above row 3 - not possible to have vertical line of 4 above it
+            int row3 = 3;
+
+            for (int row = 5; row >= row3; row--) // ?
             {
-                for (int j = 0; j <= 6; j++) // ?
+                for (int col = 0; col <= 6; col++) // ?
                 {
-                    if (Board[i][j] == Board[i + 1][j]
-                        && Board[i + 1][j] == Board[i + 2][j]
-                        && Board[i + 2][j] == Board[i + 3][j])
+                    if (Board[row][col] != Piece.Empty &&
+                        Board[row][col] == Board[row - 1][col] &&
+                        Board[row][col] == Board[row - 2][col] &&
+                        Board[row][col] == Board[row - 3][col])
                     {
                         return true;
                     }
@@ -205,6 +225,8 @@ namespace Connect_Four___approach_3
         }
         public static bool Horizontal(string player) // vertical?
         {
+            return false;
+
             for (int i = 0; i < 7; i++) // ?
             {
                 for (int j = 0; j < 6 - 4; j++) // ?
