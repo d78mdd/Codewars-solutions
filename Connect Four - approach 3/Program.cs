@@ -12,21 +12,22 @@ namespace Connect_Four___approach_3
         {
             ConnectFour.InitBoard();
 
+            ConnectFour.AddPiece("A", "Yellow");
+            ConnectFour.AddPiece("A", "Yellow");
+            ConnectFour.AddPiece("A", "Yellow");
             ConnectFour.AddPiece("A", "Red");
-            
+
+            ConnectFour.AddPiece("B", "Yellow");
             ConnectFour.AddPiece("B", "Yellow");
             ConnectFour.AddPiece("B", "Red");
-            
-            ConnectFour.AddPiece("C", "Yellow");
+
             ConnectFour.AddPiece("C", "Yellow");
             ConnectFour.AddPiece("C", "Red");
-            
-            ConnectFour.AddPiece("D", "Yellow");
-            ConnectFour.AddPiece("D", "Yellow");
-            ConnectFour.AddPiece("D", "Yellow");
+
             ConnectFour.AddPiece("D", "Red");
 
-            Console.WriteLine(ConnectFour.HasForwardDiagonal("Red"));
+
+            Console.WriteLine(ConnectFour.HasBackwardDiagonal("Red"));
 
             ConnectFour.Print();
         }
@@ -224,11 +225,12 @@ namespace Connect_Four___approach_3
             }
             return false;
         }
+
         public static bool HasBackwardDiagonal(string player)
         {
-            for (int i = 3; i < 7; i++)
+            for (int row = 0; row <= 2; row++)
             {
-                for (int j = 0; i <= 6 - 4; j++)
+                for (int col = 0; col <= 3; col++)
                 {
                     /*
                      * A B C D E F G
@@ -245,18 +247,22 @@ namespace Connect_Four___approach_3
 
                     /*
                      * backwards slash "\" win positions
-                       W W W W _ _ _ 
-                       W W W W x _ _ 
-                       W W W W x x _ 
-                       _ x x x x x x 
-                       _ _ x x x x x 
-                       _ _ _ x x x x 
+                     *
+                     * A B C D E F G
+                       0 1 2 3 4 5 6 col
+                       W W W W _ _ _ row = 0
+                       W W W W x _ _ row = 1
+                       W W W W x x _ row = 2
+                       _ x x x x x x row = 3
+                       _ _ x x x x x row = 4
+                       _ _ _ x x x x row = 5
                      */
 
                     // backwards diagonal "\"
-                    if (Board[i][j] == Board[i + 1][j]
-                        && Board[i + 1][j] == Board[i + 2][j]
-                        && Board[i + 2][j] == Board[i + 3][j])
+                    if (Board[row][col] != Piece.Empty &&
+                        Board[row][col] == Board[row + 1][col + 1] &&
+                        Board[row][col] == Board[row + 2][col + 2] &&
+                        Board[row][col] == Board[row + 3][col + 3])
                     {
                         return true;
                     }
@@ -264,6 +270,7 @@ namespace Connect_Four___approach_3
             }
             return false;
         }
+
         public static bool HasVertical(string player)
         {
             /*
@@ -295,6 +302,7 @@ namespace Connect_Four___approach_3
             }
             return false;
         }
+
         public static bool HasHorizontal(string player)
         {
             /*
@@ -327,7 +335,6 @@ namespace Connect_Four___approach_3
             return false;
         }
 
-
         public static void Print()
         {
             foreach (List<Piece> column in Board)
@@ -338,7 +345,6 @@ namespace Connect_Four___approach_3
         }
 
     }
-
 
     public enum Columns
     {
