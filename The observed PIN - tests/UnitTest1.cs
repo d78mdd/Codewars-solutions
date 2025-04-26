@@ -5,12 +5,6 @@ namespace The_observed_PIN___tests
     public class Tests
     {
         [Test]
-        public void Test1()
-        {
-            Assert.Pass();
-        }
-
-        [Test]
         public void TestBasic1()
         {
             Dictionary<string, string[]> pin = new Dictionary<string, string[]>{

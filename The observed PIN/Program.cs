@@ -187,9 +187,6 @@ namespace The_observed_PIN
                         // increment the variation internal index (move on to the next variant of this digit)
                         indexesCurrent[digitIndex]++;
 
-
-                        digitIndex = 0;  // go back to 1st digit - 1st variations array
-
                     }
                     else  // this was the last variant of this digit
                     {
@@ -197,7 +194,6 @@ namespace The_observed_PIN
                         //// update current and previous digits' variants indexes
 
                         // if a previous digit exists go to previous digit's next variants index if such exists
-                        // ? and any such previous digits?
                         for (int i = digitIndex ; ; i--)
                         {
 
@@ -222,11 +218,10 @@ namespace The_observed_PIN
                             }
 
                         }
-
-
-                        digitIndex = 0;  // go back to 1st digit - 1st variations array  // this can't be here?
+                        
                     }
-
+                    
+                    digitIndex = 0;  // go back to 1st digit - 1st variations array
 
                     if (done)
                     {
