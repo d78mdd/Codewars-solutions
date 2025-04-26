@@ -34,8 +34,6 @@
                     int digit = int.Parse(c.ToString());
 
                     mult *= digit;
-
-                    
                 }
 
                 number = mult;
