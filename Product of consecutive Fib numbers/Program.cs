@@ -38,7 +38,7 @@ namespace Product_of_consecutive_Fib_numbers
         }
 
 
-        // init 1000 element array with [4] - not a Fibonacci number
+        // init 10000 element array with [4] - not a Fibonacci number
         private static ulong initValue = 4UL;
         private static int capacity = 10000;
         private static ulong[] memo = new ulong[capacity];
