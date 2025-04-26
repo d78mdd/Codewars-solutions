@@ -108,12 +108,16 @@ namespace The_observed_PIN
 
         public static List<string> possiblePins = new List<string>();
 
+        // keep track of current number variation being constructed
+        public static List<char> numberVariationChars = new List<char>();
+
         public static List<string> GetPINs(string observed)
         {
             // init
             variationsList = new List<char[]>();
             Observed = observed;
             possiblePins = new List<string>();
+            numberVariationChars = new List<char>();
 
 
             // collect incoming digits' variations
@@ -145,88 +149,73 @@ namespace The_observed_PIN
             // keep track of digit index and thus variationsList index
             int digitIndex = 0;
 
-            // keep track of current number variation being constructed
-            List<char> numberVariationChars = new List<char>();
+
 
             bool done = false;
 
             for (; ; )
             {
-                // take a variations array
-                char[] variations = variationsList[digitIndex];
-
-                // take a value from it
-                int variationIndex = indexesCurrent[digitIndex];
-                char variation = variations[variationIndex];
-
-                // put the value in the currently constructed number
-                numberVariationChars.Add(variation);
+                TakeValue(digitIndex, indexesCurrent);
 
 
-
-
-                if (digitIndex + 1 <= variationsList.Count - 1)  // this was not final digit
+                bool wasNotFinalDigit = digitIndex + 1 <= variationsList.Count - 1;
+                if (wasNotFinalDigit)  // this was not final digit
                 {
                     // move on to the next digit thus its variations
                     digitIndex++;
+
+                    continue;
                 }
-                else  // (digitIndex > variationsList.Count - 1)  // this was final digit
+                // else  // (digitIndex > variationsList.Count - 1)  // this was final digit
+
+                //// One possible number's digits were collected
+
+                Add();
+
+
+                bool wasNotLastDigitVariant = indexesCurrent[digitIndex] + 1 <= indexesLast[digitIndex];
+                if (wasNotLastDigitVariant)  // this was not last variant of the digit
                 {
+                    // increment the variation internal index (move on to the next variant of this digit)
+                    indexesCurrent[digitIndex]++;
+                }
+                else  // this was the last variant of this digit
+                {
+                    //// update current and previous digits' variants indexes
 
-                    //// One possible number's digits were collected
-
-                    // add it to the list of possible PINs and refresh the var that keeps track of current
-                    string newNumber = string.Join("", numberVariationChars);
-                    possiblePins.Add(newNumber);
-                    numberVariationChars = new List<char>();
-
-
-
-                    if (indexesCurrent[digitIndex] + 1 <= indexesLast[digitIndex])  // this was not last variant of the digit
-                    {
-                        // increment the variation internal index (move on to the next variant of this digit)
-                        indexesCurrent[digitIndex]++;
-
-                    }
-                    else  // this was the last variant of this digit
+                    // if a previous digit exists go to previous digit's next variants index if such exists
+                    for (int i = digitIndex; ; i--)
                     {
 
-                        //// update current and previous digits' variants indexes
+                        // update all variants' indexes to 0 except the leftmost one that's not last - increment that one
 
-                        // if a previous digit exists go to previous digit's next variants index if such exists
-                        for (int i = digitIndex ; ; i--)
+                        if (i >= 0) // valid digit index
                         {
-
-                            // update all variants' indexes to 0 except the leftmost one that's not last - increment that one
-
-                            if (i >= 0) // valid digit index
+                            if (indexesCurrent[i] + 1 <= indexesLast[i])  // if not last variant index
                             {
-                                if (indexesCurrent[i] + 1 <= indexesLast[i])  // if not last variant index
-                                {
-                                    indexesCurrent[i]++;
-                                    break;
-                                }
-                                else  // last variant index
-                                {
-                                    indexesCurrent[i] = 0;
-                                }
-                            }
-                            else  // all indexes were exhausted - done
-                            {
-                                done = true;
+                                indexesCurrent[i]++;
                                 break;
                             }
-
+                            else  // last variant index
+                            {
+                                indexesCurrent[i] = 0;
+                            }
                         }
-                        
-                    }
-                    
-                    digitIndex = 0;  // go back to 1st digit - 1st variations array
+                        else  // all indexes were exhausted - done
+                        {
+                            done = true;
+                            break;
+                        }
 
-                    if (done)
-                    {
-                        break;
                     }
+
+                }
+
+                digitIndex = 0;  // go back to 1st digit - 1st variations array
+
+                if (done)
+                {
+                    break;
                 }
 
             }
@@ -234,6 +223,26 @@ namespace The_observed_PIN
             return possiblePins;
         }
 
+        private static void Add()
+        {
+            // add possible number's digits to the list of possible PINs and refresh the var that keeps track of current
+            string newNumber = string.Join("", numberVariationChars);
+            possiblePins.Add(newNumber);
+            numberVariationChars = new List<char>();
+        }
+
+        private static void TakeValue(int digitIndex, Dictionary<int, int> indexesCurrent)
+        {
+            // take a variations array
+            char[] variations = variationsList[digitIndex];
+
+            // take a value from it
+            int variationIndex = indexesCurrent[digitIndex];
+            char variation = variations[variationIndex];
+
+            // put the value in the currently constructed number
+            numberVariationChars.Add(variation);
+        }
     }
 
 }
