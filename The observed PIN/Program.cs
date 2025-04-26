@@ -116,8 +116,7 @@ namespace The_observed_PIN
             possiblePins = new List<string>();
 
 
-            // step1 collect incoming digits' variations
-
+            // collect incoming digits' variations
             for (int j = 0; j < observed.Length; j++)
             {
                 variationsList.Add(allVariations[observed[j]]);
@@ -195,16 +194,11 @@ namespace The_observed_PIN
                     else  // this was the last variant of this digit
                     {
 
-                        //// update current digit's variants index
-
-                        indexesCurrent[digitIndex] = 0; // reset index of variants of current digit
-
-
-                        //// update previous digits' variants indexes
+                        //// update current and previous digits' variants indexes
 
                         // if a previous digit exists go to previous digit's next variants index if such exists
                         // ? and any such previous digits?
-                        for (int i = digitIndex - 1; ; i--)
+                        for (int i = digitIndex ; ; i--)
                         {
 
                             // update all variants' indexes to 0 except the leftmost one that's not last - increment that one
