@@ -11,7 +11,7 @@ namespace The_observed_PIN
     {
         static void Main(string[] args)
         {
-            Kata.GetPINs("57");
+            Kata.GetPINs("571");
         }
     }
 
@@ -167,11 +167,13 @@ namespace The_observed_PIN
 
             {
 
-                // keep track of digit and thus variationsList index
+                // keep track of digit index and thus variationsList index
                 int digitIndex = 0;
 
-                // keep track of current numberVariation being constructed
+                // keep track of current number variation being constructed
                 List<char> numberVariationChars = new List<char>();
+
+                bool done = false;
 
                 for (; ; )
                 {
@@ -205,7 +207,7 @@ namespace The_observed_PIN
 
 
 
-                        
+
                         if (indexesCurrent[digitIndex] + 1 <= indexesLast[digitIndex])  // this was not last variant of the digit
                         {
                             // increment the variation internal index (move on to the next variant of this digit)
@@ -217,20 +219,53 @@ namespace The_observed_PIN
                         }
                         else  // this was the last variant of this digit
                         {
+
+                            //// update current digit's variants index
+
                             indexesCurrent[digitIndex] = 0; // reset index of variants of current digit
 
 
-                            digitIndex = 0;  // go back to 1st digit - 1st variations array
+                            //// update previous digits' variants indexes
 
-                            indexesCurrent[digitIndex]++; // move to its next variation
+                            // if a previous digit exists go to previous digit's next variants index if such exists
+                            // ? and any such previous digits?
+                            for (int i = digitIndex-1; ; i--)
+                            {
+
+                                // update all variants' indexes to 0 except the leftmost one that's not last - increment that one
+
+                                if (i >= 0) // valid digit index
+                                {
+                                    if (indexesCurrent[i] + 1 <= indexesLast[i])  // if not last variant index
+                                    {
+                                        indexesCurrent[i]++;
+                                        break;
+                                    }
+                                    else  // last variant index
+                                    {
+                                        indexesCurrent[i] = 0;
+                                    }
+                                }
+                                else  // all indexes were exhausted - done
+                                {
+                                    done = true;
+                                    break;
+                                }
+
+                            }
+
+
+                            digitIndex = 0;  // go back to 1st digit - 1st variations array  // this can't be here?
+
+
+                            //indexesCurrent[digitIndex]++; // move to its next variation  // this can't be here
                         }
 
 
 
 
-                        if (indexesCurrent[digitIndex] > indexesLast[digitIndex]) // last variation of 1st digit already used up
+                        if (done)
                         {
-                            // that should mean end
                             break;
                         }
                     }
