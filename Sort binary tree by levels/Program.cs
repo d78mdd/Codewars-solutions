@@ -19,10 +19,9 @@ namespace Sort_binary_tree_by_levels
             List<int> values = new List<int>();
 
             /*
-             * use 1 or 2 lists
-             * put all nodes of a level into it
+             * put all nodes of a level into a list
              * collect the list's nodes' values
-             * discard the list and/or put all child nodes to a list
+             * discard the list and put all child nodes to it instead
              * repeat
              *
              * end if list is empty - no more children were added
@@ -61,7 +60,6 @@ namespace Sort_binary_tree_by_levels
                 level.Clear();
                 level.AddRange(temp);
             }
-
 
             return values;
         }
