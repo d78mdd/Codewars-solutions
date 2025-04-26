@@ -86,7 +86,6 @@ namespace The_observed_PIN
 
     public class Kata
     {
-
         // key - digit 0-9
         // value - its variances
         public static Dictionary<char, char[]> allVariations = new Dictionary<char, char[]>()
