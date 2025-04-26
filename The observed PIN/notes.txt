@@ -1,0 +1,77 @@
+
+  0    1   digitIndex
+{'5', '7'} observed
+
+
+       0                1       digitIndex
+variationsList:
+{ 5, 2, 4, 6, 8 }  { 7, 4, 8 }  
+indexesCurrent[]:
+  0  1  2  3  4      0  1  2    variationIndex
+  
+
+combinations:
+5 7
+5 4
+5 8
+
+2 7
+2 4
+2 8
+
+4 7
+.....
+
+variations' indexes:
+0 0
+0 1
+0 1
+
+1 0
+1 1
+1 2
+
+2 0
+.....
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
