@@ -25,7 +25,7 @@ namespace Constructing_a_car__1___Engine_and_Fuel_Tank
 
             engine = new Engine();
 
-            fuelTankDisplay = new FuelTankDisplay();
+            fuelTankDisplay = new FuelTankDisplay(fuelTank);
         }
 
         public Car(double fuelLevel)
@@ -35,7 +35,7 @@ namespace Constructing_a_car__1___Engine_and_Fuel_Tank
 
             engine = new Engine();
 
-            fuelTankDisplay = new FuelTankDisplay();
+            fuelTankDisplay = new FuelTankDisplay(fuelTank);
         }
 
         public bool EngineIsRunning
@@ -91,7 +91,7 @@ namespace Constructing_a_car__1___Engine_and_Fuel_Tank
     public class FuelTank : IFuelTank
     {
         public const double TankMaximumSize = 60;
-        const double TankReserveLevel = 5;
+        public const double TankReserveLevel = 5;
 
         private double _fillLevel;
         public double FillLevel
@@ -104,7 +104,7 @@ namespace Constructing_a_car__1___Engine_and_Fuel_Tank
             get { return _fillLevel <= TankReserveLevel; }
         }
 
-        public bool IsComplete 
+        public bool IsComplete
         {
             get { return _fillLevel == TankMaximumSize; }
         }
@@ -130,11 +130,28 @@ namespace Constructing_a_car__1___Engine_and_Fuel_Tank
 
     public class FuelTankDisplay : IFuelTankDisplay
     {
-        public double FillLevel { get; }
+        private IFuelTank _fuelTank;
 
-        public bool IsOnReserve { get; }
+        public double FillLevel
+        {
+            get { return _fuelTank.FillLevel; }
+        }
 
-        public bool IsComplete { get; }
+        public bool IsOnReserve
+        {
+            get { return _fuelTank.IsOnReserve; }
+        }
+
+        public bool IsComplete
+        {
+            get { return _fuelTank.IsOnReserve; }
+        }
+
+        public FuelTankDisplay(IFuelTank fuelTank)
+        {
+            _fuelTank = fuelTank;
+        }
+
     }
 
 }
