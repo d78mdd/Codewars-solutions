@@ -1,4 +1,6 @@
-﻿namespace Constructing_a_car__1___Engine_and_Fuel_Tank
+﻿// https://www.codewars.com/kata/578b4f9b7c77f535fc00002f/train/csharp
+
+namespace Constructing_a_car__1___Engine_and_Fuel_Tank
 {
     internal class Program
     {
@@ -18,29 +20,42 @@
 
         public Car()
         {
+            fuelTank = new FuelTank();
+            fuelTank.Refuel(20);
 
+            engine = new Engine();
+
+            fuelTankDisplay = new FuelTankDisplay();
         }
 
         public Car(double fuelLevel)
         {
+            fuelTank = new FuelTank();
+            fuelTank.Refuel(fuelLevel);
 
+            engine = new Engine();
+
+            fuelTankDisplay = new FuelTankDisplay();
         }
 
-        public bool EngineIsRunning { get; }
+        public bool EngineIsRunning
+        {
+            get { return engine.IsRunning; }
+        }
 
         public void EngineStart()
         {
-            throw new NotImplementedException();
+            engine.Start();
         }
 
         public void EngineStop()
         {
-            throw new NotImplementedException();
+            engine.Stop();
         }
 
         public void Refuel(double liters)
         {
-            throw new NotImplementedException();
+            fuelTank.Refuel(liters);
         }
 
         public void RunningIdle()
@@ -51,7 +66,11 @@
 
     public class Engine : IEngine
     {
-        public bool IsRunning { get; }
+        private bool _isRunning;
+        public bool IsRunning
+        {
+            get { return _isRunning; }
+        }
 
         public void Consume(double liters)
         {
@@ -60,31 +79,52 @@
 
         public void Start()
         {
-            throw new NotImplementedException();
+            _isRunning = true;
         }
 
         public void Stop()
         {
-            throw new NotImplementedException();
+            _isRunning = false;
         }
     }
 
     public class FuelTank : IFuelTank
     {
-        public double FillLevel { get; }
+        public const double TankMaximumSize = 60;
+        const double TankReserveLevel = 5;
 
-        public bool IsOnReserve { get; }
+        private double _fillLevel;
+        public double FillLevel
+        {
+            get { return _fillLevel; }
+        }
 
-        public bool IsComplete { get; }
+        public bool IsOnReserve
+        {
+            get { return _fillLevel <= TankReserveLevel; }
+        }
+
+        public bool IsComplete 
+        {
+            get { return _fillLevel == TankMaximumSize; }
+        }
 
         public void Consume(double liters)
         {
-            throw new NotImplementedException();
+            _fillLevel -= liters;
+            if (_fillLevel < 0)
+            {
+                _fillLevel = 0;
+            }
         }
 
         public void Refuel(double liters)
         {
-            throw new NotImplementedException();
+            _fillLevel += liters;
+            if (_fillLevel > TankMaximumSize)
+            {
+                _fillLevel = TankMaximumSize;
+            }
         }
     }
 
