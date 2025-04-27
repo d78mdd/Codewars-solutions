@@ -29,7 +29,7 @@ namespace Battleship_field_validator
             shipsCounts = new Dictionary<int, int>();
             board = field;
 
-            CountVertial();
+            CountVertical();
             CountHorizontal();
             CountShips1();
 
@@ -100,17 +100,119 @@ namespace Battleship_field_validator
 
         private static void CountShips1()
         {
-            throw new NotImplementedException();
+            for (int row = 0; row < board.GetLength(1); row++)
+            {
+                int shipPieces = 0;
+
+                for (int col = 0; col < board.GetLength(0); col++)
+                {
+                    if (board[row, col] == 1)  // ship piece
+                    {
+                        if (row < board.GetLength(1) - 1 && board[row + 1, col] == 0 &&  // below is empty
+                            row > 0 && board[row - 1, col] == 0)    // above is empty
+                        {
+                            shipPieces++;
+                        }
+                    }
+                    else  // board[row,col] == 0 // no ship piece (empty)
+                    {
+                        if (shipPieces == 1)
+                        {
+                            shipsCounts[1]++;
+                        }
+                        // else do nothing
+
+                        shipPieces = 0;
+                    }
+
+                }
+            }
+
         }
 
         private static void CountHorizontal()
         {
-            throw new NotImplementedException();
+            for (int row = 0; row < board.GetLength(0); row++)
+            {
+                int shipPieces = 0;
+
+                for (int col = 0; col < board.GetLength(1); col++)
+                {
+                    if (board[row, col] == 1)  // ship piece
+                    {
+                        shipPieces++;
+                    }
+                    else  // board[row,col] == 0 // no ship piece
+                    {
+                        if (shipPieces == 2)
+                        {
+                            shipsCounts[2]++;
+                        }
+                        else if (shipPieces == 3)
+                        {
+                            shipsCounts[3]++;
+                        }
+                        else if (shipPieces == 4)
+                        {
+                            shipsCounts[4]++;
+                        }
+                        else if (shipPieces > 4)
+                        {
+                            shipsCounts[5]++; // long ships >4 pieces
+                        }
+                        else
+                        {
+                            // do nothing
+                        }
+
+                        shipPieces = 0;
+                    }
+
+                }
+            }
         }
 
-        private static void CountVertial()
+        private static void CountVertical()
         {
-            throw new NotImplementedException();
+            for (int col = 0; col < board.GetLength(1); col++)
+            {
+                int shipPieces = 0;
+
+                for (int row = 0; row < board.GetLength(0); row++)
+                {
+                    if (board[row, col] == 1)  // ship piece
+                    {
+                        shipPieces++;
+                    }
+                    else  // board[row,col] == 0 // no ship piece (empty)
+                    {
+                        if (shipPieces == 2)
+                        {
+                            shipsCounts[2]++;
+                        }
+                        else if (shipPieces == 3)
+                        {
+                            shipsCounts[3]++;
+                        }
+                        else if (shipPieces == 4)
+                        {
+                            shipsCounts[4]++;
+                        }
+                        else if (shipPieces > 4)
+                        {
+                            shipsCounts[5]++; // long ships >4 pieces
+                        }
+                        else
+                        {
+                            // do nothing
+                        }
+
+                        shipPieces = 0;
+                    }
+
+                }
+            }
+
         }
     }
 }
