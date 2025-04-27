@@ -152,7 +152,6 @@ namespace Constructing_a_car__1___Engine_and_Fuel_Tank
 
         public bool IsOnReserve
         {
-
             get
             {
                 Console.WriteLine("IsOnReserve");
@@ -176,7 +175,7 @@ namespace Constructing_a_car__1___Engine_and_Fuel_Tank
             Console.WriteLine("Consume");
 
             _fillLevel -= liters;
-            if (_fillLevel < 0d)
+            if (_fillLevel < 0)
             {
                 Console.WriteLine(" going down to zero");
                 _fillLevel = 0d;
@@ -204,7 +203,7 @@ namespace Constructing_a_car__1___Engine_and_Fuel_Tank
             get
             {
                 Console.WriteLine("FillLevel");
-                return _fuelTank.FillLevel;
+                return Math.Round(_fuelTank.FillLevel, 2);
             }
         }
 
