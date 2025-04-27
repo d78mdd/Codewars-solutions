@@ -8,10 +8,10 @@ namespace Battleship_field_validator
         {
             var input = new int[,]
             {
-                { 1, 1 },
-                { 0, 0 },
-                { 1, 0 },
-                { 0, 1 }
+                { 0, 1, 1 },
+                { 0, 0, 0 },
+                { 1, 0, 0 },
+                { 1, 0, 1 }
             };
 
             Console.WriteLine(BattleshipField.ValidateBattlefield(input));
@@ -20,13 +20,20 @@ namespace Battleship_field_validator
 
     public class BattleshipField
     {
-        public static Dictionary<int, int> shipsCounts = new Dictionary<int, int>();
+        public static Dictionary<int, int> shipsCounts;
 
         public static int[,] board;
 
         public static bool ValidateBattlefield(int[,] field)
         {
-            shipsCounts = new Dictionary<int, int>();
+            shipsCounts = new Dictionary<int, int>()
+            {
+                { 1, 0 },
+                { 2, 0 },
+                { 3, 0 },
+                { 4, 0 },
+                { 5, 0 }
+            };
             board = field;
 
             CountVertical();
@@ -57,19 +64,14 @@ namespace Battleship_field_validator
 
         private static bool HasDiagonals()
         {
-            bool result = false;
-
-            for (var row = 0; row < board.GetLength(0); row++)
+            // iterate from 1st to next to last row
+            for (var row = 0; row < board.GetLength(0) - 1; row++)
+            {
                 for (var col = 0; col < board.GetLength(1); col++)
                 {
                     if (board[row, col] == 1) // ship piece
                     {
-                        if (row == board.GetLength(0) - 1) // last row
-                        {
-                            break; // no diagonals to check
-                        }
-
-                        if (col == 0) // 1st - starting scell
+                        if (col == 0) // 1st - starting cell
                         {
                             if (board[row + 1, col + 1] == 1) // ship piece
                             {
@@ -94,27 +96,30 @@ namespace Battleship_field_validator
                     }
 
                 }
+            }
 
-            return result;
+            return false;
         }
 
-        private static void CountShips1()
+        private static void CountShips1()  // count ships of size 1
         {
-            for (int row = 0; row < board.GetLength(1); row++)
+            for (int row = 0; row < board.GetLength(0); row++)
             {
                 int shipPieces = 0;
 
-                for (int col = 0; col < board.GetLength(0); col++)
+                for (int col = 0; col < board.GetLength(1); col++)
                 {
                     if (board[row, col] == 1)  // ship piece
                     {
-                        if (row < board.GetLength(1) - 1 && board[row + 1, col] == 0 &&  // below is empty
-                            row > 0 && board[row - 1, col] == 0)    // above is empty
+                        if (((row < board.GetLength(0) - 1 && board[row + 1, col] == 0) || row == board.GetLength(0) - 1) &&  // below is empty
+                            ((row > 0 && board[row - 1, col] == 0) || row == 0))  // above is empty
                         {
                             shipPieces++;
                         }
                     }
-                    else  // board[row,col] == 0 // no ship piece (empty)
+
+                    if (board[row, col] == 0 ||  // no ship piece (empty)
+                        col == board.GetLength(1) - 1)  // end of row
                     {
                         if (shipPieces == 1)
                         {
@@ -130,7 +135,7 @@ namespace Battleship_field_validator
 
         }
 
-        private static void CountHorizontal()
+        private static void CountHorizontal()  // count 1+ ships placed horizontally
         {
             for (int row = 0; row < board.GetLength(0); row++)
             {
@@ -142,7 +147,9 @@ namespace Battleship_field_validator
                     {
                         shipPieces++;
                     }
-                    else  // board[row,col] == 0 // no ship piece
+
+                    if (board[row, col] == 0 ||  // no ship piece
+                        col == board.GetLength(1) - 1)  // end of row
                     {
                         if (shipPieces == 2)
                         {
@@ -172,7 +179,7 @@ namespace Battleship_field_validator
             }
         }
 
-        private static void CountVertical()
+        private static void CountVertical() // count 1+ ships placed vertically
         {
             for (int col = 0; col < board.GetLength(1); col++)
             {
@@ -184,7 +191,9 @@ namespace Battleship_field_validator
                     {
                         shipPieces++;
                     }
-                    else  // board[row,col] == 0 // no ship piece (empty)
+
+                    if (board[row, col] == 0 || // no ship piece (empty)
+                      row == board.GetLength(0) - 1)// end of column
                     {
                         if (shipPieces == 2)
                         {
