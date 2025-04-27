@@ -80,6 +80,11 @@ namespace Constructing_a_car__1___Engine_and_Fuel_Tank
             if (engine.IsRunning)
             {
                 fuelTank.Consume(0.0003d);
+
+                if (fuelTank.FillLevel == 0)
+                {
+                    EngineStop();
+                }
             }
         }
     }
