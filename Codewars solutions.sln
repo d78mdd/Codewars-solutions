@@ -97,6 +97,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Battleship field validator"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Battleship field validator - tests", "Battleship field validator - tests\Battleship field validator - tests.csproj", "{1B4C346C-E764-4442-B989-371AD3A940F0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Constructing a car #1 - Engine and Fuel Tank", "Constructing a car #1 - Engine and Fuel Tank\Constructing a car #1 - Engine and Fuel Tank.csproj", "{92AA2FC4-79B3-4107-96E7-DFC918857DA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Constructing a car #1 - Engine and Fuel Tank - tests", "Constructing a car #1 - Engine and Fuel Tank - tests\Constructing a car #1 - Engine and Fuel Tank - tests.csproj", "{4B04BF42-9AA5-4E61-A3AC-A50215A41F42}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -283,6 +287,14 @@ Global
 		{1B4C346C-E764-4442-B989-371AD3A940F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B4C346C-E764-4442-B989-371AD3A940F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B4C346C-E764-4442-B989-371AD3A940F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92AA2FC4-79B3-4107-96E7-DFC918857DA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92AA2FC4-79B3-4107-96E7-DFC918857DA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92AA2FC4-79B3-4107-96E7-DFC918857DA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92AA2FC4-79B3-4107-96E7-DFC918857DA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B04BF42-9AA5-4E61-A3AC-A50215A41F42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B04BF42-9AA5-4E61-A3AC-A50215A41F42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B04BF42-9AA5-4E61-A3AC-A50215A41F42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B04BF42-9AA5-4E61-A3AC-A50215A41F42}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -333,5 +345,7 @@ Global
 		{F1B4F208-BEE9-46A7-96EC-1FEA05C1DA3D} = {F3977773-212C-4430-A666-68D425B4CA76}
 		{7559F462-110A-4DD8-A345-81BAD79FFA86} = {0F221328-5FC3-4D26-BFE2-F2018811721B}
 		{1B4C346C-E764-4442-B989-371AD3A940F0} = {F3977773-212C-4430-A666-68D425B4CA76}
+		{92AA2FC4-79B3-4107-96E7-DFC918857DA1} = {0F221328-5FC3-4D26-BFE2-F2018811721B}
+		{4B04BF42-9AA5-4E61-A3AC-A50215A41F42} = {F3977773-212C-4430-A666-68D425B4CA76}
 	EndGlobalSection
 EndGlobal
