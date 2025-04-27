@@ -23,7 +23,7 @@ namespace Constructing_a_car__1___Engine_and_Fuel_Tank
             fuelTank = new FuelTank();
             fuelTank.Refuel(20);
 
-            engine = new Engine();
+            engine = new Engine(fuelTank);
 
             fuelTankDisplay = new FuelTankDisplay(fuelTank);
         }
@@ -33,7 +33,7 @@ namespace Constructing_a_car__1___Engine_and_Fuel_Tank
             fuelTank = new FuelTank();
             fuelTank.Refuel(fuelLevel);
 
-            engine = new Engine();
+            engine = new Engine(fuelTank);
 
             fuelTankDisplay = new FuelTankDisplay(fuelTank);
         }
@@ -60,7 +60,7 @@ namespace Constructing_a_car__1___Engine_and_Fuel_Tank
 
         public void RunningIdle()
         {
-            throw new NotImplementedException();
+            fuelTank.Consume(0.0003d);
         }
     }
 
@@ -72,9 +72,16 @@ namespace Constructing_a_car__1___Engine_and_Fuel_Tank
             get { return _isRunning; }
         }
 
+        private IFuelTank _fuelTank;
+
+        public Engine(IFuelTank fuelTank)
+        {
+            _fuelTank = fuelTank;
+        }
+
         public void Consume(double liters)
         {
-            throw new NotImplementedException();
+            _fuelTank.Consume(liters);
         }
 
         public void Start()
