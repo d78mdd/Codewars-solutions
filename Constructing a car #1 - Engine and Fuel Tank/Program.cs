@@ -21,7 +21,7 @@ namespace Constructing_a_car__1___Engine_and_Fuel_Tank
         public Car()
         {
             fuelTank = new FuelTank();
-            fuelTank.Refuel(20);
+            fuelTank.Refuel(20d);
 
             engine = new Engine(fuelTank);
 
@@ -81,12 +81,18 @@ namespace Constructing_a_car__1___Engine_and_Fuel_Tank
 
         public void Consume(double liters)
         {
-            _fuelTank.Consume(liters);
+            if (_isRunning)
+            {
+                _fuelTank.Consume(liters);
+            }
         }
 
         public void Start()
         {
-            _isRunning = true;
+            if (_fuelTank.FillLevel > 0)
+            {
+                _isRunning = true;
+            }
         }
 
         public void Stop()
@@ -97,8 +103,8 @@ namespace Constructing_a_car__1___Engine_and_Fuel_Tank
 
     public class FuelTank : IFuelTank
     {
-        public const double TankMaximumSize = 60;
-        public const double TankReserveLevel = 5;
+        public const double TankMaximumSize = 60d;
+        public const double TankReserveLevel = 5d;
 
         private double _fillLevel;
         public double FillLevel
@@ -119,9 +125,10 @@ namespace Constructing_a_car__1___Engine_and_Fuel_Tank
         public void Consume(double liters)
         {
             _fillLevel -= liters;
-            if (_fillLevel < 0)
+            if (_fillLevel < 0d)
             {
-                _fillLevel = 0;
+                Console.WriteLine(" going down to zero");
+                _fillLevel = 0d;
             }
         }
 
