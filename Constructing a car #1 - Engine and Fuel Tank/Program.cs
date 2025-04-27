@@ -144,7 +144,7 @@ namespace Constructing_a_car__1___Engine_and_Fuel_Tank
 
         public bool IsComplete
         {
-            get { return _fuelTank.IsOnReserve; }
+            get { return _fuelTank.IsComplete; }
         }
 
         public FuelTankDisplay(IFuelTank fuelTank)
