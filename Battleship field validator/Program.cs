@@ -121,8 +121,13 @@ namespace Battleship_field_validator
                 {
                     if (board[row, col] == 1)  // ship piece
                     {
-                        if (((row < board.GetLength(0) - 1 && board[row + 1, col] == 0) || row == board.GetLength(0) - 1) &&  // below is empty
-                            ((row > 0 && board[row - 1, col] == 0) || row == 0))  // above is empty
+                        bool isFirstRow = row == 0;
+                        bool isLastRow = row == board.GetLength(0) - 1;
+
+                        bool isAboveOk = (row > 0 && board[row - 1, col] == 0) || isFirstRow;
+                        bool isBelowOk = (row < board.GetLength(0) - 1 && board[row + 1, col] == 0) || isLastRow;
+
+                        if (isBelowOk && isAboveOk)
                         {
                             shipPieces++;
                         }
