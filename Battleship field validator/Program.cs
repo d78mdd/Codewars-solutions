@@ -6,7 +6,15 @@ namespace Battleship_field_validator
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            var input = new int[,]
+            {
+                { 1, 1 },
+                { 0, 0 },
+                { 1, 0 },
+                { 0, 1 }
+            };
+
+            Console.WriteLine(BattleshipField.ValidateBattlefield(input));
         }
     }
 

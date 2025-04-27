@@ -8,7 +8,8 @@ namespace Battleship_field_validator___tests
         public void TestCase()
         {
             int[,] field = new int[10, 10]
-            {{1, 0, 0, 0, 0, 1, 1, 0, 0, 0},
+            {
+                {1, 0, 0, 0, 0, 1, 1, 0, 0, 0},
                 {1, 0, 1, 0, 0, 0, 0, 0, 1, 0},
                 {1, 0, 1, 0, 1, 1, 1, 0, 1, 0},
                 {1, 0, 0, 0, 0, 0, 0, 0, 0, 0},
@@ -17,7 +18,9 @@ namespace Battleship_field_validator___tests
                 {0, 0, 0, 0, 0, 0, 0, 0, 1, 0},
                 {0, 0, 0, 1, 0, 0, 0, 0, 0, 0},
                 {0, 0, 0, 0, 0, 0, 0, 1, 0, 0},
-                {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}};
+                {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+
+            };
             Assert.That(BattleshipField.ValidateBattlefield(field), Is.True);
         }
 
