@@ -9,7 +9,7 @@ namespace Battleship_field_validator
             var input = new int[,]
             {
                 { 0, 1, 1 },
-                { 0, 0, 0 },
+                { 0, 0, 1 },
                 { 1, 0, 0 },
                 { 1, 0, 1 }
             };
@@ -20,6 +20,10 @@ namespace Battleship_field_validator
 
     public class BattleshipField
     {
+        /// <summary>
+        /// key - ship size (5 for any 4+ ships)
+        /// value - count of ships of that size
+        /// </summary>
         public static Dictionary<int, int> shipsCounts;
 
         public static int[,] board;
@@ -62,9 +66,12 @@ namespace Battleship_field_validator
 
         public static int Ships4 => shipsCounts[4];
 
+        /// <summary>
+        /// check for pieces diagonally adjacent to the current - bottom left and right positions
+        /// iterate from 1st to next to last row 
+        /// </summary>
         private static bool HasDiagonals()
         {
-            // iterate from 1st to next to last row
             for (var row = 0; row < board.GetLength(0) - 1; row++)
             {
                 for (var col = 0; col < board.GetLength(1); col++)
@@ -101,7 +108,10 @@ namespace Battleship_field_validator
             return false;
         }
 
-        private static void CountShips1()  // count ships of size 1
+        /// <summary>
+        /// count ships of size 1
+        /// </summary>
+        private static void CountShips1()
         {
             for (int row = 0; row < board.GetLength(0); row++)
             {
@@ -135,7 +145,10 @@ namespace Battleship_field_validator
 
         }
 
-        private static void CountHorizontal()  // count 1+ ships placed horizontally
+        /// <summary>
+        /// count ships of size 1+ placed horizontally
+        /// </summary>
+        private static void CountHorizontal()
         {
             for (int row = 0; row < board.GetLength(0); row++)
             {
@@ -179,7 +192,10 @@ namespace Battleship_field_validator
             }
         }
 
-        private static void CountVertical() // count 1+ ships placed vertically
+        /// <summary>
+        /// count ships of size 1+ placed vertically
+        /// </summary>
+        private static void CountVertical()
         {
             for (int col = 0; col < board.GetLength(1); col++)
             {
