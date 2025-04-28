@@ -13,7 +13,11 @@ namespace Constructing_a_car__2___Driving
 
     public class Car : ICar
     {
+        public IDrivingInformationDisplay drivingInformationDisplay; // car #2
+
         public IFuelTankDisplay fuelTankDisplay;
+
+        private IDrivingProcessor drivingProcessor; // car #2
 
         private IEngine engine;
 
@@ -37,6 +41,11 @@ namespace Constructing_a_car__2___Driving
             engine = new Engine(fuelTank);
 
             fuelTankDisplay = new FuelTankDisplay(fuelTank);
+        }
+
+        public Car(double fuelLevel, int maxAcceleration) // car #2
+        {
+
         }
 
         public bool EngineIsRunning
@@ -71,6 +80,16 @@ namespace Constructing_a_car__2___Driving
                 }
             }
         }
+    }
+
+    public class DrivingInformationDisplay : IDrivingInformationDisplay // car #2
+    {
+
+    }
+
+    public class DrivingProcessor : IDrivingProcessor // car #2
+    {
+
     }
 
     public class Engine : IEngine
