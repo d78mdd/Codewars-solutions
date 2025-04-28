@@ -20,8 +20,6 @@ namespace Constructing_a_car__1___Engine_and_Fuel_Tank
 
         public Car()
         {
-            Console.WriteLine("Car()");
-
             fuelTank = new FuelTank();
             fuelTank.Refuel(20d);
 
@@ -32,8 +30,6 @@ namespace Constructing_a_car__1___Engine_and_Fuel_Tank
 
         public Car(double fuelLevel)
         {
-            Console.WriteLine("Car(double fuelLevel)");
-
             fuelTank = new FuelTank();
             fuelTank.Refuel(fuelLevel);
 
@@ -44,39 +40,26 @@ namespace Constructing_a_car__1___Engine_and_Fuel_Tank
 
         public bool EngineIsRunning
         {
-            get
-            {
-                Console.WriteLine("EngineIsRunning");
-
-                return engine.IsRunning;
-            }
+            get { return engine.IsRunning; }
         }
 
         public void EngineStart()
         {
-            Console.WriteLine("EngineStart");
-
             engine.Start();
         }
 
         public void EngineStop()
         {
-            Console.WriteLine("EngineStop");
-
             engine.Stop();
         }
 
         public void Refuel(double liters)
         {
-            Console.WriteLine("Refuel");
-
             fuelTank.Refuel(liters);
         }
 
         public void RunningIdle()
         {
-            Console.WriteLine("RunningIdle");
-
             if (engine.IsRunning)
             {
                 fuelTank.Consume(0.0003d);
@@ -101,14 +84,11 @@ namespace Constructing_a_car__1___Engine_and_Fuel_Tank
 
         public Engine(IFuelTank fuelTank)
         {
-            Console.WriteLine("Engine(IFuelTank fuelTank)");
-
             _fuelTank = fuelTank;
         }
 
         public void Consume(double liters)
         {
-            Console.WriteLine("consume");
             if (_isRunning)
             {
                 _fuelTank.Consume(liters);
@@ -123,8 +103,6 @@ namespace Constructing_a_car__1___Engine_and_Fuel_Tank
 
         public void Start()
         {
-            Console.WriteLine("start");
-
             if (_fuelTank.FillLevel > 0)
             {
                 _isRunning = true;
@@ -133,8 +111,6 @@ namespace Constructing_a_car__1___Engine_and_Fuel_Tank
 
         public void Stop()
         {
-            Console.WriteLine("stop");
-
             _isRunning = false;
         }
     }
@@ -152,44 +128,34 @@ namespace Constructing_a_car__1___Engine_and_Fuel_Tank
 
         public bool IsOnReserve
         {
-            get
-            {
-                Console.WriteLine("IsOnReserve");
-
-                return _fillLevel <= TankReserveLevel;
-            }
+            get { return _fillLevel <= TankReserveLevel; }
         }
 
         public bool IsComplete
         {
-            get
-            {
-                Console.WriteLine("IsComplete");
-
-                return _fillLevel == TankMaximumSize;
-            }
+            get { return _fillLevel == TankMaximumSize; }
         }
 
         public void Consume(double liters)
         {
-            Console.WriteLine("Consume");
-
             _fillLevel -= liters;
             if (_fillLevel < 0)
             {
-                Console.WriteLine(" going down to zero");
                 _fillLevel = 0d;
             }
         }
 
         public void Refuel(double liters)
         {
-            Console.WriteLine("Refuel");
-
             _fillLevel += liters;
             if (_fillLevel > TankMaximumSize)
             {
                 _fillLevel = TankMaximumSize;
+            }
+
+            if (_fillLevel < 0)
+            {
+                _fillLevel = 0;
             }
         }
     }
@@ -200,37 +166,21 @@ namespace Constructing_a_car__1___Engine_and_Fuel_Tank
 
         public double FillLevel
         {
-            get
-            {
-                Console.WriteLine("FillLevel");
-                return Math.Round(_fuelTank.FillLevel, 2);
-            }
+            get { return Math.Round(_fuelTank.FillLevel, 2); }
         }
 
         public bool IsOnReserve
         {
-            get
-            {
-                Console.WriteLine("IsOnReserve");
-
-                return _fuelTank.IsOnReserve;
-            }
+            get { return _fuelTank.IsOnReserve; }
         }
 
         public bool IsComplete
         {
-            get
-            {
-                Console.WriteLine("IsComplete");
-
-                return _fuelTank.IsComplete;
-            }
+            get { return _fuelTank.IsComplete; }
         }
 
         public FuelTankDisplay(IFuelTank fuelTank)
         {
-            Console.WriteLine("FuelTankDisplay(IFuelTank fuelTank)");
-
             _fuelTank = fuelTank;
         }
 
