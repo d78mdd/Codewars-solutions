@@ -2,13 +2,13 @@
 
 namespace Constructing_a_car__2___Driving
 {
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello, World!");
-        }
-    }
+    //internal class Program
+    //{
+    //    static void Main(string[] args)
+    //    {
+    //        Console.WriteLine("Hello, World!");
+    //    }
+    //}
 
 
     public class Car : ICar
@@ -23,7 +23,7 @@ namespace Constructing_a_car__2___Driving
 
         private IFuelTank fuelTank;
 
-        private int _maxAcceleration;
+        private int _maxAcceleration = 10;
 
         public Car()
         {
@@ -104,7 +104,7 @@ namespace Constructing_a_car__2___Driving
 
         public void Accelerate(int targetSpeed)
         {
-            int newSpeed = drivingProcessor.ActualSpeed + 10;
+            int newSpeed = drivingProcessor.ActualSpeed + _maxAcceleration;
 
             if (newSpeed > targetSpeed)
             {

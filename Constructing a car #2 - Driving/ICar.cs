@@ -10,9 +10,15 @@ namespace Constructing_a_car__2___Driving
     {
         bool EngineIsRunning { get; }
 
+        void BrakeBy(int speed); // car #2
+
+        void Accelerate(int speed); // car #2
+
         void EngineStart();
 
         void EngineStop();
+
+        void FreeWheel(); // car #2
 
         void Refuel(double liters);
 
