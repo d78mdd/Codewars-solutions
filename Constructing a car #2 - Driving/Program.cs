@@ -23,6 +23,8 @@ namespace Constructing_a_car__2___Driving
 
         private IFuelTank fuelTank;
 
+        private int _maxAcceleration;
+
         public Car()
         {
             fuelTank = new FuelTank();
@@ -31,6 +33,10 @@ namespace Constructing_a_car__2___Driving
             engine = new Engine(fuelTank);
 
             fuelTankDisplay = new FuelTankDisplay(fuelTank);
+
+            drivingProcessor = new DrivingProcessor();
+
+            drivingInformationDisplay = new DrivingInformationDisplay(drivingProcessor);
         }
 
         public Car(double fuelLevel)
@@ -41,11 +47,26 @@ namespace Constructing_a_car__2___Driving
             engine = new Engine(fuelTank);
 
             fuelTankDisplay = new FuelTankDisplay(fuelTank);
+
+            drivingProcessor = new DrivingProcessor();
+
+            drivingInformationDisplay = new DrivingInformationDisplay(drivingProcessor);
         }
 
         public Car(double fuelLevel, int maxAcceleration) // car #2
         {
+            fuelTank = new FuelTank();
+            fuelTank.Refuel(fuelLevel);
 
+            engine = new Engine(fuelTank);
+
+            fuelTankDisplay = new FuelTankDisplay(fuelTank);
+
+            _maxAcceleration = maxAcceleration;
+
+            drivingProcessor = new DrivingProcessor();
+
+            drivingInformationDisplay = new DrivingInformationDisplay(drivingProcessor);
         }
 
         public bool EngineIsRunning
@@ -85,6 +106,7 @@ namespace Constructing_a_car__2___Driving
     public class DrivingInformationDisplay : IDrivingInformationDisplay // car #2
     {
         private IDrivingProcessor _drivingProcessor;
+
         public int ActualSpeed
         {
             get { return _drivingProcessor.ActualSpeed; }
