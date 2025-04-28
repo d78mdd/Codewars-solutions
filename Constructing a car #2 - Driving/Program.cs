@@ -101,6 +101,28 @@ namespace Constructing_a_car__2___Driving
                 }
             }
         }
+
+        public void Accelerate(int targetSpeed)
+        {
+            int newSpeed = drivingProcessor.ActualSpeed + 10;
+
+            if (newSpeed > targetSpeed)
+            {
+                newSpeed = targetSpeed;
+            }
+
+            drivingProcessor.IncreaseSpeedTo(newSpeed);
+        }
+
+        public void FreeWheel()
+        {
+            drivingProcessor.ReduceSpeed(1);
+        }
+
+        public void BrakeBy(int speed)
+        {
+            drivingProcessor.ReduceSpeed(speed);
+        }
     }
 
     public class DrivingInformationDisplay : IDrivingInformationDisplay // car #2
