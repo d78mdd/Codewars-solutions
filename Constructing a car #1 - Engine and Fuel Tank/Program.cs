@@ -123,7 +123,8 @@ namespace Constructing_a_car__1___Engine_and_Fuel_Tank
         private double _fillLevel;
         public double FillLevel
         {
-            get { return _fillLevel; }
+            // Internally an accuracy up to 10 decimal places should be more than enough
+            get { return Math.Round(_fillLevel, 10); }
         }
 
         public bool IsOnReserve
@@ -166,6 +167,7 @@ namespace Constructing_a_car__1___Engine_and_Fuel_Tank
 
         public double FillLevel
         {
+            // The fuel tank display shows the level as rounded for 2 decimal places
             get { return Math.Round(_fuelTank.FillLevel, 2); }
         }
 
