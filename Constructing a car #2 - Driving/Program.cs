@@ -161,7 +161,14 @@ namespace Constructing_a_car__2___Driving
 
         public void FreeWheel()
         {
-            drivingProcessor.ReduceSpeed(1);
+            if (drivingProcessor.ActualSpeed == 0)
+            {
+                RunningIdle();
+            }
+            else
+            {
+                drivingProcessor.ReduceSpeed(1);
+            }
         }
 
         public void BrakeBy(int targetAmount)

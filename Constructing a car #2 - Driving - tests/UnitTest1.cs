@@ -161,5 +161,18 @@ namespace Constructing_a_car__2___Driving___tests
 
             Assert.That(car.drivingInformationDisplay.ActualSpeed, Is.EqualTo(10));
         }
+
+        [Test]
+        public void TestConsumptionLeadsToStopEngine()
+        {
+            var car = new Car(50, 20);
+
+            car.EngineStart();
+
+            car.Accelerate(10);
+            car.Accelerate(5);
+
+            Assert.That(car.EngineIsRunning, Is.False);
+        }
     }
 }
