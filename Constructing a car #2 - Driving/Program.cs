@@ -100,15 +100,7 @@ namespace Constructing_a_car__2___Driving
 
         public void RunningIdle()
         {
-            if (engine.IsRunning)
-            {
-                fuelTank.Consume(0.0003d);
-
-                if (fuelTank.FillLevel == 0)
-                {
-                    EngineStop();
-                }
-            }
+            engine.Consume(0.0003d);
         }
 
         public void Accelerate(int targetSpeed)
@@ -137,29 +129,33 @@ namespace Constructing_a_car__2___Driving
 
                 if (speed >= 1 && speed <= 60)
                 {
-                    fuelTank.Consume(0.0020d);
+                    engine.Consume(0.0020d);
                 }
                 else if (speed <= 100)
                 {
-                    fuelTank.Consume(0.0014d);
+                    engine.Consume(0.0014d);
                 }
                 else if (speed <= 140)
                 {
-                    fuelTank.Consume(0.0020d);
+                    engine.Consume(0.0020d);
                 }
                 else if (speed <= 200)
                 {
-                    fuelTank.Consume(0.0025d);
+                    engine.Consume(0.0025d);
                 }
                 else  // speed <= 250)
                 {
-                    fuelTank.Consume(0.0030d);
+                    engine.Consume(0.0030d);
+                }
+                if (fuelTank.FillLevel == 0)
+                {
+                    EngineStop();
                 }
 
             }
         }
 
-        public void FreeWheel()
+        public void FreeWheel() // When the car brakes or freewheels with getting slower, there is no fuel consumption
         {
             if (drivingProcessor.ActualSpeed == 0)
             {
@@ -171,7 +167,7 @@ namespace Constructing_a_car__2___Driving
             }
         }
 
-        public void BrakeBy(int targetAmount)
+        public void BrakeBy(int targetAmount) // When the car brakes or freewheels with getting slower, there is no fuel consumption
         {
             int newAmount = 10;
 
