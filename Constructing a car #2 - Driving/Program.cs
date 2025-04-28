@@ -84,12 +84,42 @@ namespace Constructing_a_car__2___Driving
 
     public class DrivingInformationDisplay : IDrivingInformationDisplay // car #2
     {
+        private IDrivingProcessor _drivingProcessor;
+        public int ActualSpeed
+        {
+            get { return _drivingProcessor.ActualSpeed; }
+        }
 
+        public DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+        {
+            _drivingProcessor = drivingProcessor;
+        }
     }
 
     public class DrivingProcessor : IDrivingProcessor // car #2
     {
+        private int _actualSpeed;
+        public int ActualSpeed {
+            get { return _actualSpeed; }
+        }
 
+        public void IncreaseSpeedTo(int speed)
+        {
+            _actualSpeed = speed;
+            if (_actualSpeed > 250)
+            {
+                _actualSpeed = 250;
+            }
+        }
+
+        public void ReduceSpeed(int speed)
+        {
+            _actualSpeed -= speed;
+            if (_actualSpeed < 0)
+            {
+                _actualSpeed = 0;
+            }
+        }
     }
 
     public class Engine : IEngine
