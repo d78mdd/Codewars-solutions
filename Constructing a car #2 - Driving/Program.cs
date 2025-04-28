@@ -2,13 +2,13 @@
 
 namespace Constructing_a_car__2___Driving
 {
-    //internal class Program
-    //{
-    //    static void Main(string[] args)
-    //    {
-    //        Console.WriteLine("Hello, World!");
-    //    }
-    //}
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello, World!");
+        }
+    }
 
 
     public class Car : ICar
@@ -113,16 +113,50 @@ namespace Constructing_a_car__2___Driving
 
         public void Accelerate(int targetSpeed)
         {
-            int newSpeed = drivingProcessor.ActualSpeed + _maxAcceleration;
-
-            if (newSpeed > targetSpeed)
+            if (!EngineIsRunning)
             {
-                newSpeed = targetSpeed;
+                return;
             }
 
-            drivingProcessor.IncreaseSpeedTo(newSpeed);
+            if (targetSpeed < drivingProcessor.ActualSpeed)
+            {
+                FreeWheel();
+            }
+            else  // targetSpeed > drivingProcessor.ActualSpeed
+            {
+                int newSpeed = drivingProcessor.ActualSpeed + _maxAcceleration;
 
-            fuelTank.Consume(0.0020);
+                if (newSpeed > targetSpeed)
+                {
+                    newSpeed = targetSpeed;
+                }
+
+                drivingProcessor.IncreaseSpeedTo(newSpeed);
+
+                int speed = drivingProcessor.ActualSpeed;
+
+                if (speed >= 1 && speed <= 60)
+                {
+                    fuelTank.Consume(0.0020d);
+                }
+                else if (speed <= 100)
+                {
+                    fuelTank.Consume(0.0014d);
+                }
+                else if (speed <= 140)
+                {
+                    fuelTank.Consume(0.0020d);
+                }
+                else if (speed <= 200)
+                {
+                    fuelTank.Consume(0.0025d);
+                }
+                else  // speed <= 250)
+                {
+                    fuelTank.Consume(0.0030d);
+                }
+
+            }
         }
 
         public void FreeWheel()
@@ -161,7 +195,8 @@ namespace Constructing_a_car__2___Driving
     public class DrivingProcessor : IDrivingProcessor // car #2
     {
         private int _actualSpeed;
-        public int ActualSpeed {
+        public int ActualSpeed
+        {
             get { return _actualSpeed; }
         }
 

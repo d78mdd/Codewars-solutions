@@ -147,5 +147,19 @@ namespace Constructing_a_car__2___Driving___tests
 
             Assert.That(car.fuelTankDisplay.FillLevel, Is.EqualTo(0.98), "Wrong fuel tank fill level!");
         }
+
+
+        [Test]
+        public void TestAccelerateLowerThanActualSpeed()
+        {
+            var car = new Car(50, 20);
+
+            car.EngineStart();
+
+            car.Accelerate(10);
+            car.Accelerate(5);
+
+            Assert.That(car.drivingInformationDisplay.ActualSpeed, Is.EqualTo(10));
+        }
     }
 }
