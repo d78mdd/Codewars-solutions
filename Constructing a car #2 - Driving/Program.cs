@@ -119,9 +119,16 @@ namespace Constructing_a_car__2___Driving
             drivingProcessor.ReduceSpeed(1);
         }
 
-        public void BrakeBy(int speed)
+        public void BrakeBy(int targetAmount)
         {
-            drivingProcessor.ReduceSpeed(speed);
+            int newAmount = 10;
+
+            if (newAmount > targetAmount)
+            {
+                newAmount = targetAmount;
+            }
+
+            drivingProcessor.ReduceSpeed(newAmount);
         }
     }
 
