@@ -112,6 +112,8 @@ namespace Constructing_a_car__2___Driving
             }
 
             drivingProcessor.IncreaseSpeedTo(newSpeed);
+
+            fuelTank.Consume(0.0020);
         }
 
         public void FreeWheel()
