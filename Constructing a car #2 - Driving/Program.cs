@@ -63,6 +63,15 @@ namespace Constructing_a_car__2___Driving
             fuelTankDisplay = new FuelTankDisplay(fuelTank);
 
             _maxAcceleration = maxAcceleration;
+            if (_maxAcceleration > 20)
+            {
+                _maxAcceleration = 20;
+            }
+
+            if (_maxAcceleration < 5)
+            {
+                _maxAcceleration = 5;
+            }
 
             drivingProcessor = new DrivingProcessor();
 
