@@ -41,6 +41,10 @@ namespace Constructing_a_car__3___On_Board_Computer
             drivingProcessor = new DrivingProcessor();
 
             drivingInformationDisplay = new DrivingInformationDisplay(drivingProcessor);
+
+            onBoardComputer = new OnBoardComputer();
+
+            onBoardComputerDisplay = new OnBoardComputerDisplay();
         }
 
         public Car(double fuelLevel)
@@ -55,6 +59,10 @@ namespace Constructing_a_car__3___On_Board_Computer
             drivingProcessor = new DrivingProcessor();
 
             drivingInformationDisplay = new DrivingInformationDisplay(drivingProcessor);
+
+            onBoardComputer = new OnBoardComputer();
+
+            onBoardComputerDisplay = new OnBoardComputerDisplay();
         }
 
         public Car(double fuelLevel, int maxAcceleration) // car #2
@@ -80,6 +88,10 @@ namespace Constructing_a_car__3___On_Board_Computer
             drivingProcessor = new DrivingProcessor();
 
             drivingInformationDisplay = new DrivingInformationDisplay(drivingProcessor);
+
+            onBoardComputer = new OnBoardComputer();
+
+            onBoardComputerDisplay = new OnBoardComputerDisplay();
         }
 
         public bool EngineIsRunning
@@ -201,10 +213,29 @@ namespace Constructing_a_car__3___On_Board_Computer
 
     public class DrivingProcessor : IDrivingProcessor // car #2
     {
+        // The methods "EngineStart" and "EngineStop" of the DrivingProcessor do NOT start the engine, but give the event into the DrivingProcessor, that the engine has started or stopped
+        private bool _engineIsRunning;  // used by what?
+
+        private double _actualConsumption;
+        public double ActualConsumption
+        {
+            get { return _actualConsumption; }
+        }
+
         private int _actualSpeed;
         public int ActualSpeed
         {
             get { return _actualSpeed; }
+        }
+
+        public void EngineStart()
+        {
+            _engineIsRunning = true;
+        }
+
+        public void EngineStop()
+        {
+            _engineIsRunning = false;
         }
 
         public void IncreaseSpeedTo(int speed)
@@ -344,11 +375,163 @@ namespace Constructing_a_car__3___On_Board_Computer
 
     public class OnBoardComputer : IOnBoardComputer // car #3
     {
+        public int TripRealTime { get; }
 
+        public int TripDrivingTime { get; }
+
+        public int TripDrivenDistance { get; }
+
+        public int TotalRealTime { get; }
+
+        public int TotalDrivingTime { get; }
+
+        public int TotalDrivenDistance { get; }
+
+        public double TripAverageSpeed { get; }
+
+        public double TotalAverageSpeed { get; }
+
+        public int ActualSpeed { get; }
+
+        public double ActualConsumptionByTime { get; }
+
+        public double ActualConsumptionByDistance { get; }
+
+        public double TripAverageConsumptionByTime { get; }
+
+        public double TotalAverageConsumptionByTime { get; }
+
+        public double TripAverageConsumptionByDistance { get; }
+
+        public double TotalAverageConsumptionByDistance { get; }
+
+        public int EstimatedRange { get; }
+
+
+        public void ElapseSecond()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void TripReset()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void TotalReset()
+        {
+            throw new NotImplementedException();
+        }
     }
 
     public class OnBoardComputerDisplay : IOnBoardComputerDisplay // car #3
     {
 
+        private int _tripRealTime;
+        public int TripRealTime
+        {
+            get { return _tripRealTime; }
+        }
+
+        private int _tripDrivingTime;
+        public int TripDrivingTime
+        {
+            get { return _tripDrivingTime; }
+        }
+
+        private double _tripDrivenDistance;
+        public double TripDrivenDistance
+        {
+            get { return _tripDrivenDistance; }
+        }
+
+        private int _totalRealTime;
+        public int TotalRealTime
+        {
+            get { return _totalRealTime; }
+        }
+
+        private int _totalDrivingTime;
+        public int TotalDrivingTime
+        {
+            get { return _totalDrivingTime; }
+        }
+
+        private int _totalDrivenDistance;
+        public double TotalDrivenDistance
+        {
+            get { return _totalDrivenDistance; }
+        }
+
+        private int _actualSpeed;
+        public int ActualSpeed
+        {
+            get { return _actualSpeed; }
+        }
+
+        private double _tripAverageSpeed;
+        public double TripAverageSpeed
+        {
+            get { return _tripAverageSpeed; }
+        }
+
+        private double _totalAverageSpeed;
+        public double TotalAverageSpeed
+        {
+            get { return _totalAverageSpeed; }
+        }
+
+        private double _actualConsumptionByTime;
+        public double ActualConsumptionByTime
+        {
+            get { return _actualConsumptionByTime; }
+        }
+
+        private double _actualConsumptionByDistance;
+        public double ActualConsumptionByDistance
+        {
+            get { return _actualConsumptionByDistance; }
+        }
+
+        private double _tripAverageConsumptionByTime;
+        public double TripAverageConsumptionByTime
+        {
+            get { return _tripAverageConsumptionByTime; }
+        }
+
+        private double _totalAverageConsumptionByTime;
+        public double TotalAverageConsumptionByTime
+        {
+            get { return _totalAverageConsumptionByTime; }
+        }
+
+        private double _tripAverageConsumptionByDistance;
+        public double TripAverageConsumptionByDistance
+        {
+            get { return _tripAverageConsumptionByDistance; }
+        }
+
+        private double _totalAverageConsumptionByDistance;
+        public double TotalAverageConsumptionByDistance
+        {
+            get { return _totalAverageConsumptionByDistance; }
+        }
+
+        private int _estimatedRange;
+        public int EstimatedRange
+        {
+            get { return _estimatedRange; }
+        }
+
+
+        public void TripReset()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void TotalReset()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

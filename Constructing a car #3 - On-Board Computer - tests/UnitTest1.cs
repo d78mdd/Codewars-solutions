@@ -4,7 +4,8 @@ namespace Constructing_a_car__3___On_Board_Computer___tests
 {
     public class Tests
     {
-        [Test, Order(1)]
+        
+        [Test, Order(1)]    
         public void TestMotorStartAndStop()
         {
             var car = new Car();
@@ -147,7 +148,6 @@ namespace Constructing_a_car__3___On_Board_Computer___tests
 
             Assert.That(car.fuelTankDisplay.FillLevel, Is.EqualTo(0.98), "Wrong fuel tank fill level!");
         }
-
 
         [Test]
         public void TestAccelerateLowerThanActualSpeed()
