@@ -375,37 +375,143 @@ namespace Constructing_a_car__3___On_Board_Computer
 
     public class OnBoardComputer : IOnBoardComputer // car #3
     {
-        public int TripRealTime { get; }
+        private int _tripRealTime;
+        public int TripRealTime
+        {
+            get { return _tripRealTime; }
+        }
 
-        public int TripDrivingTime { get; }
+        private int _tripDrivingTime;
+        public int TripDrivingTime
+        {
+            get { return _tripDrivingTime; }
+        }
 
-        public int TripDrivenDistance { get; }
+        private int _tripDrivenDistance;
+        public int TripDrivenDistance
+        {
+            get
+            {
+                return _tripDrivenDistance;
+            }
+        }
 
-        public int TotalRealTime { get; }
+        private int _totalRealTime;
+        public int TotalRealTime
+        {
+            get
+            {
+                return _totalRealTime;
+            }
+        }
 
-        public int TotalDrivingTime { get; }
+        private int _totalDrivingTime;
+        public int TotalDrivingTime
+        {
+            get
+            {
+                return _totalDrivingTime;
+            }
+        }
 
-        public int TotalDrivenDistance { get; }
+        private int _totalDrivenDistance;
+        public int TotalDrivenDistance
+        {
+            get
+            {
+                return _totalDrivenDistance;
+            }
+        }
 
-        public double TripAverageSpeed { get; }
+        private int _tripAverageSpeed;
+        public double TripAverageSpeed
+        {
+            get
+            {
+                return _tripAverageSpeed;
+            }
+        }
 
-        public double TotalAverageSpeed { get; }
+        private int _totalAverageSpeed;
+        public double TotalAverageSpeed
+        {
+            get
+            {
+                return _totalAverageSpeed;
+            }
+        }
 
-        public int ActualSpeed { get; }
+        private int _actualSpeed;
+        public int ActualSpeed
+        {
+            get
+            {
+                return _actualSpeed;
+            }
+        }
 
-        public double ActualConsumptionByTime { get; }
+        private int _actualConsumptionByTime;
+        public double ActualConsumptionByTime
+        {
+            get
+            {
+                return _actualConsumptionByTime;
+            }
+        }
 
-        public double ActualConsumptionByDistance { get; }
+        private int _actualConsumptionByDistance;
+        public double ActualConsumptionByDistance
+        {
+            get
+            {
+                return _actualConsumptionByDistance;
+            }
+        }
 
-        public double TripAverageConsumptionByTime { get; }
+        private double _tripAverageConsumptionByTime;
+        public double TripAverageConsumptionByTime
+        {
+            get
+            {
+                return _tripAverageConsumptionByTime;
+            }
+        }
 
-        public double TotalAverageConsumptionByTime { get; }
+        private double _totalAverageConsumptionByTime;
+        public double TotalAverageConsumptionByTime
+        {
+            get
+            {
+                return _totalAverageConsumptionByTime;
+            }
+        }
 
-        public double TripAverageConsumptionByDistance { get; }
+        private double _tripAverageConsumptionByDistance;
+        public double TripAverageConsumptionByDistance
+        {
+            get
+            {
+                return _tripAverageConsumptionByDistance;
+            }
+        }
 
-        public double TotalAverageConsumptionByDistance { get; }
+        private double _totalAverageConsumptionByDistance;
+        public double TotalAverageConsumptionByDistance
+        {
+            get
+            {
+                return _totalAverageConsumptionByDistance;
+            }
+        }
 
-        public int EstimatedRange { get; }
+        private int _estimatedRange;
+        public int EstimatedRange
+        {
+            get
+            {
+                return _estimatedRange;
+            }
+        }
 
 
         public void ElapseSecond()
