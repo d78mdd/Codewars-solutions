@@ -1,0 +1,282 @@
+﻿namespace Constructing_a_car__3___On_Board_Computer;
+
+public class OnBoardComputer : IOnBoardComputer // car #3
+{
+    private IDrivingProcessor _drivingProcessor;
+
+    private IEngine _engine;
+
+    public OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine)
+    {
+        _drivingProcessor = drivingProcessor;
+        _engine = engine;
+    }
+
+    private int _tripRealTime;
+    public int TripRealTime
+    {
+        get { return _tripRealTime; }
+    }
+
+    private int _tripDrivingTime;
+    public int TripDrivingTime
+    {
+        get { return _tripDrivingTime; }
+    }
+
+    // The driving-distance-values are calculated in km
+    // should have at max 2 decimal places.
+    private double _tripDrivenDistance;
+    public double TripDrivenDistance
+    {
+        get { return _tripDrivenDistance; }
+    }
+
+    private int _totalRealTime;
+    public int TotalRealTime
+    {
+        get
+        {
+            return _totalRealTime;
+        }
+    }
+
+    private int _totalDrivingTime;
+    public int TotalDrivingTime
+    {
+        get
+        {
+            return _totalDrivingTime;
+        }
+    }
+
+    private double _totalDrivenDistance;
+    public double TotalDrivenDistance
+    {
+        get
+        {
+            return _totalDrivenDistance;
+        }
+    }
+
+    public double TripAverageSpeed
+    {
+        get
+        {
+            if (_tripDrivingTime == 0)
+            {
+                return 0; // NaN?
+            }
+            return _tripDrivenDistance / (_tripDrivingTime / 3600d);
+        }
+    }
+
+    private double _totalAverageSpeed = 0.0d;
+    public double TotalAverageSpeed
+    {
+        get
+        {
+            if (TotalDrivingTime == 0)
+            {
+                return 0; // NaN?
+            }
+            //return TotalDrivenDistance / (TotalDrivingTime / 3600d)  /?;
+            if (_totalAverageSpeed == 0)
+            {
+                return ActualSpeed;
+            }
+            else
+            {
+                return (_totalAverageSpeed + (double)ActualSpeed) / 2d; // correct?
+            }
+        }
+    }
+
+    public int ActualSpeed
+    {
+        get
+        {
+            return _drivingProcessor.ActualSpeed;
+        }
+    }
+
+    private double _actualConsumptionByTime;
+    public double ActualConsumptionByTime
+    {
+        get
+        {
+            return Math.Round(_actualConsumptionByTime, 5);
+        }
+    }
+
+    private double _actualConsumptionByDistance;
+    public double ActualConsumptionByDistance
+    {
+        get
+        {
+            if (ActualSpeed == 0)  // if (IsRunning == false)?
+            {
+                return Double.NaN;
+            }
+            return _actualConsumptionByDistance;
+        }
+    }
+
+    public double TripAverageConsumptionByTime  // uses _tripRealTime
+    {
+        get
+        {
+            if (TotalDrivingTime == 0)
+            {
+                return 0;
+            }
+            return consumptionsTimeTrip.Average();
+        }
+    }
+
+    public double TotalAverageConsumptionByTime  // uses _totalRealTime??
+    {
+        get
+        {
+            if (TotalDrivingTime == 0)
+            {
+                return 0;
+            }
+            return consumptionsTimeTotal.Average();
+        }
+    }
+
+    public double TripAverageConsumptionByDistance  // consumption-average-by-distance-values 
+        // are calculated in liter/100 km and should be rounded for 1 decimal place.
+    {
+        get
+        {
+            if (consumptionsDistTrip.Count == 0)
+            {
+                return 0;
+            }
+            else
+            {
+                return consumptionsDistTrip.Average();
+            }
+        }
+    }
+
+    public double TotalAverageConsumptionByDistance  // consumption-average-by-distance-values
+        // are calculated in liter/100 km and should be rounded for 1 decimal place.
+    {
+        get
+        {
+            if (consumptionsDistTotal.Count == 0)
+            {
+                return 0;
+            }
+            else
+            {
+                return consumptionsDistTotal.Average();
+            }
+        }
+    }
+
+    private int _estimatedRange;
+    public int EstimatedRange
+    {
+        get
+        {
+            return _estimatedRange;
+        }
+    }
+
+
+    public void ElapseSecond()
+    {
+        // track time
+        // it seems it needs to split somehow
+        _tripRealTime++;  // used by TripAverageConsumptionByTime
+        _totalRealTime++;  // used by TotalAverageConsumptionByTime
+            
+        _tripDrivingTime++;
+        _totalDrivingTime++;
+
+
+        // track distance
+        // distance = speed * time
+        // at max 2 decimal places
+        double currentDrivenDistance = this._drivingProcessor.ActualSpeed * (1 / 3600d);  // in km
+        _tripDrivenDistance += currentDrivenDistance;  // in km
+        _totalDrivenDistance += currentDrivenDistance;  // in km
+
+
+        // track average speed
+        _totalAverageSpeed = TotalAverageSpeed; // ok?
+
+
+
+        //if (ActualSpeed == 0)
+        //{
+        //    return;
+        //}
+
+        // track consumption
+        double currentConsumption = _drivingProcessor.ActualConsumption;
+
+
+        _actualConsumptionByTime = currentConsumption; // +=1 ? =consumption/totalDrivingTime?  +=consumption?
+
+        consumptionsTimeTrip.Add(currentConsumption);
+        consumptionsTimeTotal.Add(currentConsumption);
+
+        // l/km
+        double currentConsumptionPerCurrentDistance = currentConsumption / currentDrivenDistance;
+
+        // consumption for 100km according to current consumption // l/km
+        _actualConsumptionByDistance = currentConsumptionPerCurrentDistance * 100;
+
+        if (!double.IsNaN(_actualConsumptionByDistance) && !double.IsInfinity(_actualConsumptionByDistance))
+        {
+            consumptionsDistTrip.Add(_actualConsumptionByDistance);
+            consumptionsDistTotal.Add(_actualConsumptionByDistance);
+        }
+    }
+
+    private List<double> consumptionsTimeTrip = new List<double>();
+    private List<double> consumptionsTimeTotal = new List<double>();
+
+    private List<double> consumptionsDistTrip = new List<double>();
+    private List<double> consumptionsDistTotal = new List<double>();
+
+
+    public void TripReset()
+    {
+        _tripDrivingTime = 0;
+        _tripRealTime = 0;
+
+        consumptionsDistTrip.Clear();
+
+        consumptionsTimeTrip.Clear();
+
+        _tripDrivenDistance = 0;
+    }
+
+    public void TotalReset()
+    {
+        _totalDrivingTime = 0;
+        _totalRealTime = 0;
+
+        consumptionsDistTotal.Clear();
+
+        consumptionsTimeTotal.Clear();
+
+        _totalDrivenDistance = 0;
+    }
+
+    public void SetActualConsumptionByTime0()
+    {
+        _actualConsumptionByTime = 0;
+    }
+
+    public void SetActualConsumptionByDistance0()
+    {
+        _actualConsumptionByDistance = 0;
+    }
+}

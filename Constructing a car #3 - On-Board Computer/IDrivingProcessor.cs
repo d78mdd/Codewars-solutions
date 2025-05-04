@@ -18,7 +18,7 @@ namespace Constructing_a_car__3___On_Board_Computer
 
         void IncreaseSpeedTo(int speed);
 
-        void ReduceSpeed(int speed);
+        void ReduceSpeed(int amount);
     }
 
 }
