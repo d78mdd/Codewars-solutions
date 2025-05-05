@@ -187,8 +187,8 @@ namespace Constructing_a_car__3___On_Board_Computer
             {
                 drivingProcessor.ReduceSpeed(1);
                 onBoardComputer.ElapseSecond();
-                onBoardComputer.SetActualConsumptionByTime0();
-                onBoardComputer.SetActualConsumptionByDistance0();
+                ((OnBoardComputer)onBoardComputer).SetActualConsumptionByTime0();
+                ((OnBoardComputer)onBoardComputer).SetActualConsumptionByDistance0();
             }
         }
 

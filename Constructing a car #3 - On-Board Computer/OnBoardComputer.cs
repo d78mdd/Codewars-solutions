@@ -42,8 +42,8 @@ public class OnBoardComputer : IOnBoardComputer // car #3
 
     // The driving-distance-values are calculated in km
     // should have at max 2 decimal places.
-    private double _tripDrivenDistance;
-    public double TripDrivenDistance
+    private int _tripDrivenDistance;
+    public int TripDrivenDistance
     {
         get { return _tripDrivenDistance; }
     }
@@ -66,8 +66,8 @@ public class OnBoardComputer : IOnBoardComputer // car #3
         }
     }
 
-    private double _totalDrivenDistance;
-    public double TotalDrivenDistance
+    private int _totalDrivenDistance;
+    public int TotalDrivenDistance
     {
         get
         {
@@ -185,8 +185,6 @@ public class OnBoardComputer : IOnBoardComputer // car #3
         }
     }
 
-    private double last100SecondsConsumption = 4.8; // liters per 100s   // 0.048 l/s
-
     // estimated distance
     // estimated remaining distance 
     public int EstimatedRange  // in km
@@ -223,8 +221,8 @@ public class OnBoardComputer : IOnBoardComputer // car #3
         // distance = speed * time
         // at max 2 decimal places
         double currentDrivenDistance = this._drivingProcessor.ActualSpeed * (1 / 3600d);  // in km
-        _tripDrivenDistance += currentDrivenDistance;  // in km
-        _totalDrivenDistance += currentDrivenDistance;  // in km
+        _tripDrivenDistance += (int)currentDrivenDistance;  // in km
+        _totalDrivenDistance += (int)currentDrivenDistance;  // in km
 
 
 

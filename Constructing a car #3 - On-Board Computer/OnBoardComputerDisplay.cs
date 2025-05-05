@@ -17,7 +17,7 @@ public class OnBoardComputerDisplay : IOnBoardComputerDisplay // car #3
 
     public double TripDrivenDistance
     {
-        get { return Math.Round(_onBoardComputer.TripDrivenDistance, 2); }
+        get { return _onBoardComputer.TripDrivenDistance; }
     }
 
     public int TotalRealTime
@@ -32,7 +32,7 @@ public class OnBoardComputerDisplay : IOnBoardComputerDisplay // car #3
 
     public double TotalDrivenDistance
     {
-        get { return Math.Round(_onBoardComputer.TotalDrivenDistance, 2); }
+        get { return _onBoardComputer.TotalDrivenDistance; }
     }
 
     public int ActualSpeed

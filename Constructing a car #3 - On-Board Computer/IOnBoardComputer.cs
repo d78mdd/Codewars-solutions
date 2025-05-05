@@ -14,13 +14,13 @@ namespace Constructing_a_car__3___On_Board_Computer
 
         // The driving-distance-values are calculated in km
         // should have at max 2 decimal places.
-        double TripDrivenDistance { get; }
+        int TripDrivenDistance { get; }
 
         int TotalRealTime { get; }
 
         int TotalDrivingTime { get; }
 
-        double TotalDrivenDistance { get; }
+        int TotalDrivenDistance { get; }
 
         double TripAverageSpeed { get; }
 
@@ -47,8 +47,5 @@ namespace Constructing_a_car__3___On_Board_Computer
         void TripReset();
 
         void TotalReset();
-
-        void SetActualConsumptionByTime0(); // merge into another method?
-        void SetActualConsumptionByDistance0();  // merge into another method?
     }
 }
