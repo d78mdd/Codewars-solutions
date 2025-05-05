@@ -1,15 +1,31 @@
-﻿namespace Constructing_a_car__3___On_Board_Computer;
+﻿using System;
+
+namespace Constructing_a_car__3___On_Board_Computer;
 
 public class OnBoardComputer : IOnBoardComputer // car #3
 {
+    // When the car is built, it should be assumed that the consumption was 4.8 Liter for the last 100 seconds
+    private const double defaultConsumption = 4.8;
+    private const int seconds = 100;
+
+
     private IDrivingProcessor _drivingProcessor;
 
     private IEngine _engine;
 
-    public OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine)
+    private IFuelTank _fuelTank;
+
+    public OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
     {
         _drivingProcessor = drivingProcessor;
         _engine = engine;
+
+        _fuelTank = fuelTank;
+
+        for (int i = 0; i < seconds; i++)
+        {
+            last100SecondsConsumptions.Enqueue(defaultConsumption / seconds);
+        }
     }
 
     private int _tripRealTime;
@@ -71,24 +87,15 @@ public class OnBoardComputer : IOnBoardComputer // car #3
         }
     }
 
-    private double _totalAverageSpeed = 0.0d;
     public double TotalAverageSpeed
     {
         get
         {
-            if (TotalDrivingTime == 0)
+            if (_totalDrivingTime == 0)
             {
                 return 0; // NaN?
             }
-            //return TotalDrivenDistance / (TotalDrivingTime / 3600d)  /?;
-            if (_totalAverageSpeed == 0)
-            {
-                return ActualSpeed;
-            }
-            else
-            {
-                return (_totalAverageSpeed + (double)ActualSpeed) / 2d; // correct?
-            }
+            return _totalDrivenDistance / (_totalDrivingTime / 3600d);
         }
     }
 
@@ -178,15 +185,25 @@ public class OnBoardComputer : IOnBoardComputer // car #3
         }
     }
 
-    private int _estimatedRange;
-    public int EstimatedRange
+    private double last100SecondsConsumption = 4.8; // liters per 100s   // 0.048 l/s
+
+    // estimated distance
+    // estimated remaining distance 
+    public int EstimatedRange  // in km
     {
         get
         {
-            return _estimatedRange;
+            double avgConsumptionPer1S = last100SecondsConsumptions.Average();
+
+            int remainingDrivingTimeInSec = (int)(_fuelTank.FillLevel / avgConsumptionPer1S);
+
+            int estimatedRangeInKm = ActualSpeed * (remainingDrivingTimeInSec / 3600);
+
+            return estimatedRangeInKm;
         }
     }
 
+    private Queue<double> last100SecondsConsumptions = new Queue<double>();
 
     public void ElapseSecond()
     {
@@ -195,8 +212,11 @@ public class OnBoardComputer : IOnBoardComputer // car #3
         _tripRealTime++;  // used by TripAverageConsumptionByTime
         _totalRealTime++;  // used by TotalAverageConsumptionByTime
             
-        _tripDrivingTime++;
-        _totalDrivingTime++;
+        if (ActualSpeed > 0)
+        {
+            _tripDrivingTime++;
+            _totalDrivingTime++;
+        }
 
 
         // track distance
@@ -205,10 +225,6 @@ public class OnBoardComputer : IOnBoardComputer // car #3
         double currentDrivenDistance = this._drivingProcessor.ActualSpeed * (1 / 3600d);  // in km
         _tripDrivenDistance += currentDrivenDistance;  // in km
         _totalDrivenDistance += currentDrivenDistance;  // in km
-
-
-        // track average speed
-        _totalAverageSpeed = TotalAverageSpeed; // ok?
 
 
 
@@ -225,6 +241,12 @@ public class OnBoardComputer : IOnBoardComputer // car #3
 
         consumptionsTimeTrip.Add(currentConsumption);
         consumptionsTimeTotal.Add(currentConsumption);
+
+        last100SecondsConsumptions.Enqueue(currentConsumption);
+        if (last100SecondsConsumptions.Count > 100)
+        {
+            last100SecondsConsumptions.Dequeue();
+        }
 
         // l/km
         double currentConsumptionPerCurrentDistance = currentConsumption / currentDrivenDistance;

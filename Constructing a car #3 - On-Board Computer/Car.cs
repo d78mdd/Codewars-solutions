@@ -37,7 +37,7 @@ namespace Constructing_a_car__3___On_Board_Computer
 
             drivingInformationDisplay = new DrivingInformationDisplay(drivingProcessor);
 
-            onBoardComputer = new OnBoardComputer(drivingProcessor, engine);
+            onBoardComputer = new OnBoardComputer(drivingProcessor, engine, fuelTank);
 
             onBoardComputerDisplay = new OnBoardComputerDisplay(onBoardComputer);
         }
@@ -55,7 +55,7 @@ namespace Constructing_a_car__3___On_Board_Computer
 
             drivingInformationDisplay = new DrivingInformationDisplay(drivingProcessor);
 
-            onBoardComputer = new OnBoardComputer(drivingProcessor, engine);
+            onBoardComputer = new OnBoardComputer(drivingProcessor, engine, fuelTank);
 
             onBoardComputerDisplay = new OnBoardComputerDisplay(onBoardComputer);
         }
@@ -84,7 +84,7 @@ namespace Constructing_a_car__3___On_Board_Computer
 
             drivingInformationDisplay = new DrivingInformationDisplay(drivingProcessor);
 
-            onBoardComputer = new OnBoardComputer(drivingProcessor, engine);
+            onBoardComputer = new OnBoardComputer(drivingProcessor, engine, fuelTank);
 
             onBoardComputerDisplay = new OnBoardComputerDisplay(onBoardComputer);
         }
