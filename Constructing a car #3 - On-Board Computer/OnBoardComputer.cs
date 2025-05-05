@@ -195,11 +195,11 @@ public class OnBoardComputer : IOnBoardComputer // car #3
         {
             double avgConsumptionPer1S = last100SecondsConsumptions.Average();
 
-            int remainingDrivingTimeInSec = (int)(_fuelTank.FillLevel / avgConsumptionPer1S);
+            double remainingDrivingTimeInSec = _fuelTank.FillLevel / avgConsumptionPer1S;
 
-            int estimatedRangeInKm = ActualSpeed * (remainingDrivingTimeInSec / 3600);
+            double estimatedRangeInKm = ActualSpeed * (remainingDrivingTimeInSec / 3600);
 
-            return estimatedRangeInKm;
+            return (int)Math.Round(estimatedRangeInKm);
         }
     }
 
