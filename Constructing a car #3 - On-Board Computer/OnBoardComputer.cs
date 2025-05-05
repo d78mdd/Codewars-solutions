@@ -71,24 +71,15 @@ public class OnBoardComputer : IOnBoardComputer // car #3
         }
     }
 
-    private double _totalAverageSpeed = 0.0d;
     public double TotalAverageSpeed
     {
         get
         {
-            if (TotalDrivingTime == 0)
+            if (_totalDrivingTime == 0)
             {
                 return 0; // NaN?
             }
-            //return TotalDrivenDistance / (TotalDrivingTime / 3600d)  /?;
-            if (_totalAverageSpeed == 0)
-            {
-                return ActualSpeed;
-            }
-            else
-            {
-                return (_totalAverageSpeed + (double)ActualSpeed) / 2d; // correct?
-            }
+            return _totalDrivenDistance / (_totalDrivingTime / 3600d);
         }
     }
 
@@ -195,8 +186,11 @@ public class OnBoardComputer : IOnBoardComputer // car #3
         _tripRealTime++;  // used by TripAverageConsumptionByTime
         _totalRealTime++;  // used by TotalAverageConsumptionByTime
             
-        _tripDrivingTime++;
-        _totalDrivingTime++;
+        if (ActualSpeed > 0)
+        {
+            _tripDrivingTime++;
+            _totalDrivingTime++;
+        }
 
 
         // track distance
@@ -205,10 +199,6 @@ public class OnBoardComputer : IOnBoardComputer // car #3
         double currentDrivenDistance = this._drivingProcessor.ActualSpeed * (1 / 3600d);  // in km
         _tripDrivenDistance += currentDrivenDistance;  // in km
         _totalDrivenDistance += currentDrivenDistance;  // in km
-
-
-        // track average speed
-        _totalAverageSpeed = TotalAverageSpeed; // ok?
 
 
 
