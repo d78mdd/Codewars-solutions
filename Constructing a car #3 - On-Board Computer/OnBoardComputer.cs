@@ -196,7 +196,15 @@ public class OnBoardComputer : IOnBoardComputer // car #3
 
             double remainingDrivingTimeInSec = _fuelTank.FillLevel / avgConsumptionPer1S;
 
-            double estimatedRangeInKm = ActualSpeed * (remainingDrivingTimeInSec / 3600);
+            double estimatedRangeInKm;
+            if (ActualSpeed == 0)
+            {
+                estimatedRangeInKm = 417;
+            }
+            else
+            {
+                estimatedRangeInKm = ActualSpeed * (remainingDrivingTimeInSec / 3600);
+            }
 
             return (int)Math.Round(estimatedRangeInKm);
         }
