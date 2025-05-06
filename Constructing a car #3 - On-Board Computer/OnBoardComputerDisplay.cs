@@ -15,9 +15,10 @@ public class OnBoardComputerDisplay : IOnBoardComputerDisplay // car #3
         get { return _onBoardComputer.TripDrivingTime; }
     }
 
+    // "should have at max 2 decimal places"
     public double TripDrivenDistance
     {
-        get { return _onBoardComputer.TripDrivenDistance; }
+        get { return Math.Round(_onBoardComputer.TripDrivenDistance / 100000d, 2); }
     }
 
     public int TotalRealTime
@@ -30,9 +31,10 @@ public class OnBoardComputerDisplay : IOnBoardComputerDisplay // car #3
         get { return _onBoardComputer.TotalDrivingTime; }
     }
 
+    // "should have at max 2 decimal places"
     public double TotalDrivenDistance
     {
-        get { return _onBoardComputer.TotalDrivenDistance; }
+        get { return Math.Round(_onBoardComputer.TotalDrivenDistance / 100000d, 2); }
     }
 
     public int ActualSpeed

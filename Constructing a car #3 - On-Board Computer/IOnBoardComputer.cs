@@ -12,14 +12,14 @@ namespace Constructing_a_car__3___On_Board_Computer
 
         int TripDrivingTime { get; }
 
-        // The driving-distance-values are calculated in km
-        // should have at max 2 decimal places.
+        // "should have at max 2 decimal places"
         int TripDrivenDistance { get; }
 
         int TotalRealTime { get; }
 
         int TotalDrivingTime { get; }
 
+        // "should have at max 2 decimal places"
         int TotalDrivenDistance { get; }
 
         double TripAverageSpeed { get; }

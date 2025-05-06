@@ -40,12 +40,12 @@ public class OnBoardComputer : IOnBoardComputer // car #3
         get { return _tripDrivingTime; }
     }
 
-    // The driving-distance-values are calculated in km
-    // should have at max 2 decimal places.
-    private int _tripDrivenDistance;
+
+    // stored as cm
+    private double _tripDrivenDistance;
     public int TripDrivenDistance
     {
-        get { return _tripDrivenDistance; }
+        get { return (int)Math.Round(_tripDrivenDistance); }
     }
 
     private int _totalRealTime;
@@ -66,12 +66,13 @@ public class OnBoardComputer : IOnBoardComputer // car #3
         }
     }
 
-    private int _totalDrivenDistance;
+    // stored as cm
+    private double _totalDrivenDistance;
     public int TotalDrivenDistance
     {
         get
         {
-            return _totalDrivenDistance;
+            return (int)Math.Round(_totalDrivenDistance);
         }
     }
 
@@ -83,7 +84,7 @@ public class OnBoardComputer : IOnBoardComputer // car #3
             {
                 return 0; // NaN?
             }
-            return _tripDrivenDistance / (_tripDrivingTime / 3600d);
+            return (_tripDrivenDistance / 100000d) / (_tripDrivingTime / 3600d);
         }
     }
 
@@ -95,7 +96,7 @@ public class OnBoardComputer : IOnBoardComputer // car #3
             {
                 return 0; // NaN?
             }
-            return _totalDrivenDistance / (_totalDrivingTime / 3600d);
+            return (_totalDrivenDistance / 100000d) / (_totalDrivingTime / 3600d);
         }
     }
 
@@ -220,9 +221,9 @@ public class OnBoardComputer : IOnBoardComputer // car #3
         // track distance
         // distance = speed * time
         // at max 2 decimal places
-        double currentDrivenDistance = this._drivingProcessor.ActualSpeed * (1 / 3600d);  // in km
-        _tripDrivenDistance += (int)currentDrivenDistance;  // in km
-        _totalDrivenDistance += (int)currentDrivenDistance;  // in km
+        double currentDrivenDistance = this._drivingProcessor.ActualSpeed * (1 / 3600d) * 100000;  // in cm
+        _tripDrivenDistance += currentDrivenDistance;  // in cm
+        _totalDrivenDistance += currentDrivenDistance;  // in cm
 
 
 
