@@ -44,12 +44,12 @@ public class OnBoardComputerDisplay : IOnBoardComputerDisplay // car #3
 
     public double TripAverageSpeed
     {
-        get { return Math.Round(_onBoardComputer.TripAverageSpeed, 2); }
+        get { return Math.Round(_onBoardComputer.TripAverageSpeed, 1); }
     }
 
     public double TotalAverageSpeed
     {
-        get { return Math.Round(_onBoardComputer.TotalAverageSpeed, 2); }
+        get { return Math.Round(_onBoardComputer.TotalAverageSpeed, 1); }
     }
 
     public double ActualConsumptionByTime

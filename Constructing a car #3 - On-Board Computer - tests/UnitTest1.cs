@@ -506,4 +506,28 @@ public class Tests
 
         Assert.That(car.onBoardComputerDisplay.ActualConsumptionByTime, Is.EqualTo(0));
     }
+
+    [Test]
+    public void TestAverageSpeed2()
+    {
+        var car = new Car();
+
+        car.EngineStart();
+
+        car.RunningIdle();
+        car.RunningIdle();
+
+        car.Accelerate(30);
+        car.Accelerate(30);
+        car.Accelerate(30);
+        car.Accelerate(30);
+        car.Accelerate(30);
+
+        car.BrakeBy(10);
+        car.BrakeBy(10);
+        car.BrakeBy(10);
+
+        Assert.That(car.onBoardComputerDisplay.TripAverageSpeed, Is.EqualTo(21.4));
+    }
+
 }
