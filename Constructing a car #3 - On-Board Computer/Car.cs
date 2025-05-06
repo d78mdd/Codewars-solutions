@@ -128,7 +128,7 @@ namespace Constructing_a_car__3___On_Board_Computer
             fuelTank.Refuel(liters);
         }
 
-        private static int _counter = 0;
+        private int _counter = 0;
 
         public void RunningIdle()
         {

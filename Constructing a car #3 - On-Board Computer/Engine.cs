@@ -17,7 +17,7 @@ public class Engine : IEngine
         _fuelTank = fuelTank;
     }
 
-    private static int _counter = 0;
+    private int _counter = 0;
 
     public void Consume(double liters)
     {

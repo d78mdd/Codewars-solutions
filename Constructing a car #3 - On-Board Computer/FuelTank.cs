@@ -24,7 +24,7 @@ public class FuelTank : IFuelTank
         get { return _fillLevel == TankMaximumSize; }
     }
 
-    private static int _counter = 0;
+    private int _counter = 0;
 
     public void Consume(double liters)
     { // what if liters is negative

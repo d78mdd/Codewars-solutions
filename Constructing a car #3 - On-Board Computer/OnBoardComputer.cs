@@ -222,7 +222,7 @@ public class OnBoardComputer : IOnBoardComputer // car #3
 
     private Queue<double> last100SecondsConsumptions = new Queue<double>();
 
-    private static int _counter = 0;
+    private int _counter = 0;
 
     public void ElapseSecond()
     {

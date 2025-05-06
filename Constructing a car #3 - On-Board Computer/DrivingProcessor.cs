@@ -33,7 +33,7 @@ public class DrivingProcessor : IDrivingProcessor // car #2
         _engineIsRunning = false;
     }
 
-    private static int _counter = 0;
+    private int _counter = 0;
 
     public void IncreaseSpeedTo(int speed)
     {
