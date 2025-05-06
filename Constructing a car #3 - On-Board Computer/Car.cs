@@ -125,7 +125,7 @@ namespace Constructing_a_car__3___On_Board_Computer
 
         public void Refuel(double liters)
         {
-            Console.WriteLine("Refuel");
+            Console.WriteLine("Refuel" + liters);
 
             fuelTank.Refuel(liters);
         }

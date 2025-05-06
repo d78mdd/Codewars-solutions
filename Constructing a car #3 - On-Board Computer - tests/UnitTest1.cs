@@ -530,4 +530,69 @@ public class Tests
         Assert.That(car.onBoardComputerDisplay.TripAverageSpeed, Is.EqualTo(21.4));
     }
 
+    [Test]
+    public void TestAverageSpeedAfterEngineRestart()
+    {
+        var car = new Car();
+
+        car.EngineStart();
+
+        car.RunningIdle();
+        car.RunningIdle();
+
+        car.Accelerate(30);
+        car.Accelerate(30);
+        car.Accelerate(30);
+        car.Accelerate(30);
+        car.Accelerate(30);
+
+        car.BrakeBy(10);
+        car.BrakeBy(10);
+        car.BrakeBy(10);
+
+        car.EngineStop();
+
+        car.EngineStart();
+
+        car.Accelerate(20);
+        car.Accelerate(20);
+
+        Assert.That(car.onBoardComputerDisplay.TripAverageSpeed, Is.EqualTo(15));
+    }
+
+    [Test]
+    public void TestDrivingTimeAfterDrivingWithEngineRestart()
+    {
+        var car = new Car();
+
+        car.EngineStart();
+
+        car.RunningIdle();
+        car.RunningIdle();
+
+        car.Accelerate(30);
+        car.Accelerate(30);
+        car.Accelerate(30);
+
+        car.BrakeBy(10);
+        car.BrakeBy(10);
+        car.BrakeBy(10);
+
+        car.EngineStop();
+
+        car.Refuel(10);
+
+        car.EngineStart();
+
+        car.Accelerate(30);
+        car.Accelerate(30);
+
+        car.BrakeBy(10);
+        car.BrakeBy(10);
+
+        car.Accelerate(30);
+
+        Assert.That(car.onBoardComputerDisplay.TripRealTime, Is.EqualTo(6));
+    }
+
 }
