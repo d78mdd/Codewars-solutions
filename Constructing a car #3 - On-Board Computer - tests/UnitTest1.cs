@@ -458,4 +458,38 @@ public class Tests
 
         Assert.That(car.onBoardComputerDisplay.EstimatedRange, Is.EqualTo(417), "Wrong Estimated-Range.");
     }
+
+    [Test]
+    public void TestEstimatedRangeAfterDrivingSlowSpeedForLowerThan100Seconds()
+    {
+        var car = new Car();
+
+        car.EngineStart();
+
+        Enumerable.Range(0, 50).ToList().ForEach(c => car.Accelerate(30));
+
+        Assert.That(car.onBoardComputerDisplay.EstimatedRange, Is.EqualTo(133), "Wrong Estimated-Range.");
+    }
+
+    [Test]
+    public void TestAverageConsumptionsAfterAcceleratingAndReset()
+    {
+        var car = new Car();
+
+        car.EngineStart();
+
+        car.Accelerate(30);
+        car.Accelerate(30);
+        car.Accelerate(30);
+
+        car.onBoardComputerDisplay.TripReset();
+
+        car.Accelerate(30);
+        car.Accelerate(30);
+        car.Accelerate(30);
+
+        car.onBoardComputerDisplay.TotalReset();
+
+        Assert.That(car.onBoardComputerDisplay.TripAverageConsumptionByTime, Is.EqualTo(0.002));
+    }
 }

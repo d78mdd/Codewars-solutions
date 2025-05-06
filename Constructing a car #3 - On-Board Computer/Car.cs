@@ -159,7 +159,7 @@ namespace Constructing_a_car__3___On_Board_Computer
             {
                 FreeWheel();
             }
-            else  // targetSpeed > drivingProcessor.ActualSpeed
+            else  // targetSpeed >= drivingProcessor.ActualSpeed
             {
                 int newSpeed = drivingProcessor.ActualSpeed + _maxAcceleration;
 

@@ -140,7 +140,7 @@ public class OnBoardComputer : IOnBoardComputer // car #3
             {
                 return 0;
             }
-            if (TotalDrivingTime == 0)
+            if (TripDrivingTime == 0)
             {
                 return 0;
             }
