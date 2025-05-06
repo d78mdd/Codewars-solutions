@@ -118,6 +118,8 @@ namespace Constructing_a_car__3___On_Board_Computer
 
             engine.Stop();
 
+            drivingProcessor.ReduceSpeed(250);
+
             onBoardComputer.ElapseSecond();
         }
 

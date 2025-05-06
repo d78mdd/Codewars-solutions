@@ -492,4 +492,18 @@ public class Tests
 
         Assert.That(car.onBoardComputerDisplay.TripAverageConsumptionByTime, Is.EqualTo(0.002));
     }
+
+    [Test]
+    public void TestActualConsumptionEngineStopAfterDriving()
+    {
+        var car = new Car();
+
+        car.EngineStart();
+
+        car.Accelerate(10);
+        car.BrakeBy(10);
+        car.EngineStop();
+
+        Assert.That(car.onBoardComputerDisplay.ActualConsumptionByTime, Is.EqualTo(0));
+    }
 }
