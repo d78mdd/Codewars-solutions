@@ -136,6 +136,10 @@ public class OnBoardComputer : IOnBoardComputer // car #3
     {
         get
         {
+            if (consumptionsTimeTrip.Count == 0)
+            {
+                return 0;
+            }
             if (TotalDrivingTime == 0)
             {
                 return 0;
@@ -148,6 +152,10 @@ public class OnBoardComputer : IOnBoardComputer // car #3
     {
         get
         {
+            if (consumptionsTimeTotal.Count == 0)
+            {
+                return 0;
+            }
             if (TotalDrivingTime == 0)
             {
                 return 0;
