@@ -1,0 +1,5783 @@
+Time: 3850ms Passed: 69Failed: 9Errors: 1Exit Code: 1
+Test Results:
+Log
+src/Solution.cs(634,18): warning CS0414: The field 'DrivingProcessor._engineIsRunning' is assigned but its value is never used
+Car1RealTests
+Car1RandomTests
+Log
+Car(double fuelLevel)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+Refuel
+Refuel
+Car(double fuelLevel)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+ElapseSecond
+RunningIdle
+Consume
+Consume
+IncreaseSpeedTo
+ElapseSecond
+RunningIdle
+Consume
+Consume
+IncreaseSpeedTo
+ElapseSecond
+RunningIdle
+Consume
+Consume
+IncreaseSpeedTo
+ElapseSecond
+RunningIdle
+Consume
+Consume
+IncreaseSpeedTo
+ElapseSecond
+RunningIdle
+Consume
+Consume
+IncreaseSpeedTo
+ElapseSecond
+RunningIdle
+Consume
+Consume
+IncreaseSpeedTo
+ElapseSecond
+RunningIdle
+Consume
+Consume
+IncreaseSpeedTo
+ElapseSecond
+RunningIdle
+Consume
+Consume
+IncreaseSpeedTo
+ElapseSecond
+RunningIdle
+Consume
+Consume
+IncreaseSpeedTo
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Consume
+Stop
+Car(double fuelLevel)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+Refuel
+Refuel
+Car(double fuelLevel)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Stop
+Car(double fuelLevel)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+Refuel
+Refuel
+Car(double fuelLevel)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Stop
+Car(double fuelLevel)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+Refuel
+Refuel
+Car(double fuelLevel)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Stop
+Car(double fuelLevel)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+Refuel
+Refuel
+Car(double fuelLevel)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Stop
+Car(double fuelLevel)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+Refuel
+Refuel
+Car(double fuelLevel)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Car(double fuelLevel)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+Refuel
+Refuel
+Car(double fuelLevel)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Car(double fuelLevel)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+Refuel
+Refuel
+Car(double fuelLevel)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Car(double fuelLevel)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+Refuel
+Refuel
+Car(double fuelLevel)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Car(double fuelLevel)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+Refuel
+Refuel
+Car(double fuelLevel)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Car(double fuelLevel)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+Refuel
+Refuel
+Car(double fuelLevel)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Car(double fuelLevel)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+Refuel
+Refuel
+Car(double fuelLevel)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Stop
+Car(double fuelLevel)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+Refuel
+Refuel
+Car(double fuelLevel)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Car(double fuelLevel)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+Refuel
+Refuel
+Car(double fuelLevel)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Car(double fuelLevel)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+Refuel
+Refuel
+Car(double fuelLevel)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Car(double fuelLevel)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+Refuel
+Refuel
+Car(double fuelLevel)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Car(double fuelLevel)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+Refuel
+Refuel
+Car(double fuelLevel)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Car(double fuelLevel)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+Refuel
+Refuel
+Car(double fuelLevel)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Car(double fuelLevel)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+Refuel
+Refuel
+Car(double fuelLevel)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Stop
+Car(double fuelLevel)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+Refuel
+Refuel
+Car(double fuelLevel)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Test Passed
+Completed in 68.9420ms
+TestEngineStopsCauseOfNoFuelExactly
+Log
+Car(double fuelLevel)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Stop
+Test Passed
+Completed in 4.4380ms
+TestEngineStopsCauseOfNoFuelOver
+Log
+Car(double fuelLevel)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Stop
+Test Passed
+Completed in 1.1110ms
+TestFuelConsumptionOnIdle
+Log
+Car(double fuelLevel)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Test Passed
+Completed in 1.0020ms
+TestFuelLevelAllowedUpTo60
+Log
+Car(double fuelLevel)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+Test Passed
+Completed in 0.3040ms
+TestFuelTankDisplayIsComplete
+Log
+Car(double fuelLevel)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+Test Passed
+Completed in 0.4060ms
+TestFuelTankDisplayIsNotComplete
+Log
+Car()
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+Test Passed
+Completed in 0.3570ms
+TestFuelTankDisplayIsNotOnReserve
+Log
+Car()
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+Test Passed
+Completed in 0.2820ms
+TestFuelTankDisplayIsOnReserve
+Log
+Car(double fuelLevel)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+Test Passed
+Completed in 0.1380ms
+TestMotorDoesntStartWithEmptyFuelTank
+Log
+Car(double fuelLevel)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Test Passed
+Completed in 0.1360ms
+TestMotorStartAgainAndStopAgain
+Log
+Car()
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+EngineStart
+Start
+EngineStop
+Stop
+EngineStop
+Stop
+Test Passed
+Completed in 0.2200ms
+TestMotorStartAndStop
+Log
+Car()
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+EngineStop
+Stop
+Test Passed
+Completed in 0.1680ms
+TestNoConsumptionWhenEngineNotRunning
+Log
+Car(double fuelLevel)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+Test Passed
+Completed in 0.3530ms
+TestNoNegativeFuelLevelAllowed
+Log
+Car(double fuelLevel)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+Test Passed
+Completed in 0.1550ms
+TestRefuel
+Log
+Car(double fuelLevel)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+Refuel
+Refuel
+Test Passed
+Completed in 0.1470ms
+TestRefuelOverMaximum
+Log
+Car(double fuelLevel)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+Refuel
+Refuel
+Test Passed
+Completed in 0.1620ms
+Completed in 85.3720ms
+Car2RealTests
+Car2RandomTests
+Log
+Car(double fuelLevel, int maxAcceleration)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+BrakeBy
+ReduceSpeed
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+Accelerate
+Car(double fuelLevel, int maxAcceleration)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+BrakeBy
+ReduceSpeed
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+Accelerate
+Car(double fuelLevel, int maxAcceleration)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+BrakeBy
+ReduceSpeed
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+Accelerate
+Car(double fuelLevel, int maxAcceleration)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+BrakeBy
+ReduceSpeed
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+Accelerate
+Car(double fuelLevel, int maxAcceleration)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+BrakeBy
+ReduceSpeed
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+Accelerate
+Car(double fuelLevel, int maxAcceleration)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+BrakeBy
+ReduceSpeed
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+Accelerate
+Car(double fuelLevel, int maxAcceleration)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+BrakeBy
+ReduceSpeed
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+Accelerate
+Car(double fuelLevel, int maxAcceleration)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+BrakeBy
+ReduceSpeed
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+Accelerate
+Car(double fuelLevel, int maxAcceleration)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+BrakeBy
+ReduceSpeed
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+Accelerate
+Car(double fuelLevel, int maxAcceleration)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+BrakeBy
+ReduceSpeed
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+Accelerate
+Car(double fuelLevel, int maxAcceleration)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+BrakeBy
+ReduceSpeed
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+Accelerate
+Car(double fuelLevel, int maxAcceleration)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+BrakeBy
+ReduceSpeed
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+Accelerate
+Car(double fuelLevel, int maxAcceleration)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+BrakeBy
+ReduceSpeed
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+Accelerate
+Car(double fuelLevel, int maxAcceleration)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+BrakeBy
+ReduceSpeed
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+Accelerate
+Car(double fuelLevel, int maxAcceleration)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+BrakeBy
+ReduceSpeed
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+Accelerate
+Car(double fuelLevel, int maxAcceleration)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+BrakeBy
+ReduceSpeed
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+Accelerate
+Car(double fuelLevel, int maxAcceleration)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+BrakeBy
+ReduceSpeed
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+Accelerate
+Car(double fuelLevel, int maxAcceleration)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+BrakeBy
+ReduceSpeed
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+Accelerate
+Car(double fuelLevel, int maxAcceleration)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+BrakeBy
+ReduceSpeed
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+Accelerate
+Car(double fuelLevel, int maxAcceleration)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+BrakeBy
+ReduceSpeed
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+Accelerate
+Test Passed
+Completed in 3.2600ms
+TestAccelerateBy10
+Log
+Car()
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Test Passed
+Completed in 0.5990ms
+TestAccelerateBy5
+Log
+Car(double fuelLevel, int maxAcceleration)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Test Passed
+Completed in 0.5460ms
+TestAccelerateLowerThanActualSpeed
+Log
+Car()
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+Test Passed
+Completed in 0.3500ms
+TestAccelerateOnlyUntil250
+Log
+Car(double fuelLevel, int maxAcceleration)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Test Passed
+Completed in 0.3230ms
+TestBrakeOnlyOver0
+Log
+Car()
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+BrakeBy
+ReduceSpeed
+BrakeBy
+ReduceSpeed
+BrakeBy
+ReduceSpeed
+BrakeBy
+ReduceSpeed
+BrakeBy
+ReduceSpeed
+BrakeBy
+ReduceSpeed
+BrakeBy
+ReduceSpeed
+BrakeBy
+ReduceSpeed
+BrakeBy
+ReduceSpeed
+BrakeBy
+ReduceSpeed
+BrakeBy
+ReduceSpeed
+Test Passed
+Completed in 0.2960ms
+TestBraking
+Log
+Car()
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+BrakeBy
+ReduceSpeed
+BrakeBy
+ReduceSpeed
+Test Passed
+Completed in 0.3940ms
+TestConsumptionAsRunIdleWhenFreeWheelingAt0
+Log
+Car(double fuelLevel, int maxAcceleration)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+FreeWheel
+Test Passed
+Completed in 0.3800ms
+TestConsumptionLeadsToStopEngine
+Log
+Car(double fuelLevel, int maxAcceleration)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Stop
+EngineStop
+Stop
+Accelerate
+Test Passed
+Completed in 0.6560ms
+TestConsumptionSpeedUpTo120
+Log
+Car(double fuelLevel, int maxAcceleration)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Test Passed
+Completed in 0.3910ms
+TestConsumptionSpeedUpTo250
+Log
+Car(double fuelLevel, int maxAcceleration)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Test Passed
+Completed in 0.2360ms
+TestConsumptionSpeedUpTo30
+Log
+Car(double fuelLevel, int maxAcceleration)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Test Passed
+Completed in 0.2240ms
+TestConsumptionSpeedUpTo80
+Log
+Car(double fuelLevel, int maxAcceleration)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Test Passed
+Completed in 0.3520ms
+TestFreeWheelEndingAtZero
+Log
+Car()
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+Test Passed
+Completed in 0.3260ms
+TestFreeWheelNoSpeedReduceWhenNoMoving
+Log
+Car()
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+FreeWheel
+Test Passed
+Completed in 0.2320ms
+TestFreeWheelSpeed
+Log
+Car()
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+Test Passed
+Completed in 0.4400ms
+TestMaxAccelerationOutOfRange
+Log
+Car(double fuelLevel, int maxAcceleration)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Car(double fuelLevel, int maxAcceleration)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Car(double fuelLevel, int maxAcceleration)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Test Passed
+Completed in 0.3480ms
+TestNoAccelerationWhenEngineNotRunning
+Log
+Car()
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+Accelerate
+Test Passed
+Completed in 0.1560ms
+TestStartSpeed
+Log
+Car()
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Test Passed
+Completed in 0.1520ms
+Completed in 10.6080ms
+Car3RealTests
+Car3RandomTests
+Log
+Car()
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Test Failed
+  Wrong Trip-Average-Speed.
+Assert.That(car.onBoardComputerDisplay.TripAverageSpeed, Is.EqualTo(expectedAverageSpeed))
+  Expected: 24.699999999999999d
+  But was:  24.710000000000001d
+Completed in 50.0020ms
+TestActualConsumptionAccelerateTo10
+Log
+Car()
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Test Passed
+Completed in 0.4030ms
+TestActualConsumptionAccelerateTo100
+Log
+Car(double fuelLevel, int maxAcceleration)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Test Passed
+Completed in 0.2350ms
+TestActualConsumptionBrakeBy
+Log
+Car(double fuelLevel, int maxAcceleration)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+BrakeBy
+ReduceSpeed
+Test Passed
+Completed in 0.3280ms
+TestActualConsumptionEngineStart
+Log
+Car()
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Test Passed
+Completed in 0.2140ms
+TestActualConsumptionEngineStartAfterDriving
+Log
+Car()
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+BrakeBy
+ReduceSpeed
+EngineStop
+Stop
+EngineStart
+Start
+Test Failed
+  Wrong Actual-Consumption-By-Time
+Assert.That(car.onBoardComputerDisplay.ActualConsumptionByTime, Is.EqualTo(0))
+  Expected: 0
+  But was:  0.00029999999999999997d
+Completed in 1.6930ms
+TestActualConsumptionEngineStopAfterDriving
+Log
+Car()
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+BrakeBy
+ReduceSpeed
+EngineStop
+Stop
+Test Failed
+  Wrong Actual-Consumption-By-Time
+Assert.That(car.onBoardComputerDisplay.ActualConsumptionByTime, Is.EqualTo(0))
+  Expected: 0
+  But was:  0.00029999999999999997d
+Completed in 0.7920ms
+TestActualConsumptionFreeWheel
+Log
+Car(double fuelLevel, int maxAcceleration)
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+FreeWheel
+ReduceSpeed
+SetActualConsumptionByTime0
+SetActualConsumptionByDistance0
+Test Passed
+Completed in 0.3360ms
+TestActualConsumptionRunningIdle
+Log
+Car()
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Test Passed
+Completed in 0.2150ms
+TestActualSpeedBeforeDriving
+Log
+Car()
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Test Passed
+Completed in 0.2040ms
+TestActualSpeedWhenDriving
+Log
+Car()
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Accelerate
+Accelerate
+Test Passed
+Completed in 0.1740ms
+TestAverageConsumptionsAfterAccelerating
+Log
+Car()
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Accelerate
+Accelerate
+Test Passed
+Completed in 0.3940ms
+TestAverageConsumptionsAfterAcceleratingAndReset
+Log
+Car()
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Accelerate
+Accelerate
+TripReset
+TripReset
+System.InvalidOperationException : Sequence contains no elements
+Stack Trace
+Completed in 4.1250ms
+TestAverageConsumptionsAfterBraking
+Log
+Car()
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Accelerate
+Accelerate
+BrakeBy
+ReduceSpeed
+BrakeBy
+ReduceSpeed
+BrakeBy
+ReduceSpeed
+Test Passed
+Completed in 0.3650ms
+TestAverageConsumptionsAfterEngineStart
+Log
+Car()
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Test Passed
+Completed in 0.3320ms
+TestAverageConsumptionsAfterRunningIdle
+Log
+Car()
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+BrakeBy
+ReduceSpeed
+BrakeBy
+ReduceSpeed
+Test Passed
+Completed in 0.3330ms
+TestAverageConsumptionsBeforeEngineStart
+Log
+Car()
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+Test Passed
+Completed in 0.2760ms
+TestAverageSpeed1
+Log
+Car()
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Accelerate
+Accelerate
+BrakeBy
+ReduceSpeed
+BrakeBy
+ReduceSpeed
+BrakeBy
+ReduceSpeed
+Test Passed
+Completed in 0.4620ms
+TestAverageSpeed2
+Log
+Car()
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+BrakeBy
+ReduceSpeed
+BrakeBy
+ReduceSpeed
+BrakeBy
+ReduceSpeed
+Test Failed
+  Wrong Trip-Average-Speed.
+Assert.That(car.onBoardComputerDisplay.TripAverageSpeed, Is.EqualTo(21.4))
+  Expected: 21.399999999999999d
+  But was:  21.43d
+Completed in 0.8420ms
+TestAverageSpeedAfterEngineRestart
+Log
+Car()
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+BrakeBy
+ReduceSpeed
+BrakeBy
+ReduceSpeed
+BrakeBy
+ReduceSpeed
+EngineStop
+Stop
+EngineStart
+Start
+Accelerate
+Accelerate
+Test Failed
+  Wrong Trip-Average-Speed.
+Assert.That(car.onBoardComputerDisplay.TripAverageSpeed, Is.EqualTo(15))
+  Expected: 15
+  But was:  20.0d
+Completed in 0.9510ms
+TestAverageSpeedAfterTripReset
+Log
+Car()
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+BrakeBy
+ReduceSpeed
+BrakeBy
+ReduceSpeed
+BrakeBy
+ReduceSpeed
+TripReset
+TripReset
+Accelerate
+Accelerate
+Test Passed
+Completed in 0.3790ms
+TestDrivenDistancesAfterAccelerating
+Log
+Car()
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Test Passed
+Completed in 0.7330ms
+TestDrivenDistancesAfterDriving
+Log
+Car()
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+BrakeBy
+ReduceSpeed
+BrakeBy
+ReduceSpeed
+Accelerate
+Accelerate
+Test Passed
+Completed in 0.4930ms
+TestDrivenDistancesAfterDrivingAndResets
+Log
+Car()
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+BrakeBy
+ReduceSpeed
+BrakeBy
+ReduceSpeed
+Accelerate
+Accelerate
+BrakeBy
+ReduceSpeed
+TripReset
+TripReset
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+TotalReset
+TotalReset
+Test Passed
+Completed in 0.8390ms
+TestDrivenDistancesAfterEngineStart
+Log
+Car()
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Test Passed
+Completed in 0.2780ms
+TestDrivenDistancesAfterRunningIdle
+Log
+Car()
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Test Passed
+Completed in 0.4390ms
+TestDrivenDistancesBeforeEngineStart
+Log
+Car()
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+Test Passed
+Completed in 0.2120ms
+TestDrivingTimeAfterDrivingAfterReset
+Log
+Car()
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Accelerate
+Accelerate
+BrakeBy
+ReduceSpeed
+BrakeBy
+ReduceSpeed
+BrakeBy
+ReduceSpeed
+TripReset
+TripReset
+TotalReset
+TotalReset
+Test Passed
+Completed in 0.6700ms
+TestDrivingTimeAfterDrivingWithEngineRestart
+Log
+Car()
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Accelerate
+Accelerate
+BrakeBy
+ReduceSpeed
+BrakeBy
+ReduceSpeed
+BrakeBy
+ReduceSpeed
+EngineStop
+Stop
+Refuel
+Refuel
+EngineStart
+Start
+Accelerate
+Accelerate
+BrakeBy
+ReduceSpeed
+BrakeBy
+ReduceSpeed
+Accelerate
+Test Failed
+  Wrong Trip-Real-Time!
+Assert.That(car.onBoardComputerDisplay.TripRealTime, Is.EqualTo(6))
+  Expected: 6
+  But was:  16
+Completed in 1.1560ms
+TestEstimatedRangeAfterDrivingMaxSpeed
+Log
+Car()
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Test Passed
+Completed in 2.3220ms
+TestEstimatedRangeAfterDrivingMaxSpeedAndReset
+Log
+Car()
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+TripReset
+TripReset
+TotalReset
+TotalReset
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Test Passed
+Completed in 0.5850ms
+TestEstimatedRangeAfterDrivingOptimumSpeedForLowerThan100Seconds
+Log
+Car()
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Test Failed
+  Wrong Estimated-Range.
+Assert.That(car.onBoardComputerDisplay.EstimatedRange, Is.EqualTo(310))
+  Expected: 310
+  But was:  384
+Completed in 0.9370ms
+TestEstimatedRangeAfterDrivingOptimumSpeedForMoreThan100Seconds
+Log
+Car()
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Test Passed
+Completed in 0.4650ms
+TestEstimatedRangeAfterDrivingSlowSpeedForLowerThan100Seconds
+Log
+Car()
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Test Failed
+  Wrong Estimated-Range.
+Assert.That(car.onBoardComputerDisplay.EstimatedRange, Is.EqualTo(133))
+  Expected: 133
+  But was:  85
+Completed in 0.8680ms
+TestEstimatedRangeBeforeDriving
+Log
+Car()
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Test Passed
+Completed in 0.2240ms
+TestRealAndDrivingTimeAfterDriving
+Log
+Car()
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+Accelerate
+BrakeBy
+ReduceSpeed
+BrakeBy
+ReduceSpeed
+Accelerate
+Test Passed
+Completed in 0.3750ms
+TestRealAndDrivingTimeAfterRunningIdle
+Log
+Car()
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+EngineStart
+Start
+Test Passed
+Completed in 0.3150ms
+TestRealAndDrivingTimeBeforeStarting
+Log
+Car()
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+Test Passed
+Completed in 0.2790ms
+TestRealAndDrivingTimeBeforeStartingAccelerateTo10
+Log
+Car()
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+Accelerate
+Test Passed
+Completed in 0.2450ms
+TestRealAndDrivingTimeBeforeStartingAfterRefueling
+Log
+Car()
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+Refuel
+Refuel
+Test Passed
+Completed in 0.2680ms
+TestRealAndDrivingTimeBeforeStartingBrakeBy10
+Log
+Car()
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+BrakeBy
+ReduceSpeed
+Test Passed
+Completed in 0.2950ms
+TestRealAndDrivingTimeBeforeStartingFreeWheel
+Log
+Car()
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+FreeWheel
+Test Passed
+Completed in 0.2640ms
+TestRealAndDrivingTimeBeforeStartingRunningIdl
+Log
+Car()
+Refuel
+Engine(IFuelTank fuelTank)
+FuelTankDisplay(IFuelTank fuelTank)
+DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
+OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
+OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
+Test Passed
+Completed in 0.2800ms
+Completed in 77.3090ms

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Metrics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,6 +27,8 @@ namespace Constructing_a_car__3___On_Board_Computer
 
         public Car()
         {
+            Console.WriteLine("Car()");
+
             fuelTank = new FuelTank();
             fuelTank.Refuel(20d);
 
@@ -44,6 +47,8 @@ namespace Constructing_a_car__3___On_Board_Computer
 
         public Car(double fuelLevel)
         {
+            Console.WriteLine("Car(double fuelLevel)");
+
             fuelTank = new FuelTank();
             fuelTank.Refuel(fuelLevel);
 
@@ -62,6 +67,8 @@ namespace Constructing_a_car__3___On_Board_Computer
 
         public Car(double fuelLevel, int maxAcceleration) // car #2
         {
+            Console.WriteLine("Car(double fuelLevel, int maxAcceleration)");
+
             fuelTank = new FuelTank();
             fuelTank.Refuel(fuelLevel);
 
@@ -98,6 +105,8 @@ namespace Constructing_a_car__3___On_Board_Computer
 
         public void EngineStart()
         {
+            Console.WriteLine("EngineStart");
+
             engine.Start();
 
             onBoardComputer.ElapseSecond();
@@ -105,6 +114,8 @@ namespace Constructing_a_car__3___On_Board_Computer
 
         public void EngineStop()
         {
+            Console.WriteLine("EngineStop");
+
             engine.Stop();
 
             onBoardComputer.ElapseSecond();
@@ -112,11 +123,21 @@ namespace Constructing_a_car__3___On_Board_Computer
 
         public void Refuel(double liters)
         {
+            Console.WriteLine("Refuel");
+
             fuelTank.Refuel(liters);
         }
 
+        private static int _counter = 0;
+
         public void RunningIdle()
         {
+            _counter++;
+            if (_counter < 100)
+            {
+                Console.WriteLine("RunningIdle");
+            }
+
             if (this.EngineIsRunning)
             {
                 engine.Consume(0.0003d);
@@ -127,6 +148,7 @@ namespace Constructing_a_car__3___On_Board_Computer
 
         public void Accelerate(int targetSpeed)
         {
+            Console.WriteLine("Accelerate");
 
             if (!EngineIsRunning)
             {
@@ -182,6 +204,8 @@ namespace Constructing_a_car__3___On_Board_Computer
 
         public void FreeWheel() // "When the car brakes or freewheels with getting slower, there is no fuel consumption"
         {
+            Console.WriteLine("FreeWheel");
+
             if (drivingProcessor.ActualSpeed == 0)
             {
                 RunningIdle();
@@ -197,6 +221,8 @@ namespace Constructing_a_car__3___On_Board_Computer
 
         public void BrakeBy(int targetAmount) // "When the car brakes or freewheels with getting slower, there is no fuel consumption"
         {  // unless it comes down to 0 and does RunningIdle
+            Console.WriteLine("BrakeBy");
+
             int newAmount = 10;
 
             if (newAmount > targetAmount)

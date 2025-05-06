@@ -1,4 +1,6 @@
-﻿namespace Constructing_a_car__3___On_Board_Computer;
+﻿using System.Diagnostics.Metrics;
+
+namespace Constructing_a_car__3___On_Board_Computer;
 
 public class DrivingProcessor : IDrivingProcessor // car #2
 {
@@ -19,16 +21,28 @@ public class DrivingProcessor : IDrivingProcessor // car #2
 
     public void EngineStart()
     {
+        Console.WriteLine("EngineStart");
+
         _engineIsRunning = true;
     }
 
     public void EngineStop()
     {
+        Console.WriteLine("EngineStop");
+
         _engineIsRunning = false;
     }
 
+    private static int _counter = 0;
+
     public void IncreaseSpeedTo(int speed)
     {
+        _counter++;
+        if (_counter < 100)
+        {
+            Console.WriteLine("IncreaseSpeedTo");
+        }
+
         _actualSpeed = speed;
         if (_actualSpeed > 250)
         {
@@ -64,6 +78,8 @@ public class DrivingProcessor : IDrivingProcessor // car #2
 
     public void ReduceSpeed(int amount)
     {
+        Console.WriteLine("ReduceSpeed");
+
         _actualSpeed -= amount;
         if (_actualSpeed < 0)
         {

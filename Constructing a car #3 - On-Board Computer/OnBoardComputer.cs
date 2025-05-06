@@ -17,6 +17,8 @@ public class OnBoardComputer : IOnBoardComputer // car #3
 
     public OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)
     {
+        Console.WriteLine("OnBoardComputer(IDrivingProcessor drivingProcessor, IEngine engine, IFuelTank fuelTank)");
+
         _drivingProcessor = drivingProcessor;
         _engine = engine;
 
@@ -212,8 +214,16 @@ public class OnBoardComputer : IOnBoardComputer // car #3
 
     private Queue<double> last100SecondsConsumptions = new Queue<double>();
 
+    private static int _counter = 0;
+
     public void ElapseSecond()
     {
+        _counter++;
+        if (_counter < 100)
+        {
+            Console.WriteLine("ElapseSecond");
+        }
+
         // track time
         // it seems it needs to split somehow
         _tripRealTime++;  // used by TripAverageConsumptionByTime
@@ -277,6 +287,8 @@ public class OnBoardComputer : IOnBoardComputer // car #3
 
     public void TripReset()
     {
+        Console.WriteLine("TripReset");
+
         _tripDrivingTime = 0;
         _tripRealTime = 0;
 
@@ -289,6 +301,8 @@ public class OnBoardComputer : IOnBoardComputer // car #3
 
     public void TotalReset()
     {
+        Console.WriteLine("TotalReset");
+
         _totalDrivingTime = 0;
         _totalRealTime = 0;
 
@@ -301,11 +315,15 @@ public class OnBoardComputer : IOnBoardComputer // car #3
 
     public void SetActualConsumptionByTime0()
     {
+        Console.WriteLine("SetActualConsumptionByTime0");
+
         _actualConsumptionByTime = 0;
     }
 
     public void SetActualConsumptionByDistance0()
     {
+        Console.WriteLine("SetActualConsumptionByDistance0");
+
         _actualConsumptionByDistance = 0;
     }
 }

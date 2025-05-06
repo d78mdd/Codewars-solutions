@@ -12,11 +12,21 @@ public class Engine : IEngine
 
     public Engine(IFuelTank fuelTank)
     {
+        Console.WriteLine("Engine(IFuelTank fuelTank)");
+
         _fuelTank = fuelTank;
     }
 
+    private static int _counter = 0;
+
     public void Consume(double liters)
     {
+        if (_counter < 100)
+        {
+            _counter++;
+            Console.WriteLine("Consume");
+        }
+
         if (_isRunning)
         {
             _fuelTank.Consume(liters);
@@ -31,6 +41,8 @@ public class Engine : IEngine
 
     public void Start()
     {
+        Console.WriteLine("Start");
+
         if (_fuelTank.FillLevel > 0)
         {
             _isRunning = true;
@@ -39,6 +51,8 @@ public class Engine : IEngine
 
     public void Stop()
     {
+        Console.WriteLine("Stop");
+
         _isRunning = false;
     }
 }

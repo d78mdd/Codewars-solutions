@@ -446,4 +446,16 @@ public class Tests
         Assert.That(car.onBoardComputerDisplay.EstimatedRange, Is.EqualTo(393), "Wrong Estimated-Range.");
     }
 
+
+
+
+
+
+    [Test]
+    public void TestEstimatedRangeBeforeDriving()
+    {
+        var car = new Car();
+
+        Assert.That(car.onBoardComputerDisplay.EstimatedRange, Is.EqualTo(417), "Wrong Estimated-Range.");
+    }
 }

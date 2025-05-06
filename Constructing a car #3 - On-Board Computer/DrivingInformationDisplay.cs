@@ -11,6 +11,8 @@ public class DrivingInformationDisplay : IDrivingInformationDisplay // car #2
 
     public DrivingInformationDisplay(IDrivingProcessor drivingProcessor)
     {
+        Console.WriteLine("DrivingInformationDisplay(IDrivingProcessor drivingProcessor)");
+
         _drivingProcessor = drivingProcessor;
     }
 }

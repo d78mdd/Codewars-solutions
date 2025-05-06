@@ -93,17 +93,23 @@ public class OnBoardComputerDisplay : IOnBoardComputerDisplay // car #3
 
     public OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)
     {
+        Console.WriteLine("OnBoardComputerDisplay(IOnBoardComputer onBoardComputer)");
+
         _onBoardComputer = onBoardComputer;
     }
 
 
     public void TripReset()
     {
+        Console.WriteLine("TripReset");
+
         _onBoardComputer.TripReset();
     }
 
     public void TotalReset()
     {
+        Console.WriteLine("TotalReset");
+
         _onBoardComputer.TotalReset();
     }
 }

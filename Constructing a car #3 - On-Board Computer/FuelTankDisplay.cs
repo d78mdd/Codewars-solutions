@@ -22,6 +22,8 @@ public class FuelTankDisplay : IFuelTankDisplay
 
     public FuelTankDisplay(IFuelTank fuelTank)
     {
+        Console.WriteLine("FuelTankDisplay(IFuelTank fuelTank)");
+
         _fuelTank = fuelTank;
     }
 

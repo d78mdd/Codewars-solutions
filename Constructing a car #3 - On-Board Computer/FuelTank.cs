@@ -1,4 +1,6 @@
-﻿namespace Constructing_a_car__3___On_Board_Computer;
+﻿using System.Diagnostics.Metrics;
+
+namespace Constructing_a_car__3___On_Board_Computer;
 
 public class FuelTank : IFuelTank
 {
@@ -22,8 +24,16 @@ public class FuelTank : IFuelTank
         get { return _fillLevel == TankMaximumSize; }
     }
 
+    private static int _counter = 0;
+
     public void Consume(double liters)
     { // what if liters is negative
+        _counter++;
+        if (_counter < 100)
+        {
+            Console.WriteLine("Consume");
+        }
+
         _fillLevel -= liters;
         if (_fillLevel < 0)
         {
@@ -33,6 +43,8 @@ public class FuelTank : IFuelTank
 
     public void Refuel(double liters)
     {
+        Console.WriteLine("Refuel");
+
         _fillLevel += liters;
         if (_fillLevel > TankMaximumSize)
         {
