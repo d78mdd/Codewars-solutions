@@ -148,7 +148,7 @@ namespace Constructing_a_car__3___On_Board_Computer
 
         public void Accelerate(int targetSpeed)
         {
-            Console.WriteLine("Accelerate");
+            Console.WriteLine("Accelerate" + targetSpeed);
 
             if (!EngineIsRunning)
             {
@@ -221,7 +221,7 @@ namespace Constructing_a_car__3___On_Board_Computer
 
         public void BrakeBy(int targetAmount) // "When the car brakes or freewheels with getting slower, there is no fuel consumption"
         {  // unless it comes down to 0 and does RunningIdle
-            Console.WriteLine("BrakeBy");
+            Console.WriteLine("BrakeBy" + targetAmount);
 
             int newAmount = 10;
 
