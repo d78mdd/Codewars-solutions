@@ -128,6 +128,8 @@ namespace Constructing_a_car__3___On_Board_Computer
             Console.WriteLine("Refuel" + liters);
 
             fuelTank.Refuel(liters);
+
+            onBoardComputer.TripReset();
         }
 
         private int _counter = 0;
