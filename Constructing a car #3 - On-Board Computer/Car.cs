@@ -121,6 +121,8 @@ namespace Constructing_a_car__3___On_Board_Computer
             drivingProcessor.ReduceSpeed(250);
 
             onBoardComputer.ElapseSecond();
+
+            onBoardComputer.TripReset();
         }
 
         public void Refuel(double liters)
@@ -128,8 +130,6 @@ namespace Constructing_a_car__3___On_Board_Computer
             Console.WriteLine("Refuel" + liters);
 
             fuelTank.Refuel(liters);
-
-            onBoardComputer.TripReset();
         }
 
         private int _counter = 0;
