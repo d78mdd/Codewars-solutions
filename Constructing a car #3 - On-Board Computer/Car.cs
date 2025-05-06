@@ -117,9 +117,12 @@ namespace Constructing_a_car__3___On_Board_Computer
 
         public void RunningIdle()
         {
-            engine.Consume(0.0003d);
-            drivingProcessor.IncreaseSpeedTo(0);
-            onBoardComputer.ElapseSecond();
+            if (this.EngineIsRunning)
+            {
+                engine.Consume(0.0003d);
+                drivingProcessor.IncreaseSpeedTo(0);
+                onBoardComputer.ElapseSecond();
+            }
         }
 
         public void Accelerate(int targetSpeed)
