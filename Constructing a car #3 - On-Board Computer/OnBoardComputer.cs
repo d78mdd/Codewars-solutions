@@ -248,7 +248,7 @@ public class OnBoardComputer : IOnBoardComputer // car #3
         }
 
         // l/km
-        double currentConsumptionPerCurrentDistance = currentConsumption / currentDrivenDistance;
+        double currentConsumptionPerCurrentDistance = currentConsumption / (currentDrivenDistance / 100000);
 
         // consumption for 100km according to current consumption // l/km
         _actualConsumptionByDistance = currentConsumptionPerCurrentDistance * 100;
