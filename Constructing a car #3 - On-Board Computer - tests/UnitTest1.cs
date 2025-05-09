@@ -1,179 +1,180 @@
 using Constructing_a_car__3___On_Board_Computer;
+using NUnit.Framework.Internal;
 
 namespace Constructing_a_car__3___On_Board_Computer___tests;
 
 public class Tests
 {
 
-    //[Test, Order(1)]
-    //public void TestMotorStartAndStop()
-    //{
-    //    var car = new Car();
+    [Test, Order(1)]
+    public void TestMotorStartAndStop()
+    {
+        var car = new Car();
 
-    //    Assert.That(car.EngineIsRunning, Is.False, "Engine could not be running.");
+        Assert.That(car.EngineIsRunning, Is.False, "Engine could not be running.");
 
-    //    car.EngineStart();
+        car.EngineStart();
 
-    //    Assert.That(car.EngineIsRunning, Is.True, "Engine should be running.");
+        Assert.That(car.EngineIsRunning, Is.True, "Engine should be running.");
 
-    //    car.EngineStop();
+        car.EngineStop();
 
-    //    Assert.That(car.EngineIsRunning, Is.False, "Engine could not be running.");
-    //}
+        Assert.That(car.EngineIsRunning, Is.False, "Engine could not be running.");
+    }
 
-    //[Test, Order(2)]
-    //public void TestFuelConsumptionOnIdle()
-    //{
-    //    var car = new Car(1);
+    [Test, Order(2)]
+    public void TestFuelConsumptionOnIdle()
+    {
+        var car = new Car(1);
 
-    //    car.EngineStart();
+        car.EngineStart();
 
-    //    Enumerable.Range(0, 3000).ToList().ForEach(s => car.RunningIdle());
+        Enumerable.Range(0, 3000).ToList().ForEach(s => car.RunningIdle());
 
-    //    Assert.That(car.fuelTankDisplay.FillLevel, Is.EqualTo(0.10), "Wrong fuel tank fill level!");
-    //}
+        Assert.That(car.fuelTankDisplay.FillLevel, Is.EqualTo(0.10), "Wrong fuel tank fill level!");
+    }
 
-    //[Test, Order(3)]
-    //public void TestFuelTankDisplayIsComplete()
-    //{
-    //    var car = new Car(60);
+    [Test, Order(3)]
+    public void TestFuelTankDisplayIsComplete()
+    {
+        var car = new Car(60);
 
-    //    Assert.That(car.fuelTankDisplay.IsComplete, Is.True, "Fuel tank must be complete!");
-    //}
+        Assert.That(car.fuelTankDisplay.IsComplete, Is.True, "Fuel tank must be complete!");
+    }
 
-    //[Test, Order(4)]
-    //public void TestFuelTankDisplayIsOnReserve()
-    //{
-    //    var car = new Car(4);
+    [Test, Order(4)]
+    public void TestFuelTankDisplayIsOnReserve()
+    {
+        var car = new Car(4);
 
-    //    Assert.That(car.fuelTankDisplay.IsOnReserve, Is.True, "Fuel tank must be on reserve!");
-    //}
+        Assert.That(car.fuelTankDisplay.IsOnReserve, Is.True, "Fuel tank must be on reserve!");
+    }
 
-    //[Test, Order(5)]
-    //public void TestRefuel()
-    //{
-    //    var car = new Car(5);
+    [Test, Order(5)]
+    public void TestRefuel()
+    {
+        var car = new Car(5);
 
-    //    car.Refuel(40);
+        car.Refuel(40);
 
-    //    Assert.That(car.fuelTankDisplay.FillLevel, Is.EqualTo(45), "Wrong fuel tank fill level!");
-    //}
+        Assert.That(car.fuelTankDisplay.FillLevel, Is.EqualTo(45), "Wrong fuel tank fill level!");
+    }
 
 
 
-    //[Test, Order(6)]
-    //public void TestStartSpeed()
-    //{
-    //    var car = new Car();
+    [Test, Order(6)]
+    public void TestStartSpeed()
+    {
+        var car = new Car();
 
-    //    car.EngineStart();
+        car.EngineStart();
 
-    //    Assert.That(car.drivingInformationDisplay.ActualSpeed, Is.EqualTo(0), "Wrong actual speed!");
-    //}
+        Assert.That(car.drivingInformationDisplay.ActualSpeed, Is.EqualTo(0), "Wrong actual speed!");
+    }
 
-    //[Test, Order(7)]
-    //public void TestFreeWheelSpeed()
-    //{
-    //    var car = new Car();
+    [Test, Order(7)]
+    public void TestFreeWheelSpeed()
+    {
+        var car = new Car();
 
-    //    car.EngineStart();
+        car.EngineStart();
 
-    //    Enumerable.Range(0, 10).ToList().ForEach(s => car.Accelerate(100));
+        Enumerable.Range(0, 10).ToList().ForEach(s => car.Accelerate(100));
 
-    //    Assert.That(car.drivingInformationDisplay.ActualSpeed, Is.EqualTo(100), "Wrong actual speed!");
+        Assert.That(car.drivingInformationDisplay.ActualSpeed, Is.EqualTo(100), "Wrong actual speed!");
 
-    //    car.FreeWheel();
-    //    car.FreeWheel();
-    //    car.FreeWheel();
+        car.FreeWheel();
+        car.FreeWheel();
+        car.FreeWheel();
 
-    //    Assert.That(car.drivingInformationDisplay.ActualSpeed, Is.EqualTo(97), "Wrong actual speed!");
-    //}
+        Assert.That(car.drivingInformationDisplay.ActualSpeed, Is.EqualTo(97), "Wrong actual speed!");
+    }
 
-    //[Test, Order(8)]
-    //public void TestAccelerateBy10()
-    //{
-    //    var car = new Car();
+    [Test, Order(8)]
+    public void TestAccelerateBy10()
+    {
+        var car = new Car();
 
-    //    car.EngineStart();
+        car.EngineStart();
 
-    //    Enumerable.Range(0, 10).ToList().ForEach(s => car.Accelerate(100));
+        Enumerable.Range(0, 10).ToList().ForEach(s => car.Accelerate(100));
 
-    //    car.Accelerate(160);
-    //    Assert.That(car.drivingInformationDisplay.ActualSpeed, Is.EqualTo(110), "Wrong actual speed!");
-    //    car.Accelerate(160);
-    //    Assert.That(car.drivingInformationDisplay.ActualSpeed, Is.EqualTo(120), "Wrong actual speed!");
-    //    car.Accelerate(160);
-    //    Assert.That(car.drivingInformationDisplay.ActualSpeed, Is.EqualTo(130), "Wrong actual speed!");
-    //    car.Accelerate(160);
-    //    Assert.That(car.drivingInformationDisplay.ActualSpeed, Is.EqualTo(140), "Wrong actual speed!");
-    //    car.Accelerate(145);
-    //    Assert.That(car.drivingInformationDisplay.ActualSpeed, Is.EqualTo(145), "Wrong actual speed!");
-    //}
+        car.Accelerate(160);
+        Assert.That(car.drivingInformationDisplay.ActualSpeed, Is.EqualTo(110), "Wrong actual speed!");
+        car.Accelerate(160);
+        Assert.That(car.drivingInformationDisplay.ActualSpeed, Is.EqualTo(120), "Wrong actual speed!");
+        car.Accelerate(160);
+        Assert.That(car.drivingInformationDisplay.ActualSpeed, Is.EqualTo(130), "Wrong actual speed!");
+        car.Accelerate(160);
+        Assert.That(car.drivingInformationDisplay.ActualSpeed, Is.EqualTo(140), "Wrong actual speed!");
+        car.Accelerate(145);
+        Assert.That(car.drivingInformationDisplay.ActualSpeed, Is.EqualTo(145), "Wrong actual speed!");
+    }
 
-    //[Test, Order(9)]
-    //public void TestBraking()
-    //{
-    //    var car = new Car();
+    [Test, Order(9)]
+    public void TestBraking()
+    {
+        var car = new Car();
 
-    //    car.EngineStart();
+        car.EngineStart();
 
-    //    Enumerable.Range(0, 10).ToList().ForEach(s => car.Accelerate(100));
+        Enumerable.Range(0, 10).ToList().ForEach(s => car.Accelerate(100));
 
-    //    car.BrakeBy(20);
+        car.BrakeBy(20);
 
-    //    Assert.That(car.drivingInformationDisplay.ActualSpeed, Is.EqualTo(90), "Wrong actual speed!");
+        Assert.That(car.drivingInformationDisplay.ActualSpeed, Is.EqualTo(90), "Wrong actual speed!");
 
-    //    car.BrakeBy(10);
+        car.BrakeBy(10);
 
-    //    Assert.That(car.drivingInformationDisplay.ActualSpeed, Is.EqualTo(80), "Wrong actual speed!");
-    //}
+        Assert.That(car.drivingInformationDisplay.ActualSpeed, Is.EqualTo(80), "Wrong actual speed!");
+    }
 
-    //[Test, Order(10)]
-    //public void TestConsumptionSpeedUpTo30()
-    //{
-    //    var car = new Car(1, 20);
+    [Test, Order(10)]
+    public void TestConsumptionSpeedUpTo30()
+    {
+        var car = new Car(1, 20);
 
-    //    car.EngineStart();
+        car.EngineStart();
 
-    //    car.Accelerate(30);
-    //    car.Accelerate(30);
-    //    car.Accelerate(30);
-    //    car.Accelerate(30);
-    //    car.Accelerate(30);
-    //    car.Accelerate(30);
-    //    car.Accelerate(30);
-    //    car.Accelerate(30);
-    //    car.Accelerate(30);
-    //    car.Accelerate(30);
+        car.Accelerate(30);
+        car.Accelerate(30);
+        car.Accelerate(30);
+        car.Accelerate(30);
+        car.Accelerate(30);
+        car.Accelerate(30);
+        car.Accelerate(30);
+        car.Accelerate(30);
+        car.Accelerate(30);
+        car.Accelerate(30);
 
-    //    Assert.That(car.fuelTankDisplay.FillLevel, Is.EqualTo(0.98), "Wrong fuel tank fill level!");
-    //}
+        Assert.That(car.fuelTankDisplay.FillLevel, Is.EqualTo(0.98), "Wrong fuel tank fill level!");
+    }
 
-    //[Test]
-    //public void TestAccelerateLowerThanActualSpeed()
-    //{
-    //    var car = new Car(50, 20);
+    [Test]
+    public void TestAccelerateLowerThanActualSpeed()
+    {
+        var car = new Car(50, 20);
 
-    //    car.EngineStart();
+        car.EngineStart();
 
-    //    car.Accelerate(10);
-    //    car.Accelerate(5);
+        car.Accelerate(10);
+        car.Accelerate(5);
 
-    //    Assert.That(car.drivingInformationDisplay.ActualSpeed, Is.EqualTo(10));
-    //}
+        Assert.That(car.drivingInformationDisplay.ActualSpeed, Is.EqualTo(10));
+    }
 
-    //[Test]
-    //public void TestConsumptionLeadsToStopEngine()
-    //{
-    //    var car = new Car(50, 20);
+    [Test]
+    public void TestConsumptionLeadsToStopEngine()
+    {
+        var car = new Car(50, 20);
 
-    //    car.EngineStart();
+        car.EngineStart();
 
-    //    car.Accelerate(10);
-    //    car.Accelerate(5);
+        car.Accelerate(10);
+        car.Accelerate(5);
 
-    //    Assert.That(car.EngineIsRunning, Is.False);
-    //}
+        Assert.That(car.EngineIsRunning, Is.False);
+    }
 
 
 
@@ -593,6 +594,251 @@ public class Tests
         car.Accelerate(30);
 
         Assert.That(car.onBoardComputerDisplay.TripRealTime, Is.EqualTo(6));
+    }
+
+
+
+
+
+    [Test]
+    public void RandomTestRun1()
+    {
+        var car = new Car();
+
+        car.EngineStart();
+
+        car.Accelerate(23);
+        car.Accelerate(23);
+        car.Accelerate(23);
+        car.Accelerate(23);
+        car.Accelerate(23);
+        car.Accelerate(23);
+        car.Accelerate(23);
+        car.Accelerate(23);
+        car.Accelerate(23);
+        car.Accelerate(23);
+        car.Accelerate(23);
+        car.Accelerate(23);
+        car.Accelerate(23);
+        car.Accelerate(23);
+        car.Accelerate(23);
+        car.Accelerate(23);
+        car.Accelerate(23);
+        car.Accelerate(23);
+
+        const double expectedEstimatedRange = 199.0d;
+
+        Assert.That(car.onBoardComputerDisplay.EstimatedRange, Is.EqualTo(expectedEstimatedRange));
+    }
+
+    [Test]
+    public void RandomTestRun2()
+    {
+        var car = new Car();
+
+        car.EngineStart();
+
+        car.Accelerate(22);
+        car.Accelerate(22);
+        car.Accelerate(22);
+        car.Accelerate(22);
+        car.Accelerate(22);
+        car.Accelerate(22);
+        car.Accelerate(22);
+        car.Accelerate(22);
+        car.Accelerate(22);
+        car.Accelerate(22);
+        car.Accelerate(22);
+        car.Accelerate(22);
+
+        const double expectedEstimatedRange = 233.0d;
+
+        Assert.That(car.onBoardComputerDisplay.EstimatedRange, Is.EqualTo(expectedEstimatedRange));
+    }
+
+    [Test]
+    public void RandomTestRun3()
+    {
+        var car = new Car();
+
+        car.EngineStart();
+
+        car.Accelerate(25);
+        car.Accelerate(25);
+        car.Accelerate(25);
+        car.Accelerate(25);
+        car.Accelerate(25);
+
+        const double expectedEstimatedRange = 307.0d;
+
+        Assert.That(car.onBoardComputerDisplay.EstimatedRange, Is.EqualTo(expectedEstimatedRange));
+    }
+
+    [Test]
+    public void RandomTestRun4()
+    {
+        var car = new Car();
+
+        car.EngineStart();
+
+        car.Accelerate(21);
+        car.Accelerate(21);
+        car.Accelerate(21);
+        car.Accelerate(21);
+        car.Accelerate(21);
+        car.Accelerate(21);
+        car.Accelerate(21);
+        car.Accelerate(21);
+        car.Accelerate(21);
+        car.Accelerate(21);
+        car.Accelerate(21);
+        car.Accelerate(21);
+        car.Accelerate(21);
+
+        const double expectedEstimatedRange = 221.0d;
+
+        Assert.That(car.onBoardComputerDisplay.EstimatedRange, Is.EqualTo(expectedEstimatedRange));
+    }
+
+    [Test]
+    public void RandomTestRun5()
+    {
+        var car = new Car();
+
+        car.EngineStart();
+
+        car.Accelerate(23);
+        car.Accelerate(23);
+        car.Accelerate(23);
+        car.Accelerate(23);
+        car.Accelerate(23);
+        car.Accelerate(23);
+        car.Accelerate(23);
+        car.Accelerate(23);
+        car.Accelerate(23);
+        car.Accelerate(23);
+        car.Accelerate(23);
+        car.Accelerate(23);
+        car.Accelerate(23);
+        car.Accelerate(23);
+        car.Accelerate(23);
+        car.Accelerate(23);
+        car.Accelerate(23);
+
+        const double expectedEstimatedRange = 205.0d;
+
+        Assert.That(car.onBoardComputerDisplay.EstimatedRange, Is.EqualTo(expectedEstimatedRange));
+    }
+
+    [Test]
+    public void RandomTestRun6()
+    {
+        var car = new Car();
+
+        car.EngineStart();
+
+        car.Accelerate(24);
+        car.Accelerate(24);
+        car.Accelerate(24);
+        car.Accelerate(24);
+
+        const double expectedEstimatedRange = 318.0d;
+
+        Assert.That(car.onBoardComputerDisplay.EstimatedRange, Is.EqualTo(expectedEstimatedRange));
+    }
+
+    [Test]
+    public void RandomTestRun7()
+    {
+        var car = new Car();
+
+        car.EngineStart();
+
+        car.Accelerate(25);
+        car.Accelerate(25);
+        car.Accelerate(25);
+        car.Accelerate(25);
+        car.Accelerate(25);
+        car.Accelerate(25);
+        car.Accelerate(25);
+        car.Accelerate(25);
+        car.Accelerate(25);
+        car.Accelerate(25);
+        car.Accelerate(25);
+        car.Accelerate(25);
+        car.Accelerate(25);
+        car.Accelerate(25);
+        car.Accelerate(25);
+        car.Accelerate(25);
+        car.Accelerate(25);
+        car.Accelerate(25);
+
+        const double expectedEstimatedRange = 207.0d;
+
+        Assert.That(car.onBoardComputerDisplay.EstimatedRange, Is.EqualTo(expectedEstimatedRange));
+    }
+
+    [Test]
+    public void RandomTestRun8()
+    {
+        var car = new Car();
+
+        car.EngineStart();
+
+        car.Accelerate(22);
+        car.Accelerate(22);
+        car.Accelerate(22);
+        car.Accelerate(22);
+
+        const double expectedEstimatedRange = 315.0d;
+
+        Assert.That(car.onBoardComputerDisplay.EstimatedRange, Is.EqualTo(expectedEstimatedRange));
+    }
+
+    [Test]
+    public void RandomTestRun9()
+    {
+        var car = new Car();
+
+        car.EngineStart();
+
+        car.Accelerate(30);
+        car.Accelerate(30);
+        car.Accelerate(30);
+        car.Accelerate(30);
+        car.Accelerate(30);
+        car.Accelerate(30);
+        car.Accelerate(30);
+        car.Accelerate(30);
+        car.Accelerate(30);
+        car.Accelerate(30);
+        car.Accelerate(30);
+        car.Accelerate(30);
+        car.Accelerate(30);
+        car.Accelerate(30);
+        car.Accelerate(30);
+        car.Accelerate(30);
+
+        const double expectedEstimatedRange = 236.0d;
+
+        Assert.That(car.onBoardComputerDisplay.EstimatedRange, Is.EqualTo(expectedEstimatedRange));
+    }
+
+    [Test]
+    public void RandomTestRun10()
+    {
+        var car = new Car();
+
+        car.EngineStart();
+
+        car.Accelerate(27);
+        car.Accelerate(27);
+        car.Accelerate(27);
+        car.Accelerate(27);
+
+        const double expectedEstimatedRange = 321.0d;
+
+        Assert.That(car.onBoardComputerDisplay.EstimatedRange, Is.EqualTo(expectedEstimatedRange));
     }
 
 }
